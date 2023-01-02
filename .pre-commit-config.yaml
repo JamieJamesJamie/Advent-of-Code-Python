@@ -38,3 +38,8 @@ repos:
         # pre-commit's default_language_version, see
         # https://pre-commit.com/#top_level-default_language_version
         #language_version: python3.9
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.991 # Use the sha / tag you want to point at
+    hooks:
+      - id: mypy
