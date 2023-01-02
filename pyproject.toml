@@ -18,6 +18,12 @@ isort = "^5.11.4"
 mypy = "^0.991"
 pylint = "^2.15.9"
 
+[tool.isort]
+profile = "black"
+
+[tool.pylint.format]
+max-line-length = "88"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
