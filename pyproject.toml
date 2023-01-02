@@ -14,6 +14,7 @@ python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 black = {version = "^22.12.0", extras = ["d"]}
+mypy = "^0.991"
 pylint = "^2.15.9"
 
 [build-system]
