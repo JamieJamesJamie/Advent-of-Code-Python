@@ -254,4 +254,5 @@ cython_debug/
 #.idea/
 
 ### Custom ignores
+/.idea/mypy.xml
 /.idea/pylint.xml
