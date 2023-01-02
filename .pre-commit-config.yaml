@@ -12,3 +12,8 @@ repos:
       - id: name-tests-test
         name: Tests should be named test_*.py
         args: ["--pytest-test-first"]
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.11.2
+    hooks:
+      - id: isort
