@@ -7,3 +7,8 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
 My approaches to programming puzzles found in the [2022 edition](https://adventofcode.com/2022) of [Advent of Code](https://adventofcode.com/).
+
+Project structure inspired by [gahjelle](https://github.com/gahjelle)'s own
+Advent of Code [repo](https://github.com/gahjelle/advent_of_code),
+[Copier template](https://github.com/gahjelle/template-aoc-python)
+and [article](https://realpython.com/python-advent-of-code/).
