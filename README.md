@@ -1,4 +1,4 @@
-# Advent-of-Code-2022
+# Advent of Code 2022
 
 [![Linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/PyCQA/pylint)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
