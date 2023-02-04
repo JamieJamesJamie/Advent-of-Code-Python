@@ -29,6 +29,9 @@ pre-commit = "^2.21.0"
 pylint = "^2.15.10"
 pytest = "^7.2.1"
 
+[tool.bandit]
+exclude_dirs = ["tests"]
+
 [tool.isort]
 profile = "black"
 
