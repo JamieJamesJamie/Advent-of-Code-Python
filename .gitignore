@@ -254,5 +254,10 @@ cython_debug/
 #.idea/
 
 ### Custom ignores
+
+# PyCharm configuration
 /.idea/mypy.xml
 /.idea/pylint.xml
+
+# Advent of Code Inputs
+input.txt
