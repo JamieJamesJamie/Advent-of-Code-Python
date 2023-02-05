@@ -5,6 +5,7 @@
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/JamieJamesJamie/Advent-of-Code-2022/main.svg)](https://results.pre-commit.ci/latest/github/JamieJamesJamie/Advent-of-Code-2022/main)
 
 My approaches to programming puzzles found in the [2022 edition](https://adventofcode.com/2022) of [Advent of Code](https://adventofcode.com/).
 
