@@ -47,4 +47,10 @@ class Day4(Solver):
 
     @staticmethod
     def part2(parsed_input: tuple[tuple[set[int], ...], ...]) -> int:
+        """Solves part 2.
+
+        :param parsed_input: The section IDs that each elf pair has been assigned.
+        :return: The number of assignment pairs where one assignment overlaps the other
+            assignment.
+        """
         return sum(bool(set1.intersection(set2)) for set1, set2 in parsed_input)

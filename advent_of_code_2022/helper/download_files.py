@@ -1,6 +1,5 @@
 """Utility functions to download puzzle input."""
 
-
 from pathlib import Path
 
 from aocd.models import Puzzle
@@ -53,4 +52,6 @@ def read_file(input_path: Path, day: int, year: int = 2022) -> str:
     if not input_path.exists():
         download(output_path=input_path, day=day, year=year)
 
-    return input_path.read_text().rstrip()
+    return "\n".join(
+        line.rstrip() for line in input_path.read_text().split("\n")
+    ).rstrip()
