@@ -39,7 +39,8 @@ class TestDay6(AbstractTestDay):
     def test_parse_example(self, example, parsed):
         """Test that example input is parsed correctly.
 
-        :param example: Parsed input from example file.
+        :param example: The actual parsed input from example file.
+        :param parsed: The expected parsed input from example file.
         """
         assert example == parsed
 
@@ -52,6 +53,7 @@ class TestDay6(AbstractTestDay):
         """Test part 1 on example input.
 
         :param example: Parsed input from example file.
+        :param result: The expected result.
         """
         assert self.solver().part1(example) == result
 
@@ -64,5 +66,6 @@ class TestDay6(AbstractTestDay):
         """Test part 2 on example input.
 
         :param example: Parsed input from example file.
+        :param result: The expected result.
         """
         assert self.solver().part2(example) == result
