@@ -48,6 +48,10 @@ build-backend = "poetry.core.masonry.api"
 # one or another interpreter, leading to false positives when analysed.
 # analyse-fallback-blocks =
 
+# Clear in-memory caches upon conclusion of linting. Useful if running pylint in
+# a server-like mode.
+# clear-cache-post-run =
+
 # Always return a 0 (non-error) status code, even if lint errors are found. This
 # is primarily useful in continuous integration scripts.
 # exit-zero =
@@ -69,7 +73,7 @@ build-backend = "poetry.core.masonry.api"
 # fail-on =
 
 # Specify a score threshold under which the program will exit with error.
-fail-under = 10
+fail-under = 10.0
 
 # Interpret the stdin as a python script, whose filename needs to be passed as
 # the module_or_package argument.
@@ -80,7 +84,7 @@ ignore = ["CVS"]
 
 # Add files or directories matching the regular expressions patterns to the
 # ignore-list. The regex matches against paths and can be in Posix or Windows
-# format. Because '\' represents the directory delimiter on Windows systems, it
+# format. Because '\\' represents the directory delimiter on Windows systems, it
 # can't be used as an escape character.
 # ignore-paths =
 
@@ -308,7 +312,7 @@ min-public-methods = 2
 
 [tool.pylint.exceptions]
 # Exceptions that will emit a warning when caught.
-overgeneral-exceptions = ["BaseException", "Exception"]
+overgeneral-exceptions = ["builtins.BaseException", "builtins.Exception"]
 
 [tool.pylint.format]
 # Expected format of line ending, e.g. empty (any line ending), LF or CRLF.
@@ -340,6 +344,9 @@ max-module-lines = 1000
 [tool.pylint.imports]
 # List of modules that can be imported at any level, not just the top level one.
 # allow-any-import-level =
+
+# Allow explicit reexports by alias from a package __init__.
+# allow-reexport-from-package =
 
 # Allow wildcard imports from modules that define __all__.
 # allow-wildcard-with-all =
@@ -481,15 +488,6 @@ spelling-ignore-comment-directives = "fmt: on,fmt: off,noqa:,noqa,nosec,isort:sk
 # Tells whether to store unknown words to the private dictionary (see the
 # --spelling-private-dict-file option) instead of raising a message.
 # spelling-store-unknown-words =
-
-[tool.pylint.string]
-# This flag controls whether inconsistent-quotes generates a warning when the
-# character used as a quote delimiter is used inconsistently within a module.
-# check-quote-consistency =
-
-# This flag controls whether the implicit-str-concat should generate a warning on
-# implicit string concatenation in sequences defined over several lines.
-# check-str-concat-over-line-jumps =
 
 [tool.pylint.typecheck]
 # List of decorators that produce context managers, such as
