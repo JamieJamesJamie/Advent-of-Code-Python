@@ -1,5 +1,8 @@
 """Solutions for day 3."""
+
+
 import textwrap
+from collections.abc import Iterable, Sequence
 
 from advent_of_code_2022.helper.solver import Solver
 
@@ -52,7 +55,7 @@ class Day3(Solver):
         return tuple(puzzle_input.split("\n"))
 
     @staticmethod
-    def part1(parsed_input: tuple[str, ...]) -> int:
+    def part1(parsed_input: Iterable[str]) -> int:
         """Solves part 1.
 
         :param parsed_input: The contents contained in each rucksack.
@@ -71,7 +74,7 @@ class Day3(Solver):
         return summed_priorities
 
     @staticmethod
-    def part2(parsed_input: tuple[str, ...]) -> int:
+    def part2(parsed_input: Sequence[str]) -> int:
         """Solves part 2.
 
         :param parsed_input: The contents contained in each rucksack.

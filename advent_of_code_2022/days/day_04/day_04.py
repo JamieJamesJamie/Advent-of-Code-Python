@@ -1,7 +1,9 @@
 """Solutions for day 4."""
 
 
+from collections.abc import Iterable
 from itertools import permutations
+from typing import Any
 
 from advent_of_code_2022.helper.helper import inclusive_range
 from advent_of_code_2022.helper.solver import Solver
@@ -30,7 +32,7 @@ class Day4(Solver):
         )
 
     @staticmethod
-    def part1(parsed_input: tuple[tuple[set[int], ...], ...]) -> int:
+    def part1(parsed_input: Iterable[Iterable[set[Any]]]) -> int:
         """Solves part 1.
 
         :param parsed_input: The section IDs that each elf pair has been assigned.
@@ -46,7 +48,7 @@ class Day4(Solver):
         )
 
     @staticmethod
-    def part2(parsed_input: tuple[tuple[set[int], ...], ...]) -> int:
+    def part2(parsed_input: Iterable[tuple[set[Any], set[Any]]]) -> int:
         """Solves part 2.
 
         :param parsed_input: The section IDs that each elf pair has been assigned.

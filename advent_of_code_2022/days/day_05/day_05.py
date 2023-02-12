@@ -1,6 +1,8 @@
 """Solutions for day 5."""
 
+
 from collections import OrderedDict
+from collections.abc import Iterable, Sequence
 from typing import NamedTuple
 
 from parse import parse
@@ -45,8 +47,14 @@ class SolverState:
 
     @staticmethod
     def _parse_crates(
-        crates: tuple[str, ...], stack_labels: tuple[str, ...]
+        crates: Iterable[str], stack_labels: Sequence[str]
     ) -> OrderedDict[str, list[str]]:
+        """Parse the crate input at the top of the input file.
+
+        :param crates: Lines of crates as described in the input file.
+        :param stack_labels: The labels given to stacks in the input file.
+        :return: A mapping from stack labels to stacks of crates.
+        """
         stacks: OrderedDict[str, list[str]] = OrderedDict(
             (stack_label, []) for stack_label in stack_labels
         )
@@ -71,8 +79,14 @@ class Day5(Solver):
 
     @staticmethod
     def _parse_instructions_part1(
-        instructions: tuple[Instruction, ...], stacks: OrderedDict[str, list[str]]
+        instructions: Iterable[Instruction], stacks: OrderedDict[str, list[str]]
     ) -> None:
+        """Parse the :param:`instructions` to move crates in the
+        :param:`stacks` using the interpretation for part 1 of the puzzle.
+
+        :param instructions: Instructions to move crates in the stacks.
+        :param stacks: A mapping from stack labels to stacks of crates.
+        """
         for instruction in instructions:
             for _ in range(instruction.num_to_move):
                 stacks[instruction.to_crate].append(
@@ -81,8 +95,14 @@ class Day5(Solver):
 
     @staticmethod
     def _parse_instructions_part2(
-        instructions: tuple[Instruction, ...], stacks: OrderedDict[str, list[str]]
+        instructions: Iterable[Instruction], stacks: OrderedDict[str, list[str]]
     ) -> None:
+        """Parse the :param:`instructions` to move crates in the
+        :param:`stacks` using the interpretation for part 2 of the puzzle.
+
+        :param instructions: Instructions to move crates in the stacks.
+        :param stacks: A mapping from stack labels to stacks of crates.
+        """
         for instruction in instructions:
             # Add crates to new stack
             stacks[instruction.to_crate].extend(

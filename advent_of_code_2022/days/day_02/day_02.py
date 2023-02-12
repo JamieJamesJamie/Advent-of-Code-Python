@@ -1,5 +1,7 @@
 """Solutions for day 2."""
 
+
+from collections.abc import Iterable
 from enum import Enum
 from typing import NamedTuple
 
@@ -79,7 +81,7 @@ class Day2(Solver):
         return tuple(RoundInfo(*line.split(" ")) for line in puzzle_input.split("\n"))
 
     @staticmethod
-    def part1(parsed_input: tuple[RoundInfo, ...]) -> int:
+    def part1(parsed_input: Iterable[RoundInfo]) -> int:
         """Solves part 1.
 
         :param parsed_input: The round info for each round of Rock Paper Scissors.
@@ -101,7 +103,7 @@ class Day2(Solver):
         return total_score
 
     @staticmethod
-    def part2(parsed_input: tuple[RoundInfo, ...]) -> int:
+    def part2(parsed_input: Iterable[RoundInfo]) -> int:
         """Solves part 2.
 
         :param parsed_input: The round info for each round of Rock Paper Scissors.
