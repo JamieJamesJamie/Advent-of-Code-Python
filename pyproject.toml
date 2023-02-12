@@ -24,7 +24,7 @@ bandit = "^1.7.4"
 black = {version = "^23.0.0", extras = ["d"]}
 docformatter = "^1.5.1"
 isort = "^5.12.0"
-mypy = "^0.991"
+mypy = "^1.0"
 pre-commit = "^2.21.0"
 pylint = "^2.15.10"
 pytest = "^7.2.1"
