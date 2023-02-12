@@ -5,7 +5,7 @@ from days.helper.abstract_test_day import AbstractTestDay
 from advent_of_code_2022.days.day_02.day_02 import Day2
 
 
-@pytest.mark.usefixtures("example1")
+@pytest.mark.parametrize("example", [1], indirect=True)
 class TestDay2(AbstractTestDay):
     """Test class for testing day 2."""
 
@@ -25,23 +25,23 @@ class TestDay2(AbstractTestDay):
         """
         return Day2
 
-    def test_parse_example1(self, example1):
-        """Test that example1 input is parsed correctly.
+    def test_parse_example(self, example):
+        """Test that example input is parsed correctly.
 
-        :param example1: Parsed input from example1 file.
+        :param example: Parsed input from example file.
         """
-        assert example1 == (("A", "Y"), ("B", "X"), ("C", "Z"))
+        assert example == (("A", "Y"), ("B", "X"), ("C", "Z"))
 
-    def test_part1_example1(self, example1):
-        """Test part 1 on example1 input.
+    def test_part1_example(self, example):
+        """Test part 1 on example input.
 
-        :param example1: Parsed input from example1 file.
+        :param example: Parsed input from example file.
         """
-        assert self.solver().part1(example1) == 15
+        assert self.solver().part1(example) == 15
 
-    def test_part2_example1(self, example1):
-        """Test part 2 on example1 input.
+    def test_part2_example(self, example):
+        """Test part 2 on example input.
 
-        :param example1: Parsed input from example1 file.
+        :param example: Parsed input from example file.
         """
-        assert self.solver().part2(example1) == 12
+        assert self.solver().part2(example) == 12

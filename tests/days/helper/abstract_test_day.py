@@ -1,8 +1,6 @@
 """Abstract test class to be used for testing Solution classes."""
 
-
 from abc import ABC, abstractmethod
-from pathlib import Path
 
 import pytest
 
@@ -29,37 +27,38 @@ class AbstractTestDay(ABC):
         :return: The solver class that is being tested.
         """
 
-    def _parse_input(self, file: Path):
+    def _parse_input(self, example_number: int):
         puzzle_input = read_file(
-            input_path=directory_path(self.day()) / file, day=self.day()
+            input_path=directory_path(self.day()) / f"example{example_number}.txt",
+            day=self.day(),
         )
         return self.solver().parse(puzzle_input)
 
-    @pytest.fixture(name="example1")
-    def fixture_example1(self):
-        """Fixture for providing parsed example1 input.
+    @pytest.fixture(name="example")
+    def fixture_example(self, request):
+        """Fixture for providing parsed example input.
 
-        :return: Parsed example1 input.
+        :return: Parsed example input.
         """
-        return self._parse_input(Path("example1.txt"))
+        return self._parse_input(request.param)
 
     @abstractmethod
-    def test_parse_example1(self, example1):
+    def test_parse_example(self, example):
         """Test that example input is parsed correctly.
 
-        :param example1: Parsed input from example1 file.
+        :param example: Parsed input from example file.
         """
 
     @abstractmethod
-    def test_part1_example1(self, example1):
+    def test_part1_example(self, example):
         """Test part 1 on example input.
 
-        :param example1: Parsed input from example1 file.
+        :param example: Parsed input from example file.
         """
 
     @abstractmethod
-    def test_part2_example1(self, example1):
+    def test_part2_example(self, example):
         """Test part 2 on example input.
 
-        :param example1: Parsed input from example1 file.
+        :param example: Parsed input from example file.
         """
