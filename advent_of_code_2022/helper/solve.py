@@ -25,8 +25,7 @@ def solve(input_path: Path, day: int) -> tuple[str, str]:
     )
     solver: Solver = getattr(solver_module, solver_name)
 
-    parsed_puzzle_input = solver.parse(puzzle_input)
-    part1_solution = solver.part1(parsed_puzzle_input)
-    part2_solution = solver.part2(parsed_puzzle_input)
+    part1_solution = solver.part1(solver.parse(puzzle_input))
+    part2_solution = solver.part2(solver.parse(puzzle_input))
 
     return str(part1_solution), str(part2_solution)
