@@ -1,6 +1,5 @@
 """Solutions for day 1."""
 
-
 from collections.abc import Iterable
 
 from advent_of_code_2022.helper.solver import Solver
