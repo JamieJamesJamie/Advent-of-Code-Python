@@ -28,7 +28,7 @@ repos:
       - id: docformatter
 
   - repo: https://github.com/psf/black
-    rev: 22.12.0
+    rev: 23.1.0
     hooks:
       - id: black
         # It is recommended to specify the latest version of Python
