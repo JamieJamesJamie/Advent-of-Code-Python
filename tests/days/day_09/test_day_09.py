@@ -1,4 +1,6 @@
 """Tests for Day9 Solution class."""
+
+
 import pytest
 from days.helper.abstract_test_day import AbstractTestDay
 
