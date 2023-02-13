@@ -89,7 +89,7 @@ class Direction(ABC):
 
             solver_state.all_tail_positions.add(solver_state.current_positions[-1])
 
-            # Day9.print_map(current_positions, all_tail_positions)
+            # Day9.print_map(solver_state)
 
         return solver_state
 
