@@ -128,7 +128,7 @@ class TestDay12(AbstractTestDay):
         assert self.solver().part1(example) == 31
 
     def test_part2_example(self, example):
-        """Test part 1 on example input.
+        """Test part 2 on example input.
 
         :param example: Parsed input from example file.
         """

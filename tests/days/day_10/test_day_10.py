@@ -1,4 +1,5 @@
 """Tests for Day10 Solution class."""
+import os
 
 import pytest
 from days.helper.abstract_test_day import AbstractTestDay
@@ -205,31 +206,32 @@ class TestDay10(AbstractTestDay):
         :param example: Parsed input from example file.
         :param result: The expected result.
         """
+        assert self.solver().part1(example) == result
 
     @pytest.mark.parametrize(
         "example, result",
         (
             (
                 1,
-                """
-                        #####.
-                        #
-                        #
-                        #
-                        #
-                        #
-                        """,
+                os.linesep.join(
+                    """#####.
+#
+#
+#
+#
+#""".split()
+                ),
             ),
             (
                 2,
-                """
-                        ##..##..##..##..##..##..##..##..##..##..
-                        ###...###...###...###...###...###...###.
-                        ####....####....####....####....####....
-                        #####.....#####.....#####.....#####.....
-                        ######......######......######......####
-                        #######.......#######.......#######.....
-                        """,
+                os.linesep.join(
+                    """##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......#######.....""".split()
+                ),
             ),
         ),
         indirect=["example"],
@@ -240,3 +242,4 @@ class TestDay10(AbstractTestDay):
         :param example: Parsed input from example file.
         :param result: The expected result.
         """
+        assert self.solver().part2(example) == result
