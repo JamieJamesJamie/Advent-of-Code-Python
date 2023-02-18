@@ -80,7 +80,7 @@ class Day7(Solver):
 
         :param node: The node to render from.
         :return: A pretty string that can be printed to see a visual representation of
-            tree starting at the provided node.
+            the tree starting at the provided node.
         """
         return "\n".join(
             f"{pre}{node_i.name}"
