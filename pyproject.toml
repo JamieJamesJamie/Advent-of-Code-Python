@@ -19,7 +19,7 @@ networkx = "^3.0"
 numpy = "^1.24.2"
 parse = "^1.19.0"
 rich = "^13.3.1"
-scipy = "^1.10.0"
+scipy = "^1.10.1"
 typed-argument-parser = "^1.7.2"
 
 [tool.poetry.group.dev.dependencies]
