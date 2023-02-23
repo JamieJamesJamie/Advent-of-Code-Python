@@ -153,9 +153,9 @@ kiwisolver==1.4.4 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:f6cb459eea32a4e2cf18ba5fcece2dbdf496384413bc1bae15583f19e567f3b2 \
     --hash=sha256:f8ad8285b01b0d4695102546b342b493b3ccc6781fc28c8c6a1bb63e95d22f09 \
     --hash=sha256:f9f39e2f049db33a908319cf46624a569b36983c7c78318e9726a4cb8923b26c
-markdown-it-py==2.1.0 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:93de681e5c021a432c63147656fe21790bc01231e0cd2da73626f1aa3ac0fe27 \
-    --hash=sha256:cf7e59fed14b5ae17c0006eff14a2d9a00ed5f3a846148153899a0224e2c07da
+markdown-it-py==2.2.0; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:5a35f8d1870171d9acc47b99612dc146129b631baf04970128b568f190d0cc30 \
+    --hash=sha256:7c9a5e412688bc771c67432cbfebcdd686c93ce6484913dccf06cb5a0bea35a1
 matplotlib==3.7.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:01681566e95b9423021b49dea6a2395c16fa054604eacb87f0f4c439750f9114 \
     --hash=sha256:03eb2c8ff8d85da679b71e14c7c95d16d014c48e0c0bfa14db85f6cdc5c92aad \
