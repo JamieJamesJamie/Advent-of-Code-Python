@@ -6,7 +6,7 @@
     ":semanticCommits",
     "schedule:earlyMondays"
   ],
-  "python": {
-    "enabledManagers": ["poetry"]
+  "pip_requirements": {
+    "enabled": false
   }
 }
