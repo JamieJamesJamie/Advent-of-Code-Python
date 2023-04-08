@@ -1,0 +1,26 @@
+{
+  "bandit": {
+    "repo": "https://github.com/PyCQA/bandit",
+    "rev": "${rev}"
+  },
+  "black": {
+    "repo": "https://github.com/psf/black",
+    "rev": "${rev}"
+  },
+  "docformatter": {
+    "repo": "https://github.com/PyCQA/docformatter",
+    "rev": "v${rev}"
+  },
+  "isort": {
+    "repo": "https://github.com/pycqa/isort",
+    "rev": "${rev}"
+  },
+  "mypy": {
+    "repo": "https://github.com/pre-commit/mirrors-mypy",
+    "rev": "v${rev}"
+  },
+  "pylint": {
+    "repo": "https://github.com/PyCQA/pylint",
+    "rev": "v${rev}"
+  }
+}
