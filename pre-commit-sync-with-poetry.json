@@ -1,0 +1,6 @@
+{
+  "pylint": {
+    "repo": "https://github.com/PyCQA/pylint",
+    "rev": "v${rev}"
+  }
+}
