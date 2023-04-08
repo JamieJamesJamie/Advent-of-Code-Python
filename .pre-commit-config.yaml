@@ -51,7 +51,7 @@ repos:
       - id: mypy
 
   - repo: https://github.com/PyCQA/pylint
-    rev: v2.16.2
+    rev: v2.15.10
     hooks:
       - id: pylint
         args: [
