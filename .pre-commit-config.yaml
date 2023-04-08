@@ -16,6 +16,8 @@ repos:
     rev: 0.4.0 # the revision or tag to clone at
     hooks:
       - id: sync_with_poetry
+        args:
+          - "--db pre-commit-sync-with-poetry.json"
 
   - repo: https://github.com/pycqa/isort
     rev: 5.12.0
@@ -26,7 +28,8 @@ repos:
     rev: v3.3.1
     hooks:
       - id: pyupgrade
-        args: ["--py310-plus"]
+        args:
+          - "--py310-plus"
 
   - repo: https://github.com/PyCQA/docformatter
     rev: v1.5.1
