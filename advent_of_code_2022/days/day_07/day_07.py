@@ -175,7 +175,6 @@ class Day7(Solver):
         :return: The total size of the smallest directory that, if deleted, would free
             up enough space on the filesystem to run the update.
         """
-
         total_disk_space = 70_000_000
         required_unused_space = 30_000_000
         min_directory_deletion_size = required_unused_space - (
