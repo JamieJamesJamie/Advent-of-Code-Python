@@ -25,7 +25,6 @@ def download(output_path: Path, day: int, year: int = 2022):
     :param day: Day to download and write puzzle input from and to respectively.
     :param year: Year to download puzzle input from.
     """
-
     puzzle = Puzzle(year=year, day=day)
 
     if not output_path.is_file():
@@ -48,7 +47,6 @@ def read_file(input_path: Path, day: int, year: int = 2022) -> str:
     :param year: Year to get puzzle input from.
     :return: The puzzle input.
     """
-
     if not input_path.exists():
         download(output_path=input_path, day=day, year=year)
 

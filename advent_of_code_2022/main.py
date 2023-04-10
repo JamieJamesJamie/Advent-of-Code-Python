@@ -12,7 +12,6 @@ from advent_of_code_2022.helper.solve import solve
 
 def main():
     """Main method."""
-
     args = ArgumentParser().parse_args()
 
     table = Table(
