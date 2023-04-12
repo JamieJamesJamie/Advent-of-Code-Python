@@ -4,6 +4,8 @@ on: push
 
 jobs:
   pytest:
+    needs: pre-commit
+  
     runs-on: ubuntu-latest
 
     strategy:
