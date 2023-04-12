@@ -26,7 +26,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+        # Try up to maximum 3 times to apply pre-commit changes
       - uses: pre-commit/action@v3.0.0
+      - uses: pre-commit/action@v3.0.0
+        if: failure()
+      - uses: pre-commit/action@v3.0.0
+        if: failure()
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         if: success() || failure()
