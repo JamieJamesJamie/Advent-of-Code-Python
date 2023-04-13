@@ -1,5 +1,6 @@
 """Abstract test class to be used for testing Solution classes."""
 
+
 from abc import ABC, abstractmethod
 
 import pytest
@@ -21,7 +22,7 @@ class AbstractTestDay(ABC):
 
     @staticmethod
     @abstractmethod
-    def solver() -> Solver:
+    def solver() -> type[Solver]:
         """Returns the Solver class that is being tested.
 
         :return: The solver class that is being tested.
