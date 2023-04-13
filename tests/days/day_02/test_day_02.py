@@ -1,6 +1,11 @@
 """Tests for Day2 Solution class."""
+
+
+
+
+
 import pytest
-from days.helper.abstract_test_day import AbstractTestDay
+from tests.days.helper.abstract_test_day import AbstractTestDay
 
 from advent_of_code_2022.days.day_02.day_02 import Day2
 

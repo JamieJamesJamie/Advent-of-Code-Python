@@ -1,7 +1,13 @@
 """Tests for Day8 Solution class."""
+
+
+
+
+
+
 import numpy as np
 import pytest
-from days.helper.abstract_test_day import AbstractTestDay
+from tests.days.helper.abstract_test_day import AbstractTestDay
 
 from advent_of_code_2022.days.day_08.day_08 import Day8
 

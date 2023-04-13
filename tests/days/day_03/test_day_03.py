@@ -2,7 +2,7 @@
 
 
 import pytest
-from days.helper.abstract_test_day import AbstractTestDay
+from tests.days.helper.abstract_test_day import AbstractTestDay
 
 from advent_of_code_2022.days.day_03.day_03 import Day3
 

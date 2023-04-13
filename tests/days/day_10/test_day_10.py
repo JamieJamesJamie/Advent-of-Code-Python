@@ -1,8 +1,18 @@
 """Tests for Day10 Solution class."""
+
+
+
+
+
+# pylint: disable=arguments-differ
+
+
+
+
 import os
 
 import pytest
-from days.helper.abstract_test_day import AbstractTestDay
+from tests.days.helper.abstract_test_day import AbstractTestDay
 
 from advent_of_code_2022.days.day_10.day_10 import Day10
 

@@ -1,7 +1,10 @@
 """Tests for Day14 Solution class."""
 
+
+
+
 import pytest
-from days.helper.abstract_test_day import AbstractTestDay
+from tests.days.helper.abstract_test_day import AbstractTestDay
 
 from advent_of_code_2022.days.day_14.day_14 import Day14, Element, Position
 
