@@ -258,6 +258,7 @@ cython_debug/
 # PyCharm configuration
 /.idea/mypy.xml
 /.idea/pylint.xml
+/.idea/poetry.xml
 
 # Advent of Code Inputs
 input.txt
