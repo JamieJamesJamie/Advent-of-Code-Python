@@ -37,8 +37,6 @@ jobs:
           commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
           commit_message: "chore(pre-commit): apply automatic changes"
 
-
-
   pytest:
     needs: pre-commit
 
