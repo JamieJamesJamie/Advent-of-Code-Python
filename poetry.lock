@@ -527,6 +527,18 @@ untokenize = ">=0.1.1,<0.2.0"
 tomli = ["tomli (<2.0.0)"]
 
 [[package]]
+name = "docstring-parser"
+version = "0.15"
+description = "Parse Python docstrings in reST, Google and Numpydoc format"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+files = [
+    {file = "docstring_parser-0.15-py3-none-any.whl", hash = "sha256:d1679b86250d269d06a99670924d6bce45adc00b08069dae8c47d98e89b667a9"},
+    {file = "docstring_parser-0.15.tar.gz", hash = "sha256:48ddc093e8b1865899956fcc03b03e66bb7240c310fac5af81814580c55bf682"},
+]
+
+[[package]]
 name = "exceptiongroup"
 version = "1.1.1"
 description = "Backport of PEP 654 (exception groups)"
@@ -1745,16 +1757,17 @@ files = [
 
 [[package]]
 name = "typed-argument-parser"
-version = "1.7.2"
+version = "1.8.0"
 description = "Typed Argument Parser"
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=3.7"
 files = [
-    {file = "typed-argument-parser-1.7.2.tar.gz", hash = "sha256:4e44bc79010391cd9dec4b110e1474fedc8919138e93ca91222ea6b3b360daee"},
+    {file = "typed-argument-parser-1.8.0.tar.gz", hash = "sha256:82f7dfda955a047ff9cedd838fd76b8d4d3d07e1c0721b50151146389e758b12"},
 ]
 
 [package.dependencies]
+docstring-parser = ">=0.15"
 typing_extensions = ">=3.7.4"
 typing-inspect = ">=0.7.1"
 
@@ -2042,4 +2055,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "0193ec0611da554a03e2dec7278910b798e76f2a5bdda71cf7de34d676050d99"
+content-hash = "020691f9dc1694ff7eede301866ff3e9f1344acdb7b31ccdfcbcf232de1b31e1"
