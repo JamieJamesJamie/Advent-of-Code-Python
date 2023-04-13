@@ -2,9 +2,9 @@
 
 
 import pytest
-from tests.days.helper.abstract_test_day import AbstractTestDay
 
 from advent_of_code_2022.days.day_05.day_05 import Day5, Instruction
+from tests.days.helper.abstract_test_day import AbstractTestDay
 
 
 @pytest.mark.parametrize("example", [1], indirect=True)

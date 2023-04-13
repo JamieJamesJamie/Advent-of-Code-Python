@@ -1,16 +1,11 @@
 """Tests for Day7 Solution class."""
 
 
-
-
-
-
-
 import pytest
 from anytree import findall
-from tests.days.helper.abstract_test_day import AbstractTestDay
 
 from advent_of_code_2022.days.day_07.day_07 import Day7, Node
+from tests.days.helper.abstract_test_day import AbstractTestDay
 
 
 @pytest.mark.parametrize("example", [1], indirect=True)
