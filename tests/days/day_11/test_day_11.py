@@ -2,17 +2,16 @@
 
 
 import pytest
+from days.helper.abstract_test_day import AbstractTestDay
 
 from advent_of_code_2022.days.day_11.day_11 import Day11, Monkey
-from days.helper.abstract_test_day import AbstractTestDay
 
 
 @pytest.mark.parametrize("example", [1], indirect=True)
 class TestDay11(AbstractTestDay):
     @staticmethod
     def day() -> int:
-        """
-        Returns the day that is being tested.
+        """Returns the day that is being tested.
 
         :return: The day that is being tested.
         """
@@ -20,16 +19,14 @@ class TestDay11(AbstractTestDay):
 
     @staticmethod
     def solver() -> type[Day11]:
-        """
-        Returns the Solver class that is being tested.
+        """Returns the Solver class that is being tested.
 
         :return: The solver class that is being tested.
         """
         return Day11
 
     def test_parse_example(self, example):
-        """
-        Test that example input is parsed correctly.
+        """Test that example input is parsed correctly.
 
         :param example: Parsed input from example file.
         """
@@ -41,16 +38,14 @@ class TestDay11(AbstractTestDay):
         )
 
     def test_part1_example(self, example):
-        """
-        Test part 1 on example input.
+        """Test part 1 on example input.
 
         :param example: Parsed input from example file.
         """
         assert self.solver().part1(example) == 10_605
 
     def test_part2_example(self, example):
-        """
-        Test part 2 on example input.
+        """Test part 2 on example input.
 
         :param example: Parsed input from example file.
         """

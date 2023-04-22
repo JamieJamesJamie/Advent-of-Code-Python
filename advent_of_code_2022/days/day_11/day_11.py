@@ -3,11 +3,11 @@
 
 import logging
 import math
-from collections.abc import Sequence, Callable, Iterable
-from operator import mul, add
+from collections.abc import Callable, Iterable, Sequence
+from operator import add, mul
 from typing import Any
 
-from parse import parse, findall, search
+from parse import findall, parse, search
 
 from advent_of_code_2022.helper.solver import Solver
 

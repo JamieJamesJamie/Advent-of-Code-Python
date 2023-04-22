@@ -1,5 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="day 11 - test - example1" type="PythonConfigurationType" factoryName="Python" folderName="day 11">
+  <configuration
+    default="false"
+    name="day 11 - test - example1"
+    type="PythonConfigurationType"
+    factoryName="Python"
+    folderName="day 11"
+  >
     <module name="Advent-of-Code-2022" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
@@ -7,11 +13,17 @@
       <env name="PYTHONUNBUFFERED" value="1" />
     </envs>
     <option name="SDK_HOME" value="" />
-    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advent_of_code_2022" />
+    <option
+      name="WORKING_DIRECTORY"
+      value="$PROJECT_DIR$/advent_of_code_2022"
+    />
     <option name="IS_MODULE_SDK" value="true" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advent_of_code_2022/main.py" />
+    <option
+      name="SCRIPT_NAME"
+      value="$PROJECT_DIR$/advent_of_code_2022/main.py"
+    />
     <option name="PARAMETERS" value="--days 11 --files example1.txt" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
