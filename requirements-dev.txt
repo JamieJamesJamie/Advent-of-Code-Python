@@ -292,9 +292,9 @@ dill==0.3.6 ; python_version >= "3.10" and python_version < "3.12" \
 distlib==0.3.6 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:14bad2d9b04d3a36127ac97f30b12a19268f211063d8f8ee4f47108896e11b46 \
     --hash=sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e
-docformatter==1.6.1 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:4bd6ce2380a1cc0aef73e9da712b974d0221258e271d4e4e820535a7cdbae889 \
-    --hash=sha256:8ec562f0c0ab81cb0716472efc8216b15707748f09ef16d09189c1a7b9012525
+docformatter==1.6.2 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:49598da0f9e538802895142f08d15349d501800cf508af0e33fb23020dc840ec \
+    --hash=sha256:abe971c977595818f5ef981377384a1811ef9c259c65c38ef860a3fc2ec02c03
 docstring-parser==0.15 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:48ddc093e8b1865899956fcc03b03e66bb7240c310fac5af81814580c55bf682 \
     --hash=sha256:d1679b86250d269d06a99670924d6bce45adc00b08069dae8c47d98e89b667a9
