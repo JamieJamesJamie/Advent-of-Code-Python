@@ -578,14 +578,14 @@ files = [
 
 [[package]]
 name = "docformatter"
-version = "1.6.2"
+version = "1.6.3"
 description = "Formats docstrings to follow PEP 257"
 category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 files = [
-    {file = "docformatter-1.6.2-py3-none-any.whl", hash = "sha256:abe971c977595818f5ef981377384a1811ef9c259c65c38ef860a3fc2ec02c03"},
-    {file = "docformatter-1.6.2.tar.gz", hash = "sha256:49598da0f9e538802895142f08d15349d501800cf508af0e33fb23020dc840ec"},
+    {file = "docformatter-1.6.3-py3-none-any.whl", hash = "sha256:7d971222d86678e3d699a3e9fdf5dd5b04a027b55642f4628c50180577c63a23"},
+    {file = "docformatter-1.6.3.tar.gz", hash = "sha256:c1377c5a3d01b3f3c325158c6de904d3d6167eb3a0eeeff8d9e66a678177d337"},
 ]
 
 [package.dependencies]
@@ -1787,14 +1787,14 @@ pbr = ">=2.0.0,<2.1.0 || >2.1.0"
 
 [[package]]
 name = "termcolor"
-version = "2.2.0"
+version = "2.3.0"
 description = "ANSI color formatting for output in terminal"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "termcolor-2.2.0-py3-none-any.whl", hash = "sha256:91ddd848e7251200eac969846cbae2dacd7d71c2871e92733289e7e3666f48e7"},
-    {file = "termcolor-2.2.0.tar.gz", hash = "sha256:dfc8ac3f350788f23b2947b3e6cfa5a53b630b612e6cd8965a015a776020b99a"},
+    {file = "termcolor-2.3.0-py3-none-any.whl", hash = "sha256:3afb05607b89aed0ffe25202399ee0867ad4d3cb4180d98aaf8eefa6a5f7d475"},
+    {file = "termcolor-2.3.0.tar.gz", hash = "sha256:b5b08f68937f138fe92f6c089b99f1e2da0ae56c52b78bf7075fd95420fd9a5a"},
 ]
 
 [package.extras]
@@ -2124,4 +2124,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "bda07bc0b5f756d8312f334fb5ce9ad281036d11984651421142185a3b4b788d"
+content-hash = "de34a6bd5405807a89921a151f7fe793da0baffb8f1ce863ee15bef33eec320d"
