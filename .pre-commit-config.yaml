@@ -31,7 +31,7 @@ repos:
           - "--py310-plus"
 
   - repo: https://github.com/PyCQA/docformatter
-    rev: v1.6.3
+    rev: v1.6.4
     hooks:
       - id: docformatter
 
