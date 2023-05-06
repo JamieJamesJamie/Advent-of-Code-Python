@@ -9,6 +9,8 @@ from advent_of_code_2022.days.day_11.day_11 import Day11, Monkey
 
 @pytest.mark.parametrize("example", [1], indirect=True)
 class TestDay11(AbstractTestDay):
+    """Test class for testing day 11."""
+
     @staticmethod
     def day() -> int:
         """Returns the day that is being tested.

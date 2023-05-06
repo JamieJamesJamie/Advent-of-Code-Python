@@ -1,5 +1,7 @@
 """Solutions for day 11."""
 
+# pylint: disable=too-few-public-methods,too-many-arguments
+
 
 import logging
 import math
@@ -13,16 +15,31 @@ from advent_of_code_2022.helper.solver import Solver
 
 
 class Logger:
+    """
+    Logger for debugging.
+    """
+
     current_round: int
     rounds_to_log: set[int]
 
     @staticmethod
     def debug(msg: object, *args: object, **kwargs) -> None:
+        """
+        Logs a debug message if the :code:`current_round` is in :code:`rounds_to_log`.
+
+        :param msg: The message to log.
+        :param args: Positional arguments to pass to :code:`logging.debug`.
+        :param kwargs: Keyword arguments to pass to :code:`logging.debug`.
+        """
         if Logger.current_round in Logger.rounds_to_log:
             logging.debug(msg, *args, **kwargs)
 
 
 class Monkey:
+    """
+    A representation of a monkey.
+    """
+
     POSSIBLE_OPERATIONS: dict[str, tuple[Callable[[Any, Any], Any], str]] = {
         "*": (mul, "is multiplied"),
         "+": (add, "increases"),
@@ -37,6 +54,22 @@ class Monkey:
         to_monkey_true: int,
         to_monkey_false: int,
     ):
+        """
+        Initialises an instance of :code:`Monkey`.
+
+        :param index: The index of the monkey.
+        :param items: The list of worry levels for each item the monkey is currently
+            holding in the order they will be inspected.
+        :param operation_string: A string ending with the format
+            new = old <operator> <operand>
+        :param divisible_by_operand: The number the worry level must be divisible by to
+            satisfy :code:`to_monkey_true`. Otherwise, :code:`to_monkey_false` is
+            satisfied.
+        :param to_monkey_true: The monkey to throw an item to if the item is divisible
+            by :code:`divisible_by_operand`.
+        :param to_monkey_false: The monkey to throw an item to if the item is not
+            divisible by :code:`divisible_by_operand`.
+        """
         self.index: int = index
         self.items: list[int] = items
 
@@ -93,6 +126,8 @@ class Monkey:
 
 
 class Day11(Solver):
+    """Solver for day 11."""
+
     @staticmethod
     def _calculate_monkey_business(monkey_inspections: Iterable[int]) -> int:
         return mul(*sorted(monkey_inspections, reverse=True)[:2])
