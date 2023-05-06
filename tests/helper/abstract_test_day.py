@@ -23,8 +23,7 @@ class AbstractTestDay(ABC):
     @staticmethod
     @abstractmethod
     def year() -> int:
-        """
-        Returns the year of the puzzle that is being tested.
+        """Returns the year of the puzzle that is being tested.
 
         :return: The year of the puzzle that is being tested.
         """
