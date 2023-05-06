@@ -2,9 +2,9 @@
 
 
 import pytest
-from days.helper.abstract_test_day import AbstractTestDay
 
 from advent_of_code_2022.days.day_11.day_11 import Day11, Monkey
+from tests.days.helper.abstract_test_day import AbstractTestDay
 
 
 @pytest.mark.parametrize("example", [1], indirect=True)
@@ -33,10 +33,33 @@ class TestDay11(AbstractTestDay):
         :param example: Parsed input from example file.
         """
         assert example == (
-            Monkey(0, [79, 98], "  Operation: new = old * 19", 23, 2, 3),
-            Monkey(1, [54, 65, 75, 74], "  Operation: new = old + 6", 19, 2, 0),
-            Monkey(2, [79, 60, 97], "  Operation: new = old * old", 13, 1, 3),
-            Monkey(3, [74], "  Operation: new = old + 3", 17, 0, 1),
+            Monkey(
+                0,
+                [79, 98],
+                Monkey.POSSIBLE_OPERATORS["*"],
+                "19",
+                23,
+                {True: 2, False: 3},
+            ),
+            Monkey(
+                1,
+                [54, 65, 75, 74],
+                Monkey.POSSIBLE_OPERATORS["+"],
+                "6",
+                19,
+                {True: 2, False: 0},
+            ),
+            Monkey(
+                2,
+                [79, 60, 97],
+                Monkey.POSSIBLE_OPERATORS["*"],
+                "old",
+                13,
+                {True: 1, False: 3},
+            ),
+            Monkey(
+                3, [74], Monkey.POSSIBLE_OPERATORS["+"], "3", 17, {True: 0, False: 1}
+            ),
         )
 
     def test_part1_example(self, example):

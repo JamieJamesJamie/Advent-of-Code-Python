@@ -1,13 +1,12 @@
 """Solutions for day 11."""
 
-# pylint: disable=too-few-public-methods,too-many-arguments
-
 
 import logging
 import math
 from collections.abc import Callable, Iterable, Sequence
+from dataclasses import dataclass, field
 from operator import add, mul
-from typing import Any
+from typing import Any, ClassVar
 
 from parse import findall, parse, search
 
@@ -18,6 +17,8 @@ class Logger:
     """
     Logger for debugging.
     """
+
+    # pylint: disable=too-few-public-methods
 
     current_round: int
     rounds_to_log: set[int]
@@ -35,94 +36,82 @@ class Logger:
             logging.debug(msg, *args, **kwargs)
 
 
+@dataclass
+class Operator:
+    """
+    Representation of an operator for a monkey's operation.
+    """
+
+    func: Callable[[Any, Any], Any]
+    log: str
+
+
+@dataclass
 class Monkey:
     """
-    A representation of a monkey.
+    Representation of a monkey.
     """
 
-    POSSIBLE_OPERATIONS: dict[str, tuple[Callable[[Any, Any], Any], str]] = {
-        "*": (mul, "is multiplied"),
-        "+": (add, "increases"),
+    POSSIBLE_OPERATORS: ClassVar[dict[str, Operator]] = {
+        "*": Operator(mul, "is multiplied"),
+        "+": Operator(add, "increases"),
     }
 
-    def __init__(
-        self,
-        index: int,
-        items: list[int],
-        operation_string: str,
-        divisible_by_operand: int,
-        to_monkey_true: int,
-        to_monkey_false: int,
-    ):
+    num_inspections: int = field(default=0, init=False)
+
+    _index: int
+    items: list[int]
+    _operation_operator: Operator
+    _operation_operand: str
+    divisible_by_operand: int
+    _to_monkey: dict[bool, int]
+
+    def get_next_monkey(self, worry_level_divisor: int, modulo: int) -> int:
         """
-        Initialises an instance of :code:`Monkey`.
+        Gets the next :class:`Monkey` index.
 
-        :param index: The index of the monkey.
-        :param items: The list of worry levels for each item the monkey is currently
-            holding in the order they will be inspected.
-        :param operation_string: A string ending with the format
-            new = old <operator> <operand>
-        :param divisible_by_operand: The number the worry level must be divisible by to
-            satisfy :code:`to_monkey_true`. Otherwise, :code:`to_monkey_false` is
-            satisfied.
-        :param to_monkey_true: The monkey to throw an item to if the item is divisible
-            by :code:`divisible_by_operand`.
-        :param to_monkey_false: The monkey to throw an item to if the item is not
-            divisible by :code:`divisible_by_operand`.
+        :param worry_level_divisor: Integer to divide new worry level by.
+        :param modulo: Maximum worry level allowed.
+        :return: The index of the monkey to throw the current item to.
         """
-        self.index: int = index
-        self.items: list[int] = items
 
-        self.get_next_monkey = self._operation_function(operation_string)
+        old_worry_level = self.items[0]
+        Logger.debug(
+            "Monkey inspects an item with a worry level of %d", old_worry_level
+        )
 
-        self.divisible_by_operand: int = divisible_by_operand
-        self.to_monkey: dict[bool, int] = {True: to_monkey_true, False: to_monkey_false}
+        self.num_inspections += 1
 
-        self.num_inspections = 0
+        int_operand = (
+            int(self._operation_operand)
+            if self._operation_operand.isdigit()
+            else old_worry_level
+        )
+        new_worry_level = self._operation_operator.func(old_worry_level, int_operand)
 
-    def _operation_function(self, line: str) -> Callable[[int, int], int]:
-        operation_key, operand = line.split()[-2:]
-        operation_function, worry_level_modifier = Monkey.POSSIBLE_OPERATIONS[
-            operation_key
-        ]
+        self.items[0] = new_worry_level
+        Logger.debug(
+            "Worry level %s by %d to %d",
+            self._operation_operator.log,
+            int_operand,
+            new_worry_level,
+        )
 
-        def _monkey_do(worry_level_divisor: int, modulo: int) -> int:
-            old_worry_level = self.items[0]
-            Logger.debug(
-                "Monkey inspects an item with a worry level of %d", old_worry_level
-            )
+        self.items[0] = (self.items[0] // worry_level_divisor) % modulo
+        Logger.debug(
+            "Monkey gets bored with item. Worry level is divided by %d to %d",
+            worry_level_divisor,
+            self.items[0],
+        )
 
-            self.num_inspections += 1
+        test_result = self.items[0] % self.divisible_by_operand == 0
+        Logger.debug(
+            "Current worry level is%s divisible by %d.",
+            "" if test_result else " not",
+            self.divisible_by_operand,
+        )
 
-            int_operand = int(operand) if operand.isdigit() else old_worry_level
-            new_worry_level = operation_function(old_worry_level, int_operand)
-
-            self.items[0] = new_worry_level
-            Logger.debug(
-                "Worry level %s by %d to %d",
-                worry_level_modifier,
-                int_operand,
-                new_worry_level,
-            )
-
-            self.items[0] = (self.items[0] // worry_level_divisor) % modulo
-            Logger.debug(
-                "Monkey gets bored with item. Worry level is divided by %d to %d",
-                worry_level_divisor,
-                self.items[0],
-            )
-
-            test_result = self.items[0] % self.divisible_by_operand == 0
-
-            Logger.debug(
-                "Current worry level is%s divisible by %d.",
-                "" if test_result else " not",
-                self.divisible_by_operand,
-            )
-
-            return self.to_monkey[test_result]
-
-        return _monkey_do
+        return self._to_monkey[test_result]
 
 
 class Day11(Solver):
@@ -180,14 +169,22 @@ class Day11(Solver):
 
         for monkey_note in puzzle_input.split("\n\n"):
             monkey_lines = monkey_note.split("\n")
+            operation_key, operand = monkey_lines[2].split()[-2:]
             monkeys.append(
                 Monkey(
                     parse("Monkey {:d}:", monkey_lines[0])[0],
                     list(item[0] for item in findall("{:d}", monkey_lines[1])),
-                    monkey_lines[2],
+                    Monkey.POSSIBLE_OPERATORS[operation_key],
+                    operand,
                     search("Test: divisible by {:d}", monkey_lines[3])[0],
-                    search("If true: throw to monkey {:d}", monkey_lines[4])[0],
-                    search("If false: throw to monkey {:d}", monkey_lines[5])[0],
+                    {
+                        True: search("If true: throw to monkey {:d}", monkey_lines[4])[
+                            0
+                        ],
+                        False: search(
+                            "If false: throw to monkey {:d}", monkey_lines[5]
+                        )[0],
+                    },
                 )
             )
 
