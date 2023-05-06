@@ -6,27 +6,21 @@
     factoryName="Python"
     folderName="day 9"
   >
-    <module name="Advent-of-Code-2022" />
+    <module name="Advent-of-Code" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs>
       <env name="PYTHONUNBUFFERED" value="1" />
     </envs>
     <option name="SDK_HOME" value="" />
-    <option
-      name="WORKING_DIRECTORY"
-      value="$PROJECT_DIR$/advent_of_code_2022"
-    />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advent_of_code" />
     <option name="IS_MODULE_SDK" value="true" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
-    <option
-      name="SCRIPT_NAME"
-      value="$PROJECT_DIR$/advent_of_code_2022/main.py"
-    />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advent_of_code/main.py" />
     <option
       name="PARAMETERS"
-      value="--days 9 --files example1.txt example2.txt input.txt"
+      value="--years 2022 --days 9 --files example1.txt example2.txt input.txt"
     />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
