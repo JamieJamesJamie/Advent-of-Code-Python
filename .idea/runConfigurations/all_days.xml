@@ -12,17 +12,11 @@
       <env name="PYTHONUNBUFFERED" value="1" />
     </envs>
     <option name="SDK_HOME" value="" />
-    <option
-      name="WORKING_DIRECTORY"
-      value="$PROJECT_DIR$/advent_of_code"
-    />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/advent_of_code" />
     <option name="IS_MODULE_SDK" value="true" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
-    <option
-      name="SCRIPT_NAME"
-      value="$PROJECT_DIR$/advent_of_code/main.py"
-    />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advent_of_code/main.py" />
     <option
       name="PARAMETERS"
       value="--years 2022 --days 1 2 3 4 5 6 7 8 9 10 11 12 13 14 --files example1.txt input.txt"
