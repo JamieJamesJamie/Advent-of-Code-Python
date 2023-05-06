@@ -5,8 +5,8 @@ from abc import ABC, abstractmethod
 
 import pytest
 
-from advent_of_code_2022.helper.download_files import directory_path, read_file
-from advent_of_code_2022.helper.solver import Solver
+from advent_of_code.helper.download_files import directory_path, read_file
+from advent_of_code.helper.solver import Solver
 
 
 class AbstractTestDay(ABC):

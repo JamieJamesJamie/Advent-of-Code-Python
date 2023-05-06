@@ -1,15 +1,15 @@
-"""Tests for Day4 Solution class."""
+"""Tests for Day5 Solution class."""
 
 
 import pytest
 
-from advent_of_code_2022.days.day_04.day_04 import Day4
-from tests.days.helper.abstract_test_day import AbstractTestDay
+from advent_of_code.year_2022.day_05.day_05 import Day5, Instruction
+from tests.year_2022.helper.abstract_test_day import AbstractTestDay
 
 
 @pytest.mark.parametrize("example", [1], indirect=True)
-class TestDay4(AbstractTestDay):
-    """Test class for testing day 4."""
+class TestDay5(AbstractTestDay):
+    """Test class for testing day 5."""
 
     @staticmethod
     def day() -> int:
@@ -17,40 +17,39 @@ class TestDay4(AbstractTestDay):
 
         :return: The day that is being tested.
         """
-        return 4
+        return 5
 
     @staticmethod
-    def solver() -> type[Day4]:
+    def solver() -> type[Day5]:
         """Returns the Solver class that is being tested.
 
         :return: The solver class that is being tested.
         """
-        return Day4
+        return Day5
 
     def test_parse_example(self, example):
         """Test that example input is parsed correctly.
 
         :param example: Parsed input from example file.
         """
-        assert example == (
-            ({2, 3, 4}, {6, 7, 8}),
-            ({2, 3}, {4, 5}),
-            ({5, 6, 7}, {7, 8, 9}),
-            ({2, 3, 4, 5, 6, 7, 8}, {3, 4, 5, 6, 7}),
-            ({6}, {4, 5, 6}),
-            ({2, 3, 4, 5, 6}, {4, 5, 6, 7, 8}),
+        assert example.instructions == (
+            Instruction(num_to_move=1, from_crate="2", to_crate="1"),
+            Instruction(num_to_move=3, from_crate="1", to_crate="3"),
+            Instruction(num_to_move=2, from_crate="2", to_crate="1"),
+            Instruction(num_to_move=1, from_crate="1", to_crate="2"),
         )
+        assert example.stacks == {"1": ["Z", "N"], "2": ["M", "C", "D"], "3": ["P"]}
 
     def test_part1_example(self, example):
         """Test part 1 on example input.
 
         :param example: Parsed input from example file.
         """
-        assert self.solver().part1(example) == 2
+        assert self.solver().part1(example) == "CMZ"
 
     def test_part2_example(self, example):
         """Test part 2 on example input.
 
         :param example: Parsed input from example file.
         """
-        assert self.solver().part2(example) == 4
+        assert self.solver().part2(example) == "MCD"

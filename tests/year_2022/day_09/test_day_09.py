@@ -6,7 +6,7 @@
 
 import pytest
 
-from advent_of_code_2022.days.day_09.day_09 import (
+from advent_of_code.year_2022.day_09.day_09 import (
     Day9,
     Down,
     Instruction,
@@ -14,7 +14,7 @@ from advent_of_code_2022.days.day_09.day_09 import (
     Right,
     Up,
 )
-from tests.days.helper.abstract_test_day import AbstractTestDay
+from tests.year_2022.helper.abstract_test_day import AbstractTestDay
 
 
 class TestDay9(AbstractTestDay):

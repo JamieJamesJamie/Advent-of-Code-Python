@@ -8,8 +8,8 @@ import os
 
 import pytest
 
-from advent_of_code_2022.days.day_10.day_10 import Day10
-from tests.days.helper.abstract_test_day import AbstractTestDay
+from advent_of_code.year_2022.day_10.day_10 import Day10
+from tests.year_2022.helper.abstract_test_day import AbstractTestDay
 
 
 class TestDay10(AbstractTestDay):

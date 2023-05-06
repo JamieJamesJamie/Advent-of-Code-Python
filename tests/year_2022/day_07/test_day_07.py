@@ -4,8 +4,8 @@
 import pytest
 from anytree import findall
 
-from advent_of_code_2022.days.day_07.day_07 import Day7, Node
-from tests.days.helper.abstract_test_day import AbstractTestDay
+from advent_of_code.year_2022.day_07.day_07 import Day7, Node
+from tests.year_2022.helper.abstract_test_day import AbstractTestDay
 
 
 @pytest.mark.parametrize("example", [1], indirect=True)
