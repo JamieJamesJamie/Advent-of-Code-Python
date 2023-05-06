@@ -15,25 +15,26 @@ def main():
 
     args = ArgumentParser().parse_args()
 
-    table = Table(
-        title="Advent of Code 2022", show_lines=True, box=box.SQUARE_DOUBLE_HEAD
-    )
-    table.add_column("Day")
-    table.add_column("File")
-    table.add_column("Part 1", no_wrap=True)
-    table.add_column("Part 2", no_wrap=True)
+    for year in args.years:
+        table = Table(
+            title=f"Advent of Code {year}", show_lines=True, box=box.SQUARE_DOUBLE_HEAD
+        )
+        table.add_column("Day")
+        table.add_column("File")
+        table.add_column("Part 1", no_wrap=True)
+        table.add_column("Part 2", no_wrap=True)
 
-    for day in args.days:
-        puzzle_directory = directory_path(day)
+        for day in args.days:
+            puzzle_directory = directory_path(year, day)
 
-        for file in args.files:
-            file = puzzle_directory / file
-            part1, part2 = solve(input_path=file, day=day)
+            for file in args.files:
+                file = puzzle_directory / file
+                part1, part2 = solve(input_path=file, day=day, year=year)
 
-            table.add_row(f"Day {day}", file.name, part1, part2)
+                table.add_row(f"Day {day}", file.name, part1, part2)
 
-    console = Console()
-    console.print(table)
+        console = Console()
+        console.print(table)
 
 
 if __name__ == "__main__":

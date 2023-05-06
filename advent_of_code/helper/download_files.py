@@ -5,13 +5,14 @@ from pathlib import Path
 from aocd.models import Puzzle
 
 
-def directory_path(day: int) -> Path:
+def directory_path(year: int, day: int) -> Path:
     """Returns the directory to use for the specified day.
 
+    :param year: The year to get the directory for.
     :param day: The day to get the directory for.
     :return: The directory that should be used for the specified day.
     """
-    return Path(__file__).parents[1] / "days" / f"day_{day:02d}"
+    return Path(__file__).parents[1] / f"year_{year:04d}" / f"day_{day:02d}"
 
 
 def download(output_path: Path, day: int, year: int):
