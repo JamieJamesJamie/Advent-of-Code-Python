@@ -5,7 +5,6 @@ from rich import box
 from rich.console import Console
 from rich.table import Table
 
-from advent_of_code.helper.download_files import directory_path
 from advent_of_code.helper.parse_args import ArgumentParser
 from advent_of_code.helper.solve import solve
 
@@ -26,12 +25,8 @@ def main():
         table.add_column("Part 2", no_wrap=True)
 
         for day in args.days:
-            puzzle_directory = directory_path(year, day)
-
             for file in args.files:
-                file = puzzle_directory / file
-                part1, part2 = solve(input_path=file, year=year, day=day)
-
+                part1, part2 = solve(input_file=file, year=year, day=day)
                 table.add_row(f"Year {year}", f"Day {day}", file.name, part1, part2)
 
         console = Console()
