@@ -15,17 +15,15 @@ from advent_of_code_2022.helper.solver import Solver
 
 
 class Logger:
-    """
-    Logger for debugging.
-    """
+    """Logger for debugging."""
 
     current_round: int
     rounds_to_log: set[int]
 
     @staticmethod
     def debug(msg: object, *args: object, **kwargs) -> None:
-        """
-        Logs a debug message if the :code:`current_round` is in :code:`rounds_to_log`.
+        """Logs a debug message if the :code:`current_round` is in
+        :code:`rounds_to_log`.
 
         :param msg: The message to log.
         :param args: Positional arguments to pass to :code:`logging.debug`.
@@ -36,9 +34,7 @@ class Logger:
 
 
 class Monkey:
-    """
-    A representation of a monkey.
-    """
+    """A representation of a monkey."""
 
     POSSIBLE_OPERATIONS: dict[str, tuple[Callable[[Any, Any], Any], str]] = {
         "*": (mul, "is multiplied"),
@@ -54,8 +50,7 @@ class Monkey:
         to_monkey_true: int,
         to_monkey_false: int,
     ):
-        """
-        Initialises an instance of :code:`Monkey`.
+        """Initialises an instance of :code:`Monkey`.
 
         :param index: The index of the monkey.
         :param items: The list of worry levels for each item the monkey is currently
