@@ -23,7 +23,7 @@ scipy = "1.10.1"
 typed-argument-parser = "1.8.0"
 
 [tool.poetry.group.dev.dependencies]
-bandit = "1.7.5"
+bandit = {version = "1.7.5", extras = ["toml"]}
 black = {version = "23.3.0", extras = ["d"]}
 docformatter = "1.6.5"
 isort = "5.12.0"
