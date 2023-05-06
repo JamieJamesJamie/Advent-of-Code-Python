@@ -14,9 +14,7 @@ from advent_of_code_2022.helper.solver import Solver
 
 
 class Logger:
-    """
-    Logger for debugging.
-    """
+    """Logger for debugging."""
 
     # pylint: disable=too-few-public-methods
 
@@ -25,8 +23,8 @@ class Logger:
 
     @staticmethod
     def debug(msg: object, *args: object, **kwargs) -> None:
-        """
-        Logs a debug message if the :code:`current_round` is in :code:`rounds_to_log`.
+        """Logs a debug message if the :code:`current_round` is in
+        :code:`rounds_to_log`.
 
         :param msg: The message to log.
         :param args: Positional arguments to pass to :code:`logging.debug`.
@@ -38,9 +36,7 @@ class Logger:
 
 @dataclass
 class Operator:
-    """
-    Representation of an operator for a monkey's operation.
-    """
+    """Representation of an operator for a monkey's operation."""
 
     func: Callable[[Any, Any], Any]
     log: str
@@ -48,9 +44,7 @@ class Operator:
 
 @dataclass
 class Monkey:
-    """
-    Representation of a monkey.
-    """
+    """Representation of a monkey."""
 
     POSSIBLE_OPERATORS: ClassVar[dict[str, Operator]] = {
         "*": Operator(mul, "is multiplied"),
@@ -67,8 +61,7 @@ class Monkey:
     _to_monkey: dict[bool, int]
 
     def get_next_monkey(self, worry_level_divisor: int, modulo: int) -> int:
-        """
-        Gets the next :class:`Monkey` index.
+        """Gets the next :class:`Monkey` index.
 
         :param worry_level_divisor: Integer to divide new worry level by.
         :param modulo: Maximum worry level allowed.
