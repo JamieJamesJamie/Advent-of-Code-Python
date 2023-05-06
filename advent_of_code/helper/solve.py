@@ -8,9 +8,8 @@ from advent_of_code.helper.solver import Solver
 
 
 def solve(input_file: Path, year: int, day: int) -> tuple[str, str]:
-    """
-    Solves the specified :param:`year`'s :param:`day`'s problem using the input
-    specified in :param:`input_path`.
+    """Solves the specified :param:`year`'s :param:`day`'s problem using the
+    input specified in :param:`input_path`.
 
     :param input_file: The file to read the input from.
     :param year: The year the problem was released.

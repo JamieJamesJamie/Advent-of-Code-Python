@@ -5,8 +5,7 @@ from pathlib import Path
 
 
 def puzzle_inputs_path() -> Path:
-    """
-    Returns the :class:`Path` of the puzzle inputs directory.
+    """Returns the :class:`Path` of the puzzle inputs directory.
 
     :return: The Path of the puzzle inputs directory.
     """
@@ -14,8 +13,7 @@ def puzzle_inputs_path() -> Path:
 
 
 def year_day_path(year: int, day: int) -> Path:
-    """
-    Returns the directory to use for the specified day.
+    """Returns the directory to use for the specified day.
 
     :param year: The year to get the directory for.
     :param day: The day to get the directory for.
@@ -25,9 +23,8 @@ def year_day_path(year: int, day: int) -> Path:
 
 
 def src_path() -> Path:
-    """
-    Returns the :class:`Path` of the directory where the year subdirectories are
-    located.
+    """Returns the :class:`Path` of the directory where the year subdirectories
+    are located.
 
     :return: The Path of the directory where the year subdirectories are located.
     """
