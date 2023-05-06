@@ -9,10 +9,10 @@ import os
 import pytest
 
 from advent_of_code.year_2022.day_10.day_10 import Day10
-from tests.year_2022.helper.abstract_test_day import AbstractTestDay
+from tests.year_2022.abstract_test_day_2022 import AbstractTestDay2022
 
 
-class TestDay10(AbstractTestDay):
+class TestDay(AbstractTestDay2022):
     """Test class for testing day 10."""
 
     @staticmethod

@@ -15,7 +15,7 @@ def directory_path(year: int, day: int) -> Path:
     return Path(__file__).parents[1] / f"year_{year:04d}" / f"day_{day:02d}"
 
 
-def download(output_path: Path, day: int, year: int):
+def download(output_path: Path, year: int, day: int):
     """Downloads puzzle data to the specified path.
 
     If file_name starts with "input",
@@ -23,8 +23,8 @@ def download(output_path: Path, day: int, year: int):
     Otherwise, the example input is downloaded and written to the file.
 
     :param output_path: Path of the file to write to.
-    :param day: Day to download and write puzzle input from and to respectively.
     :param year: Year to download puzzle input from.
+    :param day: Day to download and write puzzle input from and to respectively.
     """
 
     puzzle = Puzzle(year=year, day=day)
@@ -40,18 +40,18 @@ def download(output_path: Path, day: int, year: int):
         )
 
 
-def read_file(input_path: Path, day: int, year: int) -> str:
+def read_file(input_path: Path, year: int, day: int) -> str:
     """Reads puzzle data from the specified path. If the path doesn't exist,
     then the data is downloaded.
 
     :param input_path: Path of the file to read from.
-    :param day: Day to get puzzle input for.
     :param year: Year to get puzzle input from.
+    :param day: Day to get puzzle input for.
     :return: The puzzle input.
     """
 
     if not input_path.exists():
-        download(output_path=input_path, day=day, year=year)
+        download(output_path=input_path, year=year, day=day)
 
     return "\n".join(
         line.rstrip() for line in input_path.read_text().split("\n")

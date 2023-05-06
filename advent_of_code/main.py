@@ -17,8 +17,9 @@ def main():
 
     for year in args.years:
         table = Table(
-            title=f"Advent of Code {year}", show_lines=True, box=box.SQUARE_DOUBLE_HEAD
+            title="Advent of Code", show_lines=True, box=box.SQUARE_DOUBLE_HEAD
         )
+        table.add_column("Year")
         table.add_column("Day")
         table.add_column("File")
         table.add_column("Part 1", no_wrap=True)
@@ -29,9 +30,9 @@ def main():
 
             for file in args.files:
                 file = puzzle_directory / file
-                part1, part2 = solve(input_path=file, day=day, year=year)
+                part1, part2 = solve(input_path=file, year=year, day=day)
 
-                table.add_row(f"Day {day}", file.name, part1, part2)
+                table.add_row(f"Year {year}", f"Day {day}", file.name, part1, part2)
 
         console = Console()
         console.print(table)

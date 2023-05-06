@@ -5,11 +5,11 @@ import pytest
 from anytree import findall
 
 from advent_of_code.year_2022.day_07.day_07 import Day7, Node
-from tests.year_2022.helper.abstract_test_day import AbstractTestDay
+from tests.year_2022.abstract_test_day_2022 import AbstractTestDay2022
 
 
 @pytest.mark.parametrize("example", [1], indirect=True)
-class TestDay7(AbstractTestDay):
+class TestDay(AbstractTestDay2022):
     """Test class for testing day 7."""
 
     @staticmethod

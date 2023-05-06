@@ -14,10 +14,10 @@ from advent_of_code.year_2022.day_09.day_09 import (
     Right,
     Up,
 )
-from tests.year_2022.helper.abstract_test_day import AbstractTestDay
+from tests.year_2022.abstract_test_day_2022 import AbstractTestDay2022
 
 
-class TestDay9(AbstractTestDay):
+class TestDay(AbstractTestDay2022):
     """Test class for testing day 9."""
 
     @staticmethod

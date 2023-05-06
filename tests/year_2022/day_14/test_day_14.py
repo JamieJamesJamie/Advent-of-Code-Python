@@ -4,11 +4,11 @@
 import pytest
 
 from advent_of_code.year_2022.day_14.day_14 import Day14, Element, Position
-from tests.year_2022.helper.abstract_test_day import AbstractTestDay
+from tests.year_2022.abstract_test_day_2022 import AbstractTestDay2022
 
 
 @pytest.mark.parametrize("example", [1], indirect=True)
-class TestDay14(AbstractTestDay):
+class TestDay(AbstractTestDay2022):
     """Test class for testing day 14."""
 
     @staticmethod

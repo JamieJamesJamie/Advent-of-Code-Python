@@ -15,9 +15,18 @@ class AbstractTestDay(ABC):
     @staticmethod
     @abstractmethod
     def day() -> int:
-        """Returns the day that is being tested.
+        """Returns the day of the puzzle that is being tested.
 
-        :return: The day that is being tested.
+        :return: The day of the puzzle that is being tested.
+        """
+
+    @staticmethod
+    @abstractmethod
+    def year() -> int:
+        """
+        Returns the year of the puzzle that is being tested.
+
+        :return: The year of the puzzle that is being tested.
         """
 
     @staticmethod
@@ -30,7 +39,9 @@ class AbstractTestDay(ABC):
 
     def _parse_input(self, example_number: int):
         puzzle_input = read_file(
-            input_path=directory_path(self.day()) / f"example{example_number}.txt",
+            input_path=directory_path(year=self.year(), day=self.day())
+            / f"example{example_number}.txt",
+            year=self.year(),
             day=self.day(),
         )
         return self.solver().parse(puzzle_input)
