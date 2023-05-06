@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "advent-of-code-2022"
+name = "advent-of-code"
 version = "0.1.0"
-description = "My approaches to programming puzzles found in the 2022 edition of Advent of Code."
+description = "My approaches to programming puzzles found in Advent of Code."
 # authors left as default for now.
 # There are no plans to publish to PyPI and I'd rather exclude personal details from VCS.
 authors = ["Your Name <you@example.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "advent_of_code_2022"}]
+packages = [{include = "advent_of_code"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
