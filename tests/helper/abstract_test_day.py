@@ -2,10 +2,11 @@
 
 
 from abc import ABC, abstractmethod
+from pathlib import Path
 
 import pytest
 
-from advent_of_code.helper.download_files import directory_path, read_file
+from advent_of_code.helper.download_files import read_file
 from advent_of_code.helper.solver import Solver
 
 
@@ -38,8 +39,7 @@ class AbstractTestDay(ABC):
 
     def _parse_input(self, example_number: int):
         puzzle_input = read_file(
-            input_path=directory_path(year=self.year(), day=self.day())
-            / f"example{example_number}.txt",
+            input_file=Path(f"example{example_number}.txt"),
             year=self.year(),
             day=self.day(),
         )

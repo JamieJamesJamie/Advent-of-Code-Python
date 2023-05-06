@@ -4,15 +4,7 @@ from pathlib import Path
 
 from aocd.models import Puzzle
 
-
-def directory_path(year: int, day: int) -> Path:
-    """Returns the directory to use for the specified day.
-
-    :param year: The year to get the directory for.
-    :param day: The day to get the directory for.
-    :return: The directory that should be used for the specified day.
-    """
-    return Path(__file__).parents[1] / f"year_{year:04d}" / f"day_{day:02d}"
+from advent_of_code.helper.paths import puzzle_inputs_path, year_day_path
 
 
 def download(output_path: Path, year: int, day: int):
@@ -29,6 +21,8 @@ def download(output_path: Path, year: int, day: int):
 
     puzzle = Puzzle(year=year, day=day)
 
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
     if not output_path.is_file():
         output_path.write_text(
             (
@@ -40,15 +34,17 @@ def download(output_path: Path, year: int, day: int):
         )
 
 
-def read_file(input_path: Path, year: int, day: int) -> str:
-    """Reads puzzle data from the specified path. If the path doesn't exist,
-    then the data is downloaded.
+def read_file(input_file: Path, year: int, day: int) -> str:
+    """Reads puzzle data from the specified input file.
 
-    :param input_path: Path of the file to read from.
+    If the path doesn't exist, then the data is downloaded.
+
+    :param input_file: Path of the file to read from.
     :param year: Year to get puzzle input from.
     :param day: Day to get puzzle input for.
     :return: The puzzle input.
     """
+    input_path = puzzle_inputs_path() / year_day_path(year=year, day=day) / input_file
 
     if not input_path.exists():
         download(output_path=input_path, year=year, day=day)
