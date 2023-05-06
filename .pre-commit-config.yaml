@@ -87,7 +87,7 @@ repos:
         args:
           [
             "--with",
-            "dev",
+            "dev,test",
             "-f",
             "requirements.txt",
             "-o",
