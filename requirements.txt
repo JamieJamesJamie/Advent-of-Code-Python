@@ -10,9 +10,9 @@ anytree==2.8.0 ; python_version >= "3.10" and python_version < "3.12" \
 beautifulsoup4==4.12.2 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:492bbc69dca35d12daac71c4db1bfff0c876c00ef4a2ffacce226d4638eb72da \
     --hash=sha256:bd2520ca0d9d7d12694a53d44ac482d181b4ec1888909b035a3dbf40d0f57d4a
-certifi==2022.12.7 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:35824b4c3a97115964b408844d64aa14db1cc518f6562e8d7261699d1350a9e3 \
-    --hash=sha256:4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
+certifi==2023.5.7 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:0f0d56dc5a6ad56fd4ba36484d6cc34451e1c6548c61daad8c320169f91eddc7 \
+    --hash=sha256:c6c2e98f5c7869efca1f8916fed228dd91539f9f1b444c314c06eef02980c716
 charset-normalizer==3.1.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:04afa6387e2b282cf78ff3dbce20f0cc071c12dc8f685bd40960cc68644cfea6 \
     --hash=sha256:04eefcee095f58eaabe6dc3cc2262f3bcd776d2c67005880894f447b3f2cb9c1 \
@@ -154,9 +154,9 @@ cycler==0.11.0 ; python_version >= "3.10" and python_version < "3.12" \
 docstring-parser==0.15 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:48ddc093e8b1865899956fcc03b03e66bb7240c310fac5af81814580c55bf682 \
     --hash=sha256:d1679b86250d269d06a99670924d6bce45adc00b08069dae8c47d98e89b667a9
-fonttools==4.39.3 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:64c0c05c337f826183637570ac5ab49ee220eec66cf50248e8df527edfa95aeb \
-    --hash=sha256:9234b9f57b74e31b192c3fc32ef1a40750a8fbc1cd9837a7b7bfc4ca4a5c51d7
+fonttools==4.39.4 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:106caf6167c4597556b31a8d9175a3fdc0356fdcd70ab19973c3b0d4c893c461 \
+    --hash=sha256:dba8d7cdb8e2bac1b3da28c5ed5960de09e59a2fe7e63bb73f5a59e57b0430d2
 idna==3.4 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4 \
     --hash=sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2
