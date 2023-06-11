@@ -76,7 +76,8 @@ class Day2(Solver):
         """Parse input for puzzle 2.
 
         :param puzzle_input: Input to parse.
-        :return: The columns (round info) for each round of Rock Paper Scissors.
+        :return: The columns (round info) for each round of Rock Paper
+            Scissors.
         """
         return tuple(RoundInfo(*line.split(" ")) for line in puzzle_input.split("\n"))
 
@@ -84,7 +85,8 @@ class Day2(Solver):
     def part1(parsed_input: Iterable[RoundInfo]) -> int:
         """Solves part 1.
 
-        :param parsed_input: The round info for each round of Rock Paper Scissors.
+        :param parsed_input: The round info for each round of Rock Paper
+            Scissors.
         :return: The total score.
         """
         total_score = 0
@@ -106,7 +108,8 @@ class Day2(Solver):
     def part2(parsed_input: Iterable[RoundInfo]) -> int:
         """Solves part 2.
 
-        :param parsed_input: The round info for each round of Rock Paper Scissors.
+        :param parsed_input: The round info for each round of Rock Paper
+            Scissors.
         :return: The total score.
         """
         total_score = 0

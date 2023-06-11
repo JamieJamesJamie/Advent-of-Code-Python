@@ -10,13 +10,14 @@ from advent_of_code.helper.paths import puzzle_inputs_path, year_day_path
 def download(output_path: Path, year: int, day: int):
     """Downloads puzzle data to the specified path.
 
-    If file_name starts with "input",
-    then the puzzle input is downloaded and written to the file.
-    Otherwise, the example input is downloaded and written to the file.
+    If file_name starts with "input", then the puzzle input is
+    downloaded and written to the file. Otherwise, the example input is
+    downloaded and written to the file.
 
     :param output_path: Path of the file to write to.
     :param year: Year to download puzzle input from.
-    :param day: Day to download and write puzzle input from and to respectively.
+    :param day: Day to download and write puzzle input from and to
+        respectively.
     """
 
     puzzle = Puzzle(year=year, day=day)

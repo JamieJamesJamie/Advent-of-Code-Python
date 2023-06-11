@@ -59,8 +59,8 @@ class Day3(Solver):
         """Solves part 1.
 
         :param parsed_input: The contents contained in each rucksack.
-        :return: The sum of the priorities of each item that appears in both
-            compartments in each rucksack.
+        :return: The sum of the priorities of each item that appears in
+            both compartments in each rucksack.
         """
         summed_priorities = 0
 

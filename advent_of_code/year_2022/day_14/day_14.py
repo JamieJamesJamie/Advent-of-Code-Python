@@ -48,10 +48,12 @@ class Day14(Solver):
         """Parses the given coordinates representing the ends of a straight
         line, and returns each coordinate on this straight line.
 
-        :param coordinate1_string: An iterable containing 2 coordinates as strings.
-        :param coordinate2_string: An iterable containing 2 coordinates as strings.
-        :return: Each coordinate along the straight line represented by the given
-            coordinates.
+        :param coordinate1_string: An iterable containing 2 coordinates
+            as strings.
+        :param coordinate2_string: An iterable containing 2 coordinates
+            as strings.
+        :return: Each coordinate along the straight line represented by
+            the given coordinates.
         """
         coordinate1 = Position(*(int(dim) for dim in coordinate1_string))
         coordinate2 = Position(*(int(dim) for dim in coordinate2_string))
@@ -142,8 +144,8 @@ class Day14(Solver):
         """Solves part 1.
 
         :param parsed_input: Mapping from positions to ROCK elements.
-        :return: The number of units of sand that have come to rest before sand starts
-            flowing into the void below.
+        :return: The number of units of sand that have come to rest
+            before sand starts flowing into the void below.
         """
         void_y_coordinate = max(y_coordinate for _, y_coordinate in parsed_input.keys())
         cave_map = Day14._simulate_sand(parsed_input, void_y_coordinate)
