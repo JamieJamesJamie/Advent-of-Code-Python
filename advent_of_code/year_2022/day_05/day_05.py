@@ -52,7 +52,8 @@ class SolverState:
         """Parse the crate input at the top of the input file.
 
         :param crates: Lines of crates as described in the input file.
-        :param stack_labels: The labels given to stacks in the input file.
+        :param stack_labels: The labels given to stacks in the input
+            file.
         :return: A mapping from stack labels to stacks of crates.
         """
         stacks: OrderedDict[str, list[str]] = OrderedDict(

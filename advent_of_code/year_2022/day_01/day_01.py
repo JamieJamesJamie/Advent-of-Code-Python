@@ -28,7 +28,8 @@ class Day1(Solver):
     def part1(parsed_input: Iterable[int]) -> int:
         """Solves part 1.
 
-        :param parsed_input: The calories being carried by each elf in order.
+        :param parsed_input: The calories being carried by each elf in
+            order.
         :return: The maximum number of calories being carried by an elf.
         """
         return max(parsed_input)
@@ -37,7 +38,8 @@ class Day1(Solver):
     def part2(parsed_input: Iterable[int]) -> int:
         """Solves part 2.
 
-        :param parsed_input: The calories being carried by each elf in order.
+        :param parsed_input: The calories being carried by each elf in
+            order.
         :return: The sum of the top 3 elves carrying the most calories.
         """
         return sum(sorted(parsed_input)[-3:])

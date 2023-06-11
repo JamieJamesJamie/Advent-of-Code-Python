@@ -47,9 +47,10 @@ class Day6(Solver):
     def part1(parsed_input: str) -> int:
         """Solves part 1.
 
-        :param parsed_input: The datastream buffer received by the device.
-        :return: The number of characters that need to be processed before the
-            start-of-packet marker is detected.
+        :param parsed_input: The datastream buffer received by the
+            device.
+        :return: The number of characters that need to be processed
+            before the start-of-packet marker is detected.
         """
         return Day6._get_marker(parsed_input, 4)
 
@@ -57,8 +58,9 @@ class Day6(Solver):
     def part2(parsed_input: str) -> int:
         """Solves part 2.
 
-        :param parsed_input: The datastream buffer received by the device.
-        :return: The number of characters that need to be processed before the
-            start-of-message marker is detected.
+        :param parsed_input: The datastream buffer received by the
+            device.
+        :return: The number of characters that need to be processed
+            before the start-of-message marker is detected.
         """
         return Day6._get_marker(parsed_input, 14)

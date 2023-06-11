@@ -169,8 +169,8 @@ class Day13(Solver):
         """Solves part 1.
 
         :param parsed_input: Pairs of packets.
-        :return: The sum of the indices of the pairs where the left packet is smaller
-            than the right packet.
+        :return: The sum of the indices of the pairs where the left
+            packet is smaller than the right packet.
         """
         # for list_index, (left_list, right_list) in enumerate(parsed_input, start=1):
         #     right_order, root = Day13._compare_lists(left_list, right_list)

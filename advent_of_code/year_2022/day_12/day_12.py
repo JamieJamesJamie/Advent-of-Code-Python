@@ -144,7 +144,8 @@ class Day12(Solver):
         """Solves part 2.
 
         :param parsed_input: A digraph representing the possible paths.
-        :return: The length of the shortest path between any "a" (or "S") and "E".
+        :return: The length of the shortest path between any "a" (or
+            "S") and "E".
         """
         target = next(node for node in parsed_input.nodes if node[0] == "E")
 

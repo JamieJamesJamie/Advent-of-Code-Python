@@ -66,7 +66,8 @@ class Direction(ABC):
         """Computes the positions of each knot in the rope and what positions
         the tail of the rope has traversed.
 
-        :param num_steps: Number of steps to traverse the head of the rope.
+        :param num_steps: Number of steps to traverse the head of the
+            rope.
         :param solver_state: Current state of the solver.
         :return: The new state of the solver.
         """
@@ -269,7 +270,8 @@ class Day9(Solver):
         """Parse input for puzzle 9.
 
         :param puzzle_input: Input to parse.
-        :return: A sequence of instructions to move the head of the rope.
+        :return: A sequence of instructions to move the head of the
+            rope.
         """
         instructions = []
 
@@ -288,8 +290,10 @@ class Day9(Solver):
     def _solve_puzzle(instructions: tuple[Instruction, ...], rope_length: int) -> int:
         """Solves the puzzle.
 
-        :param instructions: A sequence of instructions to move the head of the rope.
-        :param rope_length: The length of the rope being used in the puzzle.
+        :param instructions: A sequence of instructions to move the head
+            of the rope.
+        :param rope_length: The length of the rope being used in the
+            puzzle.
         :return: The number of positions the tail visited at least once.
         """
         solver_state = SolverState(rope_length=rope_length)
@@ -305,7 +309,8 @@ class Day9(Solver):
     def part1(parsed_input: tuple[Instruction, ...]) -> int:
         """Solves part 1.
 
-        :param parsed_input: A sequence of instructions to move the head of the rope.
+        :param parsed_input: A sequence of instructions to move the head
+            of the rope.
         :return: The number of positions the tail visited at least once.
         """
         return Day9._solve_puzzle(instructions=parsed_input, rope_length=2)
@@ -314,7 +319,8 @@ class Day9(Solver):
     def part2(parsed_input: tuple[Instruction, ...]) -> int:
         """Solves part 2.
 
-        :param parsed_input: A sequence of instructions to move the head of the rope.
+        :param parsed_input: A sequence of instructions to move the head
+            of the rope.
         :return: The number of positions the tail visited at least once.
         """
         return Day9._solve_puzzle(instructions=parsed_input, rope_length=10)

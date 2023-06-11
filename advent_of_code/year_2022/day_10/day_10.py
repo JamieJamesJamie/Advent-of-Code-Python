@@ -26,7 +26,8 @@ class Day10(Solver):
         """Solves part 1.
 
         :param parsed_input: A sequence of CPU instructions.
-        :return: The sum of the 20th, 60th, 100th, 140th, 180th and 220th CPU cycles.
+        :return: The sum of the 20th, 60th, 100th, 140th, 180th and
+            220th CPU cycles.
         """
         register_x = 1
         cycles_until_free = 0
@@ -73,9 +74,9 @@ class Day10(Solver):
         """Solves part 2.
 
         :param parsed_input: A sequence of CPU instructions.
-        :return: The rendered image given by the CPU instructions. If the rendered image
-            can be converted to text using an OCR, then this is appended to the end of
-            the puzzle answer.
+        :return: The rendered image given by the CPU instructions. If
+            the rendered image can be converted to text using an OCR,
+            then this is appended to the end of the puzzle answer.
         """
         # The X (register_x) position controls the horizontal position of a sprite.
 

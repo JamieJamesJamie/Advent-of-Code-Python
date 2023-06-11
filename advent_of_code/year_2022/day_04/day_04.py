@@ -35,9 +35,10 @@ class Day4(Solver):
     def part1(parsed_input: Iterable[Iterable[set[Any]]]) -> int:
         """Solves part 1.
 
-        :param parsed_input: The section IDs that each elf pair has been assigned.
-        :return: The number of assignment pairs where one assignment fully contains
-            the other assignment.
+        :param parsed_input: The section IDs that each elf pair has been
+            assigned.
+        :return: The number of assignment pairs where one assignment
+            fully contains the other assignment.
         """
         return sum(
             any(
@@ -51,8 +52,9 @@ class Day4(Solver):
     def part2(parsed_input: Iterable[tuple[set[Any], set[Any]]]) -> int:
         """Solves part 2.
 
-        :param parsed_input: The section IDs that each elf pair has been assigned.
-        :return: The number of assignment pairs where one assignment overlaps the other
-            assignment.
+        :param parsed_input: The section IDs that each elf pair has been
+            assigned.
+        :return: The number of assignment pairs where one assignment
+            overlaps the other assignment.
         """
         return sum(bool(set1.intersection(set2)) for set1, set2 in parsed_input)

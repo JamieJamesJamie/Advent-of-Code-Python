@@ -124,7 +124,8 @@ class Day7(Solver):
         """Parse input for puzzle 7.
 
         :param puzzle_input: Input to parse.
-        :return: The root directory of the tree described in the puzzle input.
+        :return: The root directory of the tree described in the puzzle
+            input.
         """
         root = Node("/")
         current_node = root
@@ -151,10 +152,10 @@ class Day7(Solver):
     def part1(parsed_input: Node) -> int:
         """Solves part 1.
 
-        :param parsed_input: The root directory of the tree described in the puzzle
-            input.
-        :return: The sum of the directories' total sizes that are less than or equal to
-            100,000.
+        :param parsed_input: The root directory of the tree described in
+            the puzzle input.
+        :return: The sum of the directories' total sizes that are less
+            than or equal to 100,000.
         """
         return sum(
             node.size
@@ -170,10 +171,11 @@ class Day7(Solver):
     def part2(parsed_input: Node) -> int:
         """Solves part 2.
 
-        :param parsed_input: The root directory of the tree described in the puzzle
-            input.
-        :return: The total size of the smallest directory that, if deleted, would free
-            up enough space on the filesystem to run the update.
+        :param parsed_input: The root directory of the tree described in
+            the puzzle input.
+        :return: The total size of the smallest directory that, if
+            deleted, would free up enough space on the filesystem to run
+            the update.
         """
 
         total_disk_space = 70_000_000
