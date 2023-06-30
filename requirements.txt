@@ -447,9 +447,9 @@ termcolor==2.3.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:b5b08f68937f138fe92f6c089b99f1e2da0ae56c52b78bf7075fd95420fd9a5a
 typed-argument-parser==1.8.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:82f7dfda955a047ff9cedd838fd76b8d4d3d07e1c0721b50151146389e758b12
-typing-extensions==4.6.3 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:88a4153d8505aabbb4e13aacb7c486c2b4a33ca3b3f807914a9b4c844c471c26 \
-    --hash=sha256:d91d5919357fe7f681a9f2b5b4cb2a5f1ef0a1e9f59c4d8ff0d3491e05c0ffd5
+typing-extensions==4.7.0 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:5d8c9dac95c27d20df12fb1d97b9793ab8b2af8a3a525e68c80e21060c161771 \
+    --hash=sha256:935ccf31549830cda708b42289d44b6f74084d616a00be651601a4f968e77c82
 typing-inspect==0.9.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:9ee6fc59062311ef8547596ab6b955e1b8aa46242d854bfc78f4f6b0eff35f9f \
     --hash=sha256:b23fc42ff6f6ef6954e4852c1fb512cdd18dbea03134f91f856a95ccc9461f78
