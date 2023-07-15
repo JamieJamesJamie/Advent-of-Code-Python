@@ -1728,17 +1728,16 @@ files = [
 
 [[package]]
 name = "typed-argument-parser"
-version = "1.8.0"
+version = "1.8.1"
 description = "Typed Argument Parser"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "typed-argument-parser-1.8.0.tar.gz", hash = "sha256:82f7dfda955a047ff9cedd838fd76b8d4d3d07e1c0721b50151146389e758b12"},
+    {file = "typed-argument-parser-1.8.1.tar.gz", hash = "sha256:a3c286a6fac597da558c13b13e7090935803f43f47e46e51ed3c1d20959f47b9"},
 ]
 
 [package.dependencies]
 docstring-parser = ">=0.15"
-typing_extensions = ">=3.7.4"
 typing-inspect = ">=0.7.1"
 
 [[package]]
@@ -2016,4 +2015,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "f649472a608051527e279192d6785370682734d42fb0aba218a1480b9905ebd1"
+content-hash = "847a0fd2fd6f55b347b58172dfb3e77c4b8c52d6f3b0ea4763a3b157c6748e1a"
