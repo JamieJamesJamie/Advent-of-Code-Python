@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA7B4BAC-2CED-45D4-81DC-5E1D1DB065CA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		..\..\.gitignore = ..\..\.gitignore
+		..\..\.pre-commit-config.yaml = ..\..\.pre-commit-config.yaml
+		Directory.Build.props = Directory.Build.props
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+		..\..\LICENSE = ..\..\LICENSE
+		..\..\README.md = ..\..\README.md
+		..\..\renovate.json = ..\..\renovate.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AOCHelper", "AOCHelper", "{7E5BE901-20C3-4AE2-B83A-15D0F4660422}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent.Of.Code.Helper", "AOCHelper\Advent.Of.Code.Helper\Advent.Of.Code.Helper.csproj", "{8D890949-CD00-4389-9ED4-E90872317730}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent.Of.Code.Helper.Test", "AOCHelper\Advent.Of.Code.Helper.Test\Advent.Of.Code.Helper.Test.csproj", "{E858B397-D754-4EB1-AF32-D1DD4BAF4F8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AOC", "AOC", "{CA0E12D3-4960-49A3-AE89-82876E44216D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Y2022", "Y2022", "{3C25478B-DDEC-479D-8C41-41D8C0D700AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent.Of.Code.Y2022", "AOC\Y2022\Advent.Of.Code.Y2022\Advent.Of.Code.Y2022.csproj", "{ABFFF9D8-F125-4368-AE4F-0ADD2D8F4564}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent.Of.Code.Y2022.Test", "AOC\Y2022\Advent.Of.Code.Y2022.Test\Advent.Of.Code.Y2022.Test.csproj", "{949D1A6E-6859-4388-BB1F-06D6E5D206F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{692D31F2-52B5-4C21-B018-40D100F04F1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{2216333B-8A77-4AC6-A845-C8929C257B3C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.github\workflows\dotnet.yml = ..\..\.github\workflows\dotnet.yml
+		..\..\.github\workflows\python.yml = ..\..\.github\workflows\python.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".config", ".config", "{3AEE1CBB-3B1F-47B3-A090-40CCA67CDC41}"
+	ProjectSection(SolutionItems) = preProject
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D890949-CD00-4389-9ED4-E90872317730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D890949-CD00-4389-9ED4-E90872317730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D890949-CD00-4389-9ED4-E90872317730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D890949-CD00-4389-9ED4-E90872317730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E858B397-D754-4EB1-AF32-D1DD4BAF4F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E858B397-D754-4EB1-AF32-D1DD4BAF4F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E858B397-D754-4EB1-AF32-D1DD4BAF4F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E858B397-D754-4EB1-AF32-D1DD4BAF4F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFFF9D8-F125-4368-AE4F-0ADD2D8F4564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFFF9D8-F125-4368-AE4F-0ADD2D8F4564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFFF9D8-F125-4368-AE4F-0ADD2D8F4564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFFF9D8-F125-4368-AE4F-0ADD2D8F4564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{949D1A6E-6859-4388-BB1F-06D6E5D206F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949D1A6E-6859-4388-BB1F-06D6E5D206F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949D1A6E-6859-4388-BB1F-06D6E5D206F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949D1A6E-6859-4388-BB1F-06D6E5D206F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D890949-CD00-4389-9ED4-E90872317730} = {7E5BE901-20C3-4AE2-B83A-15D0F4660422}
+		{E858B397-D754-4EB1-AF32-D1DD4BAF4F8D} = {7E5BE901-20C3-4AE2-B83A-15D0F4660422}
+		{3C25478B-DDEC-479D-8C41-41D8C0D700AA} = {CA0E12D3-4960-49A3-AE89-82876E44216D}
+		{ABFFF9D8-F125-4368-AE4F-0ADD2D8F4564} = {3C25478B-DDEC-479D-8C41-41D8C0D700AA}
+		{949D1A6E-6859-4388-BB1F-06D6E5D206F9} = {3C25478B-DDEC-479D-8C41-41D8C0D700AA}
+		{692D31F2-52B5-4C21-B018-40D100F04F1C} = {CA7B4BAC-2CED-45D4-81DC-5E1D1DB065CA}
+		{2216333B-8A77-4AC6-A845-C8929C257B3C} = {692D31F2-52B5-4C21-B018-40D100F04F1C}
+		{3AEE1CBB-3B1F-47B3-A090-40CCA67CDC41} = {CA7B4BAC-2CED-45D4-81DC-5E1D1DB065CA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {569637A8-A2F4-450A-AEE3-1F1B59E1E31A}
+	EndGlobalSection
+EndGlobal

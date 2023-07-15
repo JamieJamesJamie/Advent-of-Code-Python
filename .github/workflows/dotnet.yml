@@ -1,0 +1,16 @@
+name: .NET
+
+on: push
+
+jobs:
+  xunit:
+    needs: pre-commit
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        cs-project: ["Advent.Of.Code.Helper.Test", "Advent.Of.Code.Y2022.Test"]
+
+    steps:
+      - uses: 
