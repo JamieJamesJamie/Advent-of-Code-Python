@@ -122,7 +122,8 @@ class Day14(Solver):
         """Simulates sand falling from the :param:`sand_source`.
 
         :param cave_map: Mapping from positions to elements.
-        :param void_y_coordinate: The point at which sand will fall into the void.
+        :param void_y_coordinate: The point at which sand will fall into
+            the void.
         :param sand_source: The source of sand.
         :return: Mapping from positions to elements.
         """

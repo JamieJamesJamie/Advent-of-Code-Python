@@ -52,7 +52,8 @@ class SolverState:
     def __init__(self, rope_length: int):
         """The constructor for the :class:`SolverState`.
 
-        :param rope_length: The length of the rope being used in the puzzle.
+        :param rope_length: The length of the rope being used in the
+            puzzle.
         """
         self.current_positions = [Position(0, 0) for _ in range(rope_length)]
         self.all_tail_positions = {self.current_positions[-1]}
@@ -120,13 +121,12 @@ class Direction(ABC):
     @staticmethod
     @abstractmethod
     def _move_one_step(position: Position) -> Position:
-        """
-        Returns a new position one step in a particular direction away from
+        """Returns a new position one step in a particular direction away from
         :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step in a particular direction away from the given
-            position.
+        :return: A new position one step in a particular direction away
+            from the given position.
         """
 
 
@@ -138,7 +138,8 @@ class Up(Direction):
         """Returns a new position one step up away from :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step up away from the given position.
+        :return: A new position one step up away from the given
+            position.
         """
         return Position(position.x, position.y + 1)
 
@@ -151,7 +152,8 @@ class Down(Direction):
         """Returns a new position one step down away from :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step down away from the given position.
+        :return: A new position one step down away from the given
+            position.
         """
         return Position(position.x, position.y - 1)
 
@@ -164,7 +166,8 @@ class Left(Direction):
         """Returns a new position one step left away from :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step left away from the given position.
+        :return: A new position one step left away from the given
+            position.
         """
         return Position(position.x - 1, position.y)
 
@@ -177,7 +180,8 @@ class Right(Direction):
         """Returns a new position one step right away from :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step right away from the given position.
+        :return: A new position one step right away from the given
+            position.
         """
         return Position(position.x + 1, position.y)
 

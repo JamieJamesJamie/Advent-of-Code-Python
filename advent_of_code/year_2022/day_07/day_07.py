@@ -34,9 +34,8 @@ class Day7(Solver):
 
     @staticmethod
     def process_file(line: Sequence[str], current_node: Node) -> None:
-        """
-        Adds file or directory specified by :param:`line` as a child to the given
-        :param:`current_node`.
+        """Adds file or directory specified by :param:`line` as a child to the
+        given :param:`current_node`.
 
         If the specified file or directory is already a child of :param:`current_node`,
         then the file or directory is not added as a child to :param:`current_node`.
@@ -56,7 +55,8 @@ class Day7(Solver):
         """Changes directory from the :param:`current_node` using the
         instruction provided in :param:`line`.
 
-        :param line: The change directory (cd) instruction as seen in the puzzle input.
+        :param line: The change directory (cd) instruction as seen in
+            the puzzle input.
         :param current_node: The node to traverse from.
         :return: The node that was traversed to.
         """
@@ -79,8 +79,8 @@ class Day7(Solver):
         """Renders the :param:`node` and its children to a pretty string.
 
         :param node: The node to render from.
-        :return: A pretty string that can be printed to see a visual representation of
-            the tree starting at the provided node.
+        :return: A pretty string that can be printed to see a visual
+            representation of the tree starting at the provided node.
         """
         return "\n".join(
             f"{pre}{node_i.name}"

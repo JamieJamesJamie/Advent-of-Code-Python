@@ -15,11 +15,12 @@ class Day6(Solver):
         :param:`num_distinct_characters` that there should be to indicate a
         marker.
 
-        :param datastream_buffer: The datastream buffer received by the device.
-        :param num_distinct_characters: The number of distinct characters that there
-            should be to indicate a marker.
-        :return: The number of characters that need to be processed before the marker is
-            detected.
+        :param datastream_buffer: The datastream buffer received by the
+            device.
+        :param num_distinct_characters: The number of distinct
+            characters that there should be to indicate a marker.
+        :return: The number of characters that need to be processed
+            before the marker is detected.
         """
         window: deque[str] = deque(maxlen=num_distinct_characters)
 

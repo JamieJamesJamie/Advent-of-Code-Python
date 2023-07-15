@@ -35,7 +35,8 @@ class SolverState:
         """Constructor for :class:`SolverState`.
 
         :param crates: Lines of crates as described in the input file.
-        :param stack_labels: The labels given to stacks in the input file.
+        :param stack_labels: The labels given to stacks in the input
+            file.
         :param instructions: The procedure to follow to move crates.
         """
         self.instructions = tuple(

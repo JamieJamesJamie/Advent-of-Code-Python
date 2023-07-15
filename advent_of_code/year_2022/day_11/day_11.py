@@ -63,7 +63,8 @@ class Monkey:
     def get_next_monkey(self, worry_level_divisor: int, modulo: int) -> int:
         """Gets the next :class:`Monkey` index.
 
-        :param worry_level_divisor: Integer to divide new worry level by.
+        :param worry_level_divisor: Integer to divide new worry level
+            by.
         :param modulo: Maximum worry level allowed.
         :return: The index of the monkey to throw the current item to.
         """
