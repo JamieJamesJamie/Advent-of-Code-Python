@@ -61,7 +61,8 @@ class Day2(Solver):
 
         :param opponent_move: Opponent's move in Rock Paper Scissors.
         :param my_outcome: The outcome that should be achieved.
-        :return: The move that should be made to achieve the given outcome.
+        :return: The move that should be made to achieve the given
+            outcome.
         """
         if Day2._outcome(opponent_move, Move.ROCK) == my_outcome:
             return Move.ROCK

@@ -20,8 +20,8 @@ class Day13(Solver):
         """Renders the :param:`node` and its children to a pretty string.
 
         :param node: The node to render from.
-        :return: A pretty string that can be printed to see a visual representation of
-            the tree starting at the provided node.
+        :return: A pretty string that can be printed to see a visual
+            representation of the tree starting at the provided node.
         """
         return "\n".join(f"{pre}{node_i.name}" for pre, _, node_i in RenderTree(node))
 
@@ -41,8 +41,8 @@ class Day13(Solver):
         :param left: The left input.
         :param right: The right input.
         :param parent_node: The node for debugging purposes.
-        :return: Whether the left input is lower than the right input, or None if the
-            inputs are the same.
+        :return: Whether the left input is lower than the right input,
+            or None if the inputs are the same.
         """
         current_node = Node(f"Compare {left} vs {right}", parent=parent_node)
 
@@ -71,8 +71,8 @@ class Day13(Solver):
         :param left_list: The left input.
         :param right_list: The right input.
         :param parent_node: The node for debugging purposes.
-        :return: Whether the inputs are in the correct order, or None if the inputs are
-            the same.
+        :return: Whether the inputs are in the correct order, or None if
+            the inputs are the same.
         """
         current_node = Node(f"Compare {left_list} vs {right_list}", parent=parent_node)
 
@@ -140,14 +140,13 @@ class Day13(Solver):
 
     @staticmethod
     def _sort(item1: list[Any], item2: list[Any]):
-        """
-        Returns whether :param:`item1` is smaller, larger or the same size as
-        :param:`item2`.
+        """Returns whether :param:`item1` is smaller, larger or the same size
+        as :param:`item2`.
 
         :param item1: Item to compare.
         :param item2: Items to compare.
-        :return: -1 if item1 is smaller than item2. 1 if item1 is larger than item2.
-            0 if item1 is the same size as item2.
+        :return: -1 if item1 is smaller than item2. 1 if item1 is larger
+            than item2. 0 if item1 is the same size as item2.
         """
         result, _ = Day13._compare_lists(item1, item2)
         return 0 if result is None else -1 if result else 1
