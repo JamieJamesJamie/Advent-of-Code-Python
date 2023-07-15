@@ -19,7 +19,7 @@ public class InputReader<T>
 
         while (!file.Empty)
         {
-           
+
         }
 
 

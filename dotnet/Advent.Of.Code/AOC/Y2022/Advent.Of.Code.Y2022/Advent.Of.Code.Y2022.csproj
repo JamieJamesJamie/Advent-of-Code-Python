@@ -8,7 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="$(SolutionDir)AOCHelper\Advent.Of.Code.Helper\Advent.Of.Code.Helper.csproj" />
+    <ProjectReference
+      Include="$(SolutionDir)AOCHelper\Advent.Of.Code.Helper\Advent.Of.Code.Helper.csproj"
+    />
   </ItemGroup>
 
 </Project>

@@ -109,7 +109,7 @@ public abstract class BaseSolver<TSolve1, TSolve2> : BaseDay
          {
              return this.InputFilePath;
          }
- 
+
          string index = this.CalculateIndex().ToString("D2");
          return Path.Combine(
              this.InputFileDirPath,
