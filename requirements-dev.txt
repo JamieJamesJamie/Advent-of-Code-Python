@@ -834,9 +834,9 @@ pyyaml==6.0.1 ; python_version >= "3.10" and python_version < "3.12" \
 requests==2.31.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f \
     --hash=sha256:942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1
-rich==13.4.2 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:8f87bc7ee54675732fa66a05ebfe489e27264caeeff3728c945d25971b6485ec \
-    --hash=sha256:d653d6bccede5844304c605d5aac802c7cf9621efd700b46c7ec2b51ea914898
+rich==13.5.2 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:146a90b3b6b47cac4a73c12866a499e9817426423f57c5a66949c086191a8808 \
+    --hash=sha256:fb9d6c0a0f643c99eed3875b5377a184132ba9be4d61516a55273d3554d75a39
 scipy==1.11.1 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:08d957ca82d3535b3b9ba6c8ff355d78fe975271874e2af267cb5add5bd78625 \
     --hash=sha256:249cfa465c379c9bb2c20123001e151ff5e29b351cbb7f9c91587260602c58d0 \
