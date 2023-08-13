@@ -95,9 +95,9 @@ aiohttp==3.8.5 ; python_version >= "3.10" and python_version < "3.12" \
 aiosignal==1.3.1 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:54cd96e15e1649b75d6c87526a6ff0b6c1b0dd3459f43d9ca11d48c339b68cfc \
     --hash=sha256:f8376fb07dd1e86a584e4fcdec80b36b7f81aac666ebc724e2c090300dd83b17
-anytree==2.8.0 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:14c55ac77492b11532395049a03b773d14c7e30b22aa012e337b1e983de31521 \
-    --hash=sha256:3f0f93f355a91bc3e6245319bf4c1d50e3416cc7a35cc1133c1ff38306bbccab
+anytree==2.9.0 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:06f7bc294293da2755f4699cc5da5c92d9182a5cfae2842c83fb56f02bd427c8 \
+    --hash=sha256:7f1ad0f9b225705b780ea0593c8ff52af05df9428e7cc34b9379b879fa462663
 astroid==2.15.6 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:389656ca57b6108f939cf5d2f9a2a825a3be50ba9d589670f393236e0a03b91c \
     --hash=sha256:903f024859b7c7687d7a7f3a3f73b17301f8e42dfd9cc9df9d4418172d3e2dbd
