@@ -30,7 +30,7 @@ bandit = {version = "1.7.5", extras = ["toml"]}
 black = {version = "23.7.0", extras = ["d"]}
 docformatter = "1.7.5"
 isort = "5.12.0"
-mypy = "1.4.1"
+mypy = "1.5.0"
 pre-commit = "3.3.3"
 pylint = "2.17.5"
 
