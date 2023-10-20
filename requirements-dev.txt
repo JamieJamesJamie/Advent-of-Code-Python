@@ -418,9 +418,9 @@ frozenlist==1.4.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:f0ed05f5079c708fe74bf9027e95125334b6978bf07fd5ab923e9e55e5fbb9d3 \
     --hash=sha256:f61e2dc5ad442c52b4887f1fdc112f97caeff4d9e6ebe78879364ac59f1663e1 \
     --hash=sha256:fec520865f42e5c7f050c2a79038897b1c7d1595e907a9e08e3353293ffc948e
-gitdb==4.0.10 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:6eb990b69df4e15bad899ea868dc46572c3f75339735663b81de79b06f17eb9a \
-    --hash=sha256:c286cf298426064079ed96a9e4a9d39e7f3e9bf15ba60701e95f5492f28415c7
+gitdb==4.0.11 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:81a3407ddd2ee8df444cbacea00e2d038e40150acfa3001696fe0dcf1d3adfa4 \
+    --hash=sha256:bf5421126136d6d0af55bc1e7c1af1c397a34f5b7bd79e776cd3e89785c2b04b
 gitpython==3.1.40 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:22b126e9ffb671fdd0c129796343a02bf67bf2994b35449ffc9321aa755e18a4 \
     --hash=sha256:cf14627d5a8049ffbf49915732e5eddbe8134c3bdb9d476e6182b676fc573f8a
