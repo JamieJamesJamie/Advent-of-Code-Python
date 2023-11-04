@@ -677,9 +677,9 @@ mypy==1.6.1 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:d8fbb68711905f8912e5af474ca8b78d077447d8f3918997fecbf26943ff3cbb \
     --hash=sha256:e5012e5cc2ac628177eaac0e83d622b2dd499e28253d4107a08ecc59ede3fc2c \
     --hash=sha256:eb4f18589d196a4cbe5290b435d135dee96567e07c2b2d43b5c4621b6501531a
-networkx==3.2 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:8b25f564bd28f94ac821c58b04ae1a3109e73b001a7d476e4bb0d00d63706bf8 \
-    --hash=sha256:bda29edf392d9bfa5602034c767d28549214ec45f620081f0b74dc036a1fbbc1
+networkx==3.2.1 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:9f1bb5cf3409bf324e0a722c20bdb4c20ee39bf1c30ce8ae499c8502b0b5e0c6 \
+    --hash=sha256:f18c69adc97877c42332c170849c96cefa91881c99a7cb3e95b7c659ebdc1ec2
 nodeenv==1.8.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:d51e0c37e64fbf47d017feac3145cdbb58836d7eee8c6f6d3b6880c5456227d2 \
     --hash=sha256:df865724bb3c3adc86b3876fa209771517b0cfe596beff01a92700e0e8be4cec
