@@ -23,7 +23,7 @@ scipy = "1.11.3"
 typed-argument-parser = "1.8.1"
 
 [tool.poetry.group.test.dependencies]
-pytest = "7.4.2"
+pytest = "7.4.3"
 
 [tool.poetry.group.dev.dependencies]
 bandit = {version = "1.7.5", extras = ["toml"]}
