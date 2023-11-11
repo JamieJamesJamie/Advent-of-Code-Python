@@ -16,19 +16,19 @@ jobs:
         python-version: ["3.11"]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GIT_AUTO_COMMIT_ACTION_CHECKOUT_PAT }}
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236 # v4
         with:
           python-version: ${{ matrix.python-version }}
 
-      - uses: pre-commit/action@v3.0.0
+      - uses: pre-commit/action@646c83fcd040023954eafda54b4db0192ce70507 # v3.0.0
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@8756aa072ef5b4a080af5dc8fef36c5d586e521d # v5
         if: success() || failure()
         with:
           commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
@@ -44,10 +44,10 @@ jobs:
         python-version: ["3.10", "3.11"]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
       - name: Read .pre-commit-config.yaml
-        uses: actions-tools/yaml-outputs@v2
+        uses: actions-tools/yaml-outputs@1a26d8aaa36aa54fe71d91c265dd6d4369a4fcfb # v2
         with:
           file-path: ${{ github.workspace }}/.pre-commit-config.yaml
           node: repos.10
@@ -56,7 +56,7 @@ jobs:
         run: pipx install poetry==${{ env.rev }}
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236 # v4
         with:
           python-version: ${{ matrix.python-version }}
           cache: "poetry"
