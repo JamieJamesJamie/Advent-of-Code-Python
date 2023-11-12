@@ -917,8 +917,8 @@ tomli==2.0.1 ; python_version >= "3.10" and python_version < "3.11" \
 tomlkit==0.12.2 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:df32fab589a81f0d7dc525a4267b6d7a64ee99619cbd1eeb0fae32c1dd426977 \
     --hash=sha256:eeea7ac7563faeab0a1ed8fe12c2e5a51c61f933f2502f7e9db0241a65163ad0
-typed-argument-parser==1.8.1 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:a3c286a6fac597da558c13b13e7090935803f43f47e46e51ed3c1d20959f47b9
+typed-argument-parser==1.9.0 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:7bfa8629849ab89912df1f5a4ecf6feae5de0deaf30914fa6e2733a95abd7c20
 typing-extensions==4.8.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:8f92fc8806f9a6b641eaa5318da32b44d401efaac0f6678c9bc448ba3605faa0 \
     --hash=sha256:df8e4339e9cb77357558cbdbceca33c303714cf861d1eef15e1070055ae8b7ef
