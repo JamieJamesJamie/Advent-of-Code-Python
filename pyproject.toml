@@ -19,7 +19,7 @@ networkx = "3.2.1"
 numpy = "1.26.2"
 parse = "1.19.1"
 rich = "13.7.0"
-scipy = "1.11.3"
+scipy = "1.11.4"
 typed-argument-parser = "1.9.0"
 
 [tool.poetry.group.test.dependencies]
