@@ -4,7 +4,6 @@
 
 from abc import ABCMeta
 
-
 from tests.helper.abstract_test_day import AbstractTestDay
 
 
