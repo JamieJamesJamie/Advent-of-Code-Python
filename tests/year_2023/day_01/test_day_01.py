@@ -1,26 +1,13 @@
 """Tests for Day1 Solution class."""
 
 
-
-
 # pylint: disable=arguments-differ
-
-
-
 
 
 import pytest
 
-
-
-
-
 from advent_of_code.year_2023.day_01.day_01 import Day1
 from tests.year_2023.abstract_test_day_2023 import AbstractTestDay2023
-
-
-
-
 
 
 class TestDay(AbstractTestDay2023):
