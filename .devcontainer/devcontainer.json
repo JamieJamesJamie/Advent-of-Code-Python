@@ -18,34 +18,47 @@
     "vscode": {
       "settings": { "pylint.lintOnChange": true },
       "extensions": [
+        // Python functionality
         "ms-python.python",
-        "njpwerner.autodocstring",
-        "ms-azuretools.vscode-docker",
-        "streetsidesoftware.code-spell-checker-british-english",
-        "tombonnike.vscode-status-bar-format-toggle",
-        "donjayamanne.githistory",
-        "github.vscode-github-actions",
-        "me-dutour-mathieu.vscode-github-actions",
-        "GitHub.vscode-pull-request-github",
-        "codezombiech.gitignore",
-        "VisualStudioExptTeam.vscodeintellicode",
-        "ms-vsliveshare.vsliveshare",
-        "bierner.markdown-emoji",
-        "DevHawk.markdown-sup",
-        "DavidAnson.vscode-markdownlint",
-        "christian-kohler.path-intellisense",
-        "mushan.vscode-paste-image",
-        "esbenp.prettier-vscode",
-        "076923.python-image-preview",
-        "mechatroner.rainbow-csv",
-        "richie5um2.vscode-sort-json",
-        "Gruntfuggly.todo-tree",
-        "redhat.vscode-xml",
         "ms-python.black-formatter",
         "ms-python.isort",
         "ms-python.mypy-type-checker",
-        "tamasfe.even-better-toml",
-        "ms-python.pylint"
+        "ms-python.pylint",
+        "njpwerner.autodocstring",
+        "VisualStudioExptTeam.vscodeintellicode",
+
+        // Docker
+        "ms-azuretools.vscode-docker",
+
+        // Git
+        "codezombiech.gitignore",
+        "donjayamanne.githistory",
+        "GitHub.vscode-pull-request-github",
+        "github.vscode-github-actions",
+        "me-dutour-mathieu.vscode-github-actions",
+
+        // Markdown
+        "bierner.markdown-emoji",
+        "DavidAnson.vscode-markdownlint",
+        "DevHawk.markdown-sup",
+
+        // Images
+        "076923.python-image-preview",
+        "mushan.vscode-paste-image",
+
+        // Other Formatters
+        "esbenp.prettier-vscode",
+        "tombonnike.vscode-status-bar-format-toggle",
+
+        // Other
+        "christian-kohler.path-intellisense",
+        "Gruntfuggly.todo-tree",
+        "mechatroner.rainbow-csv",
+        "ms-vsliveshare.vsliveshare",
+        "redhat.vscode-xml",
+        "richie5um2.vscode-sort-json",
+        "streetsidesoftware.code-spell-checker-british-english",
+        "tamasfe.even-better-toml"
       ]
     }
   }
