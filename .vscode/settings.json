@@ -1,0 +1,23 @@
+{
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "autoDocstring.docstringFormat": "sphinx",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "black-formatter.importStrategy": "fromEnvironment",
+  "isort.check": true,
+  "isort.severity": {
+    "W": "Warning",
+    "E": "Warning"
+  },
+  "isort.importStrategy": "fromEnvironment",
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  "mypy-type-checker.reportingScope": "workspace",
+  "mypy-type-checker.preferDaemon": true,
+  "pylint.importStrategy": "fromEnvironment"
+}
