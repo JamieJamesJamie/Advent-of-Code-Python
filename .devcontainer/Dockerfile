@@ -36,7 +36,7 @@ ARG POETRY_VERSION=1.7.0
 
 ENV PYENV_ROOT="${HOME}.pyenv/"
 ENV PATH="${PYENV_ROOT}shims:${PYENV_ROOT}/bin:${HOME}/.local/bin:$PATH"
-ENV POETRY_VIRTUALENVS_IN_PROJECT
+ENV POETRY_VIRTUALENVS_IN_PROJECT=true
 
 RUN curl https://pyenv.run | bash \
     && echo "installed pyenv" \
