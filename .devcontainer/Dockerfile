@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/base:1.0.17-ubuntu-22.04
+FROM mcr.microsoft.com/devcontainers/base:1.0.17-ubuntu-22.04@sha256:a724e14d4175f641fd52ee317680e7b228d5c553c3ac1a558b069a3373688016
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG USER=vscode
