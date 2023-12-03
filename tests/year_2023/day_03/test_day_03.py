@@ -46,4 +46,4 @@ class TestDay(AbstractTestDay2023):
 
         :param example: Parsed input from example file.
         """
-        assert self.solver().part2(example) == 45_000
+        assert self.solver().part2(example) == 467_835
