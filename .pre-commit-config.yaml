@@ -10,7 +10,7 @@ repos:
       - id: check-toml
       - id: check-xml
       - id: check-added-large-files
-  
+
   - repo: https://gitlab.com/bmares/check-json5
     rev: v1.0.0
     hooks:
