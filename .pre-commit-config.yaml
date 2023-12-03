@@ -6,11 +6,15 @@ repos:
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
-      - id: check-json
       - id: check-yaml
       - id: check-toml
       - id: check-xml
       - id: check-added-large-files
+
+  - repo: https://gitlab.com/bmares/check-json5
+    rev: v1.0.0
+    hooks:
+      - id: check-json5
 
   - repo: https://github.com/floatingpurr/sync_with_poetry
     rev: 1.1.0 # the revision or tag to clone at

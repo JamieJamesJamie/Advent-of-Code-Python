@@ -1,0 +1,68 @@
+{
+  "name": "poetry3-poetry-pyenv",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  // 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
+  // "features": {},
+
+  // 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // 👇 Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "poetry install && poetry run pre-commit install",
+
+  // 👇 Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "settings": { "pylint.lintOnChange": true },
+      "extensions": [
+        // Python functionality
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.isort",
+        "ms-python.mypy-type-checker",
+        "ms-python.pylint",
+        "njpwerner.autodocstring",
+        "VisualStudioExptTeam.vscodeintellicode",
+
+        // Docker
+        "ms-azuretools.vscode-docker",
+
+        // Git
+        "codezombiech.gitignore",
+        "donjayamanne.githistory",
+        "GitHub.vscode-pull-request-github",
+        "github.vscode-github-actions",
+        "me-dutour-mathieu.vscode-github-actions",
+
+        // Markdown
+        "bierner.markdown-emoji",
+        "DavidAnson.vscode-markdownlint",
+        "DevHawk.markdown-sup",
+
+        // Images
+        "076923.python-image-preview",
+        "mushan.vscode-paste-image",
+
+        // Other Formatters
+        "esbenp.prettier-vscode",
+        "tombonnike.vscode-status-bar-format-toggle",
+
+        // Other
+        "christian-kohler.path-intellisense",
+        "Gruntfuggly.todo-tree",
+        "mechatroner.rainbow-csv",
+        "ms-vsliveshare.vsliveshare",
+        "redhat.vscode-xml",
+        "richie5um2.vscode-sort-json",
+        "streetsidesoftware.code-spell-checker-british-english",
+        "tamasfe.even-better-toml"
+      ]
+    }
+  }
+
+  // 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}

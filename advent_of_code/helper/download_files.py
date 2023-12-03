@@ -1,5 +1,6 @@
 """Utility functions to download puzzle input."""
 
+
 from pathlib import Path
 
 from aocd.models import Puzzle
