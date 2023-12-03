@@ -10,7 +10,7 @@ readme = "README.md"
 packages = [{ include = "advent_of_code" }]
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.12"
+python = ">=3.10,<3.13"
 advent-of-code-data = "2.0.1"
 advent-of-code-ocr = "1.0.0"
 anytree = "2.8.0"
