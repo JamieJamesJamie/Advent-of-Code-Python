@@ -47,4 +47,4 @@ RUN curl https://pyenv.run | bash \
     && poetry config virtualenvs.in-project true
 
 # Advent of Code
-COPY --link --chown=${USER}:${USER} AOC_TOKE[N] ${HOME}.config/aocd/token
+#COPY --link --chown=${USER}:${USER} AOC_TOKE[N] ${HOME}.config/aocd/token
