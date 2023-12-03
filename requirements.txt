@@ -7,9 +7,9 @@ advent-of-code-ocr==1.0.0 ; python_version >= "3.10" and python_version < "3.12"
 anytree==2.8.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:14c55ac77492b11532395049a03b773d14c7e30b22aa012e337b1e983de31521 \
     --hash=sha256:3f0f93f355a91bc3e6245319bf4c1d50e3416cc7a35cc1133c1ff38306bbccab
-aocd-example-parser==2023.2 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:7baabde61727c73a5a8fe5f5d578f095ddcb7fe6fdaabdacc79343293be86320 \
-    --hash=sha256:8fb225ec31f423f85cbcf6f7b92c0a5873b3108f83e645d67b10006fd8773a8e
+aocd-example-parser==2023.12.2 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:5768994681d5ed77ac51b315a4ea67b7d29ac47c4cf15b2c718449f7d8dc253b \
+    --hash=sha256:e287532cfaa450fd8594d143e63eec45a49f9fd5584666cc23215a094c558ae5
 beautifulsoup4==4.12.2 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:492bbc69dca35d12daac71c4db1bfff0c876c00ef4a2ffacce226d4638eb72da \
     --hash=sha256:bd2520ca0d9d7d12694a53d44ac482d181b4ec1888909b035a3dbf40d0f57d4a

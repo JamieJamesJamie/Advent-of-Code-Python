@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/base:jammy
+FROM mcr.microsoft.com/devcontainers/base:1.0.17-ubuntu-22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG USER=vscode
