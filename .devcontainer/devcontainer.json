@@ -16,7 +16,6 @@
   // 👇 Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "settings": { "pylint.lintOnChange": true },
       "extensions": [
         // Python functionality
         "ms-python.python",
