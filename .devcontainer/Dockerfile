@@ -44,8 +44,7 @@ RUN curl https://pyenv.run | bash \
     && pyenv global ${PYTHON_VERSION} \
     && echo "set global python version ${PYTHON_VERSION}" \
     && curl -sSL https://install.python-poetry.org | python3 - \
-    && poetry config virtualenvs.in-project true \
-    && mkdir -p /IdeaProjects/Advent-of-Code-Python
+    && poetry config virtualenvs.in-project true
 
 # Advent of Code
 #COPY --link --chown=${USER}:${USER} AOC_TOKE[N] ${HOME}.config/aocd/token
