@@ -40,6 +40,8 @@ ENV PATH="${PYENV_ROOT}shims:${PYENV_ROOT}/bin:${HOME}/.local/bin:$PATH"
 RUN curl https://pyenv.run | bash \
     && echo "installed pyenv" \
     && pyenv install ${PYTHON_VERSION} \
+    && echo 'eval "$(pyenv init -)"' >> ~/.bashrc \
+    && echo 'eval "$(pyenv init -)"' >> ~/.profile \
     && echo "installed python ${PYTHON_VERSION}" \
     && pyenv global ${PYTHON_VERSION} \
     && echo "set global python version ${PYTHON_VERSION}" \
