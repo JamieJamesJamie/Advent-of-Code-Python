@@ -2,11 +2,34 @@
 
 
 import re
+from collections.abc import Iterable
 
 import numpy as np
 from scipy.ndimage import correlate, generate_binary_structure, label
 
 from advent_of_code.helper.solver import Solver
+
+
+class ParsedInput:
+    """
+    Represents the parsed input.
+    """
+
+    # pylint: disable=too-few-public-methods
+
+    def __init__(self, puzzle_input: str):
+        lines = puzzle_input.splitlines()
+
+        self.character_map = np.array(tuple(tuple(line) for line in lines))
+        self.character_map.flags.writeable = False
+
+        self.numbers = tuple(
+            tuple(
+                (int(match.group(0)), (match.start(), match.end() - 1))
+                for match in re.finditer(r"\d+", line)
+            )
+            for line in lines
+        )
 
 
 class Day3(Solver):
@@ -24,148 +47,92 @@ class Day3(Solver):
 
     _KERNEL_BOUNDARY = _NUM_WEIGHTS * _MAXIMUM_DIGIT
 
-    _BINRARY_STRUCTURE = generate_binary_structure(2, 2)
+    _BINARY_STRUCTURE = generate_binary_structure(2, 2)
 
     @staticmethod
-    def parse(puzzle_input: str) -> tuple[str, ...]:
-        return tuple(puzzle_input.split("\n"))
+    def _calculate_calibration_sum_part_2(
+        numbers_that_are_next_to_gears_bool: Iterable[np.ndarray],
+        numbers: Iterable[Iterable[tuple[int, tuple[int, int]]]],
+    ) -> int:
+        result = 0
+
+        for gear_map in numbers_that_are_next_to_gears_bool:
+            operands = []
+            mult = 1
+
+            for line_index, line in enumerate(numbers):
+                for number, (start_index, end_index) in line:
+                    if gear_map[line_index, start_index : (end_index + 1)].any():
+                        operands.append(number)
+                        mult *= number
+
+            if len(operands) == 2:
+                result += int(np.prod(operands))
+
+        return result
 
     @staticmethod
-    def part1(parsed_input: tuple[str, ...]) -> int:
+    def parse(puzzle_input: str) -> ParsedInput:
+        return ParsedInput(puzzle_input)
+
+    @staticmethod
+    def part1(parsed_input: ParsedInput) -> int:
         """Solves part 1.
 
         :param parsed_input: The lines to use for calibration.
         :return: The summed calibration values.
         """
-        character_map = np.array(tuple(tuple(line) for line in parsed_input))
 
-        replaced_dots = np.where(character_map == ".", "0", character_map)
+        replaced_dots = np.where(
+            parsed_input.character_map == ".", "0", parsed_input.character_map
+        )
         digit_map = np.where(~np.char.isdigit(replaced_dots), "100", replaced_dots)
-        int_map = np.asarray(digit_map, dtype=int)
+        int_map = digit_map.astype(int)
 
-        weights = [
-            [1, 1, 1],
-            [1, 0, 1],
-            [1, 1, 1],
-        ]
+        correlated = correlate(int_map, Day3._WEIGHTS)
 
-        correlated = correlate(int_map, weights)
+        does_touch_symbol = correlated > Day3._KERNEL_BOUNDARY
 
-        max_digit = 9
-        num_weights = sum(sum(weight) for weight in weights)
-
-        does_touch_symbol = correlated > (max_digit * num_weights)
-
-        number_does_touch_symbol = does_touch_symbol & np.char.isdigit(character_map)
-
-        numbers = [
-            [
-                (match.group(0), (match.start(), match.end() - 1))
-                for match in re.finditer(r"\d+", line)
-            ]
-            for line in parsed_input
-        ]
+        number_does_touch_symbol = does_touch_symbol & np.char.isdigit(
+            parsed_input.character_map
+        )
 
         return sum(
             int(number)
-            for line_index, line in enumerate(numbers)
+            for line_index, line in enumerate(parsed_input.numbers)
             for number, (start_index, end_index) in line
             if number_does_touch_symbol[line_index, start_index : (end_index + 1)].any()
         )
 
     @staticmethod
-    def part2(parsed_input: tuple[str, ...]) -> int:
+    def part2(parsed_input: ParsedInput) -> int:
         """Solves part 2.
 
         :param parsed_input: The lines to use for calibration.
         :return: The summed calibration values.
         """
-        # pylint: disable=too-many-locals
+        is_digits = np.char.isdigit(parsed_input.character_map)
+        sums = correlate(is_digits.astype(int), Day3._WEIGHTS)
+        gear_bools = (sums >= 2) & (parsed_input.character_map == "*")
 
-        # Get rid of the above pylint disable eventually
+        gear_nums = np.where(gear_bools, "100", parsed_input.character_map)
+        input_nums = np.where(~np.char.isdigit(gear_nums), "0", gear_nums)
+        input_ints = input_nums.astype(int)
 
-        character_map = np.array(tuple(tuple(line) for line in parsed_input))
-
-        numbers = [
-            [
-                (match.group(0), (match.start(), match.end() - 1))
-                for match in re.finditer(r"\d+", line)
-            ]
-            for line in parsed_input
-        ]
-
-        input_np_str = character_map
-
-        is_digits = np.char.isdigit(input_np_str)
-
-        weights = [
-            [1, 1, 1],
-            [1, 0, 1],
-            [1, 1, 1],
-        ]
-
-        sums = correlate(is_digits.astype(int), weights)
-
-        gear_bools = (sums >= 2) & (input_np_str == "*")
-
-        thingy10 = np.where(gear_bools, "100", input_np_str)
-
-        input_nums2 = np.where(~np.char.isdigit(thingy10), "0", thingy10)
-
-        input_ints2 = np.asarray(input_nums2, dtype=int)
-
-        correlated3 = correlate(input_ints2, weights)
-
-        correlated_bools3 = correlated3 > (9 * 8)
-
-        numbers_that_touch_symbols_bools3 = correlated_bools3 & is_digits
-
-        s = generate_binary_structure(2, 2)
+        correlated = correlate(input_ints, Day3._WEIGHTS)
+        correlated_bools = correlated > Day3._KERNEL_BOUNDARY
+        numbers_that_touch_symbols_bools = correlated_bools & is_digits
 
         labelled_array, num_features = label(
-            numbers_that_touch_symbols_bools3 | gear_bools, structure=s
+            numbers_that_touch_symbols_bools | gear_bools,
+            structure=Day3._BINARY_STRUCTURE,
         )
 
         numbers_that_are_next_to_gears_bool = tuple(
-            numbers_that_touch_symbols_bools3 & (labelled_array == feature_num)
+            numbers_that_touch_symbols_bools & (labelled_array == feature_num)
             for feature_num in range(1, num_features + 1)
         )
 
-        my_sum = 0
-
-        for gear_map in numbers_that_are_next_to_gears_bool:
-            my_mults = []
-            my_mult = 1
-
-            for line_index, line in enumerate(numbers):
-                for number, (start_index, end_index) in line:
-                    if gear_map[line_index, start_index : (end_index + 1)].any():
-                        # print(int(number))
-                        my_mults.append(int(number))
-                        my_mult *= int(number)
-
-            # print(f"gear {gear_index}:", my_mult)
-
-            if len(my_mults) == 2:
-                my_sum += np.prod(my_mults)
-
-        # my_sum += int(my_mult)
-        # my_sum += np.prod([int(number) for line_index, line in enumerate(numbers)
-        # for number, (start_index, end_index) in line
-        # if gear_map[line_index, start_index:(end_index + 1)].any()])
-
-        # print("sum:", my_sum)
-
-        return my_sum
-
-        # return sum(
-        #     np.prod(
-        #         [
-        #             int(number)
-        #             for line_index, line in enumerate(numbers)
-        #             for number, (start_index, end_index) in line
-        #             if gear_map[line_index, start_index : (end_index + 1)].any()
-        #         ]
-        #     )
-        #     for gear_index, gear_map in enumerate(numbers_that_are_next_to_gears_bool)
-        # )
+        return Day3._calculate_calibration_sum_part_2(
+            numbers_that_are_next_to_gears_bool, parsed_input.numbers
+        )

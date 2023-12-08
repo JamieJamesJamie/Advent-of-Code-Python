@@ -1,9 +1,10 @@
 """Tests for Day3 Solution class."""
 
 
+import numpy as np
 import pytest
 
-from advent_of_code.year_2023.day_03.day_03 import Day3
+from advent_of_code.year_2023.day_03.day_03 import Day3, ParsedInput
 from tests.year_2023.abstract_test_day_2023 import AbstractTestDay2023
 
 
@@ -27,12 +28,41 @@ class TestDay(AbstractTestDay2023):
         """
         return Day3
 
-    def test_parse_example(self, example):
+    def test_parse_example(self, example: ParsedInput):
         """Test that example input is parsed correctly.
 
         :param example: Parsed input from example file.
         """
-        assert example == (6_000, 4_000, 11_000, 24_000, 10_000)
+        assert (
+            example.character_map
+            == np.array(
+                (
+                    ("4", "6", "7", ".", ".", "1", "1", "4", ".", "."),
+                    (".", ".", ".", "*", ".", ".", ".", ".", ".", "."),
+                    (".", ".", "3", "5", ".", ".", "6", "3", "3", "."),
+                    (".", ".", ".", ".", ".", ".", "#", ".", ".", "."),
+                    ("6", "1", "7", "*", ".", ".", ".", ".", ".", "."),
+                    (".", ".", ".", ".", ".", "+", ".", "5", "8", "."),
+                    (".", ".", "5", "9", "2", ".", ".", ".", ".", "."),
+                    (".", ".", ".", ".", ".", ".", "7", "5", "5", "."),
+                    (".", ".", ".", "$", ".", "*", ".", ".", ".", "."),
+                    (".", "6", "6", "4", ".", "5", "9", "8", ".", "."),
+                )
+            )
+        ).all()
+
+        assert example.numbers == (
+            ((467, (0, 2)), (114, (5, 7))),
+            (),
+            ((35, (2, 3)), (633, (6, 8))),
+            (),
+            ((617, (0, 2)),),
+            ((58, (7, 8)),),
+            ((592, (2, 4)),),
+            ((755, (6, 8)),),
+            (),
+            ((664, (1, 3)), (598, (5, 7))),
+        )
 
     def test_part1_example(self, example):
         """Test part 1 on example input.
