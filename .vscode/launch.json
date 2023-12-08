@@ -20,6 +20,25 @@
         "example1.txt",
         "input.txt"
       ]
+    },
+    {
+      "name": "Python: AOC 2023",
+      "type": "python",
+      "request": "launch",
+      "program": "advent_of_code/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "--years",
+        "2023",
+        "--days",
+        "1",
+        "3",
+        "4",
+        "--files",
+        "example1.txt",
+        "input.txt"
+      ]
     }
   ]
 }
