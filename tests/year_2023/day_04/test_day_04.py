@@ -2,9 +2,8 @@
 
 
 import pytest
-
-
 from year_2023.abstract_test_day_2023 import AbstractTestDay2023
+
 from advent_of_code.year_2023.day_04.day_04 import Day4
 
 
@@ -22,16 +21,14 @@ class TestDay(AbstractTestDay2023):
 
     @staticmethod
     def solver() -> type[Day4]:
-        """
-        Returns the Solver class that is being tested.
+        """Returns the Solver class that is being tested.
 
         :return: The solver class that is being tested.
         """
         return Day4
 
     def test_parse_example(self, example):
-        """
-        Test that example input is parsed correctly.
+        """Test that example input is parsed correctly.
 
         :param example: Parsed input from example file.
         """
