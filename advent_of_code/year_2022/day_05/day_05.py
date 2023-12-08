@@ -124,7 +124,7 @@ class Day5(Solver):
         :return: The state of the puzzle.
         """
         crates, instructions = tuple(
-            tuple(line.split("\n")) for line in puzzle_input.split("\n\n")
+            tuple(line.splitlines()) for line in puzzle_input.split("\n\n")
         )
 
         solver_state = SolverState(

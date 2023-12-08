@@ -279,7 +279,7 @@ class Day9(Solver):
         """
         instructions = []
 
-        for line in puzzle_input.split("\n"):
+        for line in puzzle_input.splitlines():
             direction, num_steps = line.split()
             instructions.append(
                 Instruction(

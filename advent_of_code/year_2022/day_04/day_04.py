@@ -28,7 +28,7 @@ class Day4(Solver):
                 )
                 for elf_boundaries in section_assignment_pair.split(",")
             )
-            for section_assignment_pair in puzzle_input.split("\n")
+            for section_assignment_pair in puzzle_input.splitlines()
         )
 
     @staticmethod

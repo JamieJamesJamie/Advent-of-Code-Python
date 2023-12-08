@@ -130,7 +130,7 @@ class Day7(Solver):
         root = Node("/")
         current_node = root
 
-        for line_string in puzzle_input.split("\n"):
+        for line_string in puzzle_input.splitlines():
             line = line_string.split(" ")
 
             if line[0] != "$":

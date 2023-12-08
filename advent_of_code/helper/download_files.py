@@ -52,5 +52,5 @@ def read_file(input_file: Path, year: int, day: int) -> str:
         download(output_path=input_path, year=year, day=day)
 
     return "\n".join(
-        line.rstrip() for line in input_path.read_text().split("\n")
+        line.rstrip() for line in input_path.read_text().splitlines()
     ).rstrip()

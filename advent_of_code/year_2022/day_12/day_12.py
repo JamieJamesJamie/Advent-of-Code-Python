@@ -33,7 +33,7 @@ class Day12(Solver):
         :return: A digraph representing the possible paths.
         """
         heightmap_character_array = np.array(
-            [list(line.rstrip()) for line in puzzle_input.split("\n")]
+            [list(line.rstrip()) for line in puzzle_input.splitlines()]
         )
 
         heightmap_int_array = np.vectorize(Day12.character_to_height)(

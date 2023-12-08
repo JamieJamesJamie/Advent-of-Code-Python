@@ -18,7 +18,7 @@ class Day8(Solver):
         return np.array(
             [
                 [int(character) for character in line.rstrip()]
-                for line in puzzle_input.split("\n")
+                for line in puzzle_input.splitlines()
             ],
             dtype=np.int8,
         )

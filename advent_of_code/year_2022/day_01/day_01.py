@@ -19,7 +19,7 @@ class Day1(Solver):
         return tuple(
             sum(
                 int(elf_individual_calories)
-                for elf_individual_calories in elf_all_calories.split("\n")
+                for elf_individual_calories in elf_all_calories.splitlines()
             )
             for elf_all_calories in puzzle_input.split("\n\n")
         )

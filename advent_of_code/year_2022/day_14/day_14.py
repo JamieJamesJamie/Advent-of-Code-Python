@@ -76,7 +76,7 @@ class Day14(Solver):
         """
         return {
             rock_coordinate: Element.ROCK
-            for line in puzzle_input.split("\n")
+            for line in puzzle_input.splitlines()
             for rock_coordinate in Day14._parse_path(line)
         }
 

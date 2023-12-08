@@ -67,7 +67,7 @@ class Day1(Solver):
         :param puzzle_input: Input to parse.
         :return: The lines to use for calibration.
         """
-        return tuple(puzzle_input.split("\n"))
+        return tuple(puzzle_input.splitlines())
 
     @staticmethod
     def part1(parsed_input: Iterable[str]) -> int:
