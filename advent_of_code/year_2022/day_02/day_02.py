@@ -80,7 +80,7 @@ class Day2(Solver):
         :return: The columns (round info) for each round of Rock Paper
             Scissors.
         """
-        return tuple(RoundInfo(*line.split(" ")) for line in puzzle_input.split("\n"))
+        return tuple(RoundInfo(*line.split(" ")) for line in puzzle_input.splitlines())
 
     @staticmethod
     def part1(parsed_input: Iterable[RoundInfo]) -> int:

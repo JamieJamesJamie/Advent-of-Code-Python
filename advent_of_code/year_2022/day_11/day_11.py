@@ -162,7 +162,7 @@ class Day11(Solver):
         monkeys = []
 
         for monkey_note in puzzle_input.split("\n\n"):
-            monkey_lines = monkey_note.split("\n")
+            monkey_lines = monkey_note.splitlines()
             operation_key, operand = monkey_lines[2].split()[-2:]
             monkeys.append(
                 Monkey(

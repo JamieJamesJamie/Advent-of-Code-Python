@@ -19,7 +19,7 @@ class Day10(Solver):
         :param puzzle_input: Input to parse.
         :return: A sequence of CPU instructions.
         """
-        return (tuple(line.split()) for line in puzzle_input.split("\n"))
+        return (tuple(line.split()) for line in puzzle_input.splitlines())
 
     @staticmethod
     def part1(parsed_input: Iterator[tuple[str, ...]]) -> int:

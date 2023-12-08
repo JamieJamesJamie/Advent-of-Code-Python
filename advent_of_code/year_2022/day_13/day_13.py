@@ -159,7 +159,7 @@ class Day13(Solver):
         :return: Pairs of packets.
         """
         return tuple(
-            tuple(ast.literal_eval(packets) for packets in pair.split("\n"))
+            tuple(ast.literal_eval(packets) for packets in pair.splitlines())
             for pair in puzzle_input.split("\n\n")
         )
 
