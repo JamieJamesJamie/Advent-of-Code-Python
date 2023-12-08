@@ -71,8 +71,7 @@ class Day3(Solver):
 
     @staticmethod
     def parse(puzzle_input: str) -> ParsedInput:
-        """
-        Parse input for puzzle 3.
+        """Parse input for puzzle 3.
 
         :param puzzle_input: Input to parse.
         :return: The engine schematic.
