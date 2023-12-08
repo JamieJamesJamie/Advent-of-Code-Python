@@ -165,13 +165,13 @@ test = ["coverage"]
 
 [[package]]
 name = "aocd-example-parser"
-version = "2023.12.6"
+version = "2023.12.8"
 description = "Implementation of example parser plugins for advent-of-code-data"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "aocd_example_parser-2023.12.6-py3-none-any.whl", hash = "sha256:9e7d3b4b8c70eb59d6fc3f2e126e8b932895b2645dfd5ca7eeab7ca59deb217b"},
-    {file = "aocd_example_parser-2023.12.6.tar.gz", hash = "sha256:6beb7109430d30ea758d6457aa13875c48ec096010b7aa9efbe33a00c11700b2"},
+    {file = "aocd_example_parser-2023.12.8-py3-none-any.whl", hash = "sha256:9025cbac819a9c548f6259b2dc8b786b065182a41f329a553e2b40333dcf9486"},
+    {file = "aocd_example_parser-2023.12.8.tar.gz", hash = "sha256:518578f7ae2a3502a9657b9118c0f1d4d6c1a3a229fad4db8f6c523e8d7cf2cc"},
 ]
 
 [[package]]
