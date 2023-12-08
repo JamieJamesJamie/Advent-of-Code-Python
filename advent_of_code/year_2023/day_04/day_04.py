@@ -11,8 +11,7 @@ class Day4(Solver):
 
     @staticmethod
     def parse(puzzle_input: str) -> tuple[int, ...]:
-        """
-        Parse input for puzzle 4.
+        """Parse input for puzzle 4.
 
         :param puzzle_input: Input to parse.
         :return: The number of matches for each card.
@@ -31,8 +30,7 @@ class Day4(Solver):
 
     @staticmethod
     def part1(parsed_input: Iterable[int]) -> int:
-        """
-        Solves part 1.
+        """Solves part 1.
 
         :param parsed_input: The number of matches for each card.
         :return: The total number of points from each card.
@@ -41,8 +39,7 @@ class Day4(Solver):
 
     @staticmethod
     def part2(parsed_input: Sequence[int]) -> int:
-        """
-        Solves part 2.
+        """Solves part 2.
 
         :param parsed_input: The number of matches for each card.
         :return: The total number of cards that have been won.
