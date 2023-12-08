@@ -11,9 +11,7 @@ from advent_of_code.helper.solver import Solver
 
 
 class ParsedInput:
-    """
-    Represents the parsed input.
-    """
+    """Represents the parsed input."""
 
     # pylint: disable=too-few-public-methods
 
