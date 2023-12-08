@@ -3,7 +3,6 @@
   <component name="ExternalDependencies">
     <plugin id="com.leinardi.pycharm.mypy" />
     <plugin id="com.leinardi.pycharm.pylint" />
-    <plugin id="me.lensvol.blackconnect" />
     <plugin id="org.tonybaloney.security.pycharm-security" />
   </component>
 </project>
