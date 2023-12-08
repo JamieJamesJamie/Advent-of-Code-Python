@@ -71,14 +71,20 @@ class Day3(Solver):
 
     @staticmethod
     def parse(puzzle_input: str) -> ParsedInput:
+        """
+        Parse input for puzzle 3.
+
+        :param puzzle_input: Input to parse.
+        :return: The engine schematic.
+        """
         return ParsedInput(puzzle_input)
 
     @staticmethod
     def part1(parsed_input: ParsedInput) -> int:
         """Solves part 1.
 
-        :param parsed_input: The lines to use for calibration.
-        :return: The summed calibration values.
+        :param parsed_input: The engine schematic.
+        :return: The summed part numbers.
         """
 
         replaced_dots = np.where(
@@ -106,8 +112,8 @@ class Day3(Solver):
     def part2(parsed_input: ParsedInput) -> int:
         """Solves part 2.
 
-        :param parsed_input: The lines to use for calibration.
-        :return: The summed calibration values.
+        :param parsed_input: The engine schematic.
+        :return: The summed gear ratios.
         """
         is_digits = np.char.isdigit(parsed_input.character_map)
         sums = correlate(is_digits.astype(int), Day3._WEIGHTS)
