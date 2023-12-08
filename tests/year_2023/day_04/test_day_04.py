@@ -2,7 +2,9 @@
 
 
 import pytest
-from year_2023.abstract_test_day_2023 import AbstractTestDay2023
+
+
+from tests.year_2023.abstract_test_day_2023 import AbstractTestDay2023
 
 from advent_of_code.year_2023.day_04.day_04 import Day4
 
