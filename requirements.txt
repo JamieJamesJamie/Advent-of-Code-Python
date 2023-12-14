@@ -4,9 +4,9 @@ advent-of-code-data==2.0.1 ; python_version >= "3.10" and python_version < "3.13
 advent-of-code-ocr==1.0.0 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:690bcdad71e4246264ba1a4678e3666732bf1aa7b1bc285ab6b88bea263d5c40 \
     --hash=sha256:b2f5593967eca658534cb23044b28a3e623de8a4df4c97e805bd50c5d741cd6c
-anytree==2.8.0 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:14c55ac77492b11532395049a03b773d14c7e30b22aa012e337b1e983de31521 \
-    --hash=sha256:3f0f93f355a91bc3e6245319bf4c1d50e3416cc7a35cc1133c1ff38306bbccab
+anytree==2.12.1 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:244def434ccf31b668ed282954e5d315b4e066c4940b94aff4a7962d85947830 \
+    --hash=sha256:5ea9e61caf96db1e5b3d0a914378d2cd83c269dfce1fb8242ce96589fa3382f0
 aocd-example-parser==2023.12.14 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:8d3304ac355440e18a7819dcf932ab17b0f1fa9c26fd9275eb8315046084199b \
     --hash=sha256:e2782377e54c6f3101411bedd43ff48b016ef0f06f9828fda3f1140e1da4aa3a
