@@ -165,13 +165,13 @@ test = ["coverage"]
 
 [[package]]
 name = "aocd-example-parser"
-version = "2023.12.12"
+version = "2023.12.14"
 description = "Implementation of example parser plugins for advent-of-code-data"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "aocd_example_parser-2023.12.12-py3-none-any.whl", hash = "sha256:8be9d15dc2775f402d8c7edb1aff7ed59deb3c1ba4de9ffe4a0c96f9b5ffe3c3"},
-    {file = "aocd_example_parser-2023.12.12.tar.gz", hash = "sha256:f1efc6e5ec199b28a88557cabda6181982b94ce205f719ac7656cac6617c9e2f"},
+    {file = "aocd_example_parser-2023.12.14-py3-none-any.whl", hash = "sha256:8d3304ac355440e18a7819dcf932ab17b0f1fa9c26fd9275eb8315046084199b"},
+    {file = "aocd_example_parser-2023.12.14.tar.gz", hash = "sha256:e2782377e54c6f3101411bedd43ff48b016ef0f06f9828fda3f1140e1da4aa3a"},
 ]
 
 [[package]]
@@ -219,18 +219,18 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 
 [[package]]
 name = "bandit"
-version = "1.7.5"
+version = "1.7.6"
 description = "Security oriented static analyser for python code."
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "bandit-1.7.5-py3-none-any.whl", hash = "sha256:75665181dc1e0096369112541a056c59d1c5f66f9bb74a8d686c3c362b83f549"},
-    {file = "bandit-1.7.5.tar.gz", hash = "sha256:bdfc739baa03b880c2d15d0431b31c658ffc348e907fe197e54e0389dd59e11e"},
+    {file = "bandit-1.7.6-py3-none-any.whl", hash = "sha256:36da17c67fc87579a5d20c323c8d0b1643a890a2b93f00b3d1229966624694ff"},
+    {file = "bandit-1.7.6.tar.gz", hash = "sha256:72ce7bc9741374d96fb2f1c9a8960829885f1243ffde743de70a19cee353e8f3"},
 ]
 
 [package.dependencies]
 colorama = {version = ">=0.3.9", markers = "platform_system == \"Windows\""}
-GitPython = ">=1.0.1"
+GitPython = ">=3.1.30"
 PyYAML = ">=5.3.1"
 rich = "*"
 stevedore = ">=1.20.0"
@@ -1921,4 +1921,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "0f39813242c8b42163b66c8f6f7be0b5d5d7781988232ea62e50d5649bef3b73"
+content-hash = "ae6c7b4b9bd7242b6ee60ad924cadb24400691483a6ce0cabe11329d2537baeb"
