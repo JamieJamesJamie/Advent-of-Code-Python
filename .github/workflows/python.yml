@@ -43,7 +43,7 @@ jobs:
         run: |
           echo "pre-commit-version=$(poetry run pre-commit -V)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@704facf57e6136b1bc63b828d79edcd491f0ee84 # v3
         with:
           path: ~/.cache/pre-commit
           key: ${{ steps.pre-commit-version.outputs.pre-commit-version }}|${{ env.pythonLocation }}|${{ hashFiles('.pre-commit-config.yaml') }}
