@@ -16,17 +16,17 @@ class Node(AnyTreeNode):
 
     # pylint: disable=too-few-public-methods
 
-    size: int
+    file_size: int
 
     def __init__(
         self,
         name: Any,
-        size: int = 0,
+        file_size: int = 0,
         parent: Any | None = None,
         children: Any | None = None,
         **kwargs: Any,
     ):
-        super().__init__(name, parent, children, size=size, **kwargs)
+        super().__init__(name, parent, children, file_size=file_size, **kwargs)
 
 
 class Day7(Solver):
@@ -47,7 +47,7 @@ class Day7(Solver):
             Node(
                 name=line[1],
                 parent=current_node,
-                size=0 if line[0] == "dir" else int(line[0]),
+                file_size=0 if line[0] == "dir" else int(line[0]),
             )
 
     @staticmethod
@@ -86,7 +86,7 @@ class Day7(Solver):
             f"{pre}{node_i.name}"
             f" ("
             f"{'file' if node_i.is_leaf else 'dir'}, "
-            f"size={node_i.size}"
+            f"file_size={node_i.file_size}"
             f")"
             for pre, _, node_i in RenderTree(node)
         )
@@ -100,24 +100,27 @@ class Day7(Solver):
         print(Day7.render_tree(node))
 
     @staticmethod
-    def post_order_function_with_size_limit(
-        node: Node, size_limit: int | None = None
+    def post_order_function_with_file_size_limit(
+        node: Node, file_size_limit: int | None = None
     ) -> bool:
-        """Calculates the size of the :param:`node` and returns whether the
-        :param:`node` should be used for traversal.
+        """Calculates the file size of the :param:`node` and returns whether
+        the :param:`node` should be used for traversal.
 
-        The :param:`node` will be used for traversal if the :param:`node`'s size is less
-        than or equal to the :param:`size_limit`. Otherwise, if :param:`size_limit` is
-        :code:`None`, this function will always return :code:`True`.
+        The :param:`node` will be used for traversal if the :param:`node`'s file size
+        is less than or equal to the :param:`file_size_limit`.
+        Otherwise, if :param:`file_size_limit` is :code:`None`,
+        this function will always return :code:`True`.
 
         :param node: The node to check.
-        :param size_limit: The size limit to filter on.
+        :param file_size_limit: The file size limit to filter on.
         :return: Whether the node should be included in the filter.
         """
         if not node.is_leaf:
-            node.size = sum(child.size for child in node.children)
+            node.file_size = sum(child.file_size for child in node.children)
 
-        return size_limit is None or (node.size <= size_limit and not node.is_leaf)
+        return file_size_limit is None or (
+            node.file_size <= file_size_limit and not node.is_leaf
+        )
 
     @staticmethod
     def parse(puzzle_input: str) -> Node:
@@ -138,11 +141,11 @@ class Day7(Solver):
             elif line[1] == "cd":
                 current_node = Day7.change_directory(line, current_node)
 
-        # Calculate each node's size
+        # Calculate each node's file_size
         _ = sum(
-            node.size
+            node.file_size
             for node in PostOrderIter(
-                root, filter_=Day7.post_order_function_with_size_limit
+                root, filter_=Day7.post_order_function_with_file_size_limit
             )
         )
 
@@ -154,15 +157,16 @@ class Day7(Solver):
 
         :param parsed_input: The root directory of the tree described in
             the puzzle input.
-        :return: The sum of the directories' total sizes that are less
-            than or equal to 100,000.
+        :return: The sum of the directories' total file sizes that are
+            less than or equal to 100,000.
         """
         return sum(
-            node.size
+            node.file_size
             for node in PostOrderIter(
                 parsed_input,
                 filter_=partial(
-                    Day7.post_order_function_with_size_limit, size_limit=100_000
+                    Day7.post_order_function_with_file_size_limit,
+                    file_size_limit=100_000,
                 ),
             )
         )
@@ -173,15 +177,15 @@ class Day7(Solver):
 
         :param parsed_input: The root directory of the tree described in
             the puzzle input.
-        :return: The total size of the smallest directory that, if
+        :return: The total file size of the smallest directory that, if
             deleted, would free up enough space on the filesystem to run
             the update.
         """
 
         total_disk_space = 70_000_000
         required_unused_space = 30_000_000
-        min_directory_deletion_size = required_unused_space - (
-            total_disk_space - parsed_input.size
+        min_directory_deletion_file_size = required_unused_space - (
+            total_disk_space - parsed_input.file_size
         )
 
         answer_node = min(
@@ -190,10 +194,10 @@ class Day7(Solver):
                 for node in PostOrderIter(
                     parsed_input,
                     filter_=lambda n: not n.is_leaf
-                    and n.size >= min_directory_deletion_size,
+                    and n.file_size >= min_directory_deletion_file_size,
                 )
             ),
-            key=lambda n: n.size,
+            key=lambda n: n.file_size,
         )
 
-        return answer_node.size
+        return answer_node.file_size
