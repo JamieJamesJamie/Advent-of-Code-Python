@@ -27,14 +27,14 @@ jobs:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GIT_AUTO_COMMIT_ACTION_CHECKOUT_PAT }}
 
+      - name: Install poetry
+        run: pipx install poetry=="${{ env.POETRY_VERSION }}"
+
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@0a5c61591373683505ea898e09a3ea4f39ef2b9c # v5
         with:
           python-version: ${{ matrix.python-version }}
           cache: "poetry"
-
-      - name: Install poetry
-        run: pipx install poetry=="${{ env.POETRY_VERSION }}"
 
       - run: poetry install
 
