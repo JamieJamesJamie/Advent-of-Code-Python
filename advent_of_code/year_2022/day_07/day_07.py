@@ -103,8 +103,8 @@ class Day7(Solver):
     def post_order_function_with_file_size_limit(
         node: Node, file_size_limit: int | None = None
     ) -> bool:
-        """Calculates the file size of the :param:`node` and returns whether the
-        :param:`node` should be used for traversal.
+        """Calculates the file size of the :param:`node` and returns whether
+        the :param:`node` should be used for traversal.
 
         The :param:`node` will be used for traversal if the :param:`node`'s file size
         is less than or equal to the :param:`file_size_limit`.
@@ -157,8 +157,8 @@ class Day7(Solver):
 
         :param parsed_input: The root directory of the tree described in
             the puzzle input.
-        :return: The sum of the directories' total file sizes that are less
-            than or equal to 100,000.
+        :return: The sum of the directories' total file sizes that are
+            less than or equal to 100,000.
         """
         return sum(
             node.file_size
