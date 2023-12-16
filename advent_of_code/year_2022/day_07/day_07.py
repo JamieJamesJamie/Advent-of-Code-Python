@@ -14,6 +14,10 @@ from advent_of_code.helper.solver import Solver
 class Node(AnyTreeNode):
     """Tree node to represent a file or directory within a file system."""
 
+    # pylint: disable=too-few-public-methods
+
+    size: int
+
     def __init__(
         self,
         name: Any,
@@ -22,16 +26,7 @@ class Node(AnyTreeNode):
         children: Any | None = None,
         **kwargs: Any,
     ):
-        super().__init__(name, parent, children, **kwargs)
-        self._size = size
-
-    @property
-    def size(self) -> int:
-        return self._size
-
-    @size.setter
-    def size(self, size: int) -> None:
-        self._size = size
+        super().__init__(name, parent, children, size=size, **kwargs)
 
 
 class Day7(Solver):
