@@ -26,13 +26,13 @@ typed-argument-parser = "1.9.0"
 pytest = "7.4.3"
 
 [tool.poetry.group.dev.dependencies]
-bandit = { version = "1.7.5", extras = ["toml"] }
-black = { version = "23.11.0", extras = ["d"] }
+bandit = { version = "1.7.6", extras = ["toml"] }
+black = { version = "23.12.0", extras = ["d"] }
 docformatter = "1.7.5"
-isort = "5.12.0"
+isort = "5.13.2"
 mypy = "1.7.1"
 pre-commit = "3.5.0"
-pylint = "3.0.2"
+pylint = "3.0.3"
 
 [tool.bandit]
 exclude_dirs = ["tests"]
