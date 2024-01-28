@@ -1,6 +1,5 @@
 """Tests for Day14 Solution class."""
 
-
 import pytest
 
 from advent_of_code.year_2022.day_14.day_14 import Day14, Element, Position

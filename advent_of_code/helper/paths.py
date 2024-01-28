@@ -1,6 +1,5 @@
 """Utility functions that provide common paths."""
 
-
 from pathlib import Path
 
 

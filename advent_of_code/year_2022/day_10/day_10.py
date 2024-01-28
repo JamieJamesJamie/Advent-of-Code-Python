@@ -1,6 +1,5 @@
 """Solutions for day 10."""
 
-
 import os
 from collections.abc import Iterator
 

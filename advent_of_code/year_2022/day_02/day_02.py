@@ -1,6 +1,5 @@
 """Solutions for day 2."""
 
-
 from collections.abc import Iterable
 from enum import Enum
 from typing import NamedTuple

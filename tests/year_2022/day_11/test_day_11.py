@@ -1,6 +1,5 @@
 """Tests for Day11 Solution class."""
 
-
 import pytest
 
 from advent_of_code.year_2022.day_11.day_11 import Day11, Monkey

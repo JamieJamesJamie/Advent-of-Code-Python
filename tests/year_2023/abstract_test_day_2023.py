@@ -1,7 +1,6 @@
 """Abstract test class to be used for testing Solution classes for the year
 2023."""
 
-
 from abc import ABCMeta
 
 from tests.helper.abstract_test_day import AbstractTestDay

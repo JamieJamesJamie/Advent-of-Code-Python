@@ -1,6 +1,5 @@
 """Solutions for day 3."""
 
-
 import re
 from collections.abc import Iterable
 

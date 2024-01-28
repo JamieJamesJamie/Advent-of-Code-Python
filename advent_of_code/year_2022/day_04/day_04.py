@@ -1,6 +1,5 @@
 """Solutions for day 4."""
 
-
 from collections.abc import Iterable
 from itertools import permutations
 from typing import Any

@@ -1,6 +1,5 @@
 """Tests for Day8 Solution class."""
 
-
 import numpy as np
 import pytest
 

@@ -1,6 +1,5 @@
 """Solutions for day 3."""
 
-
 import textwrap
 from collections.abc import Iterable, Sequence
 

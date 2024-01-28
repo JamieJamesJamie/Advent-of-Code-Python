@@ -59,12 +59,16 @@ class Day14(Solver):
         coordinate2 = Position(*(int(dim) for dim in coordinate2_string))
 
         return product(
-            range(coordinate1.x, coordinate2.x + 1)
-            if coordinate1.x <= coordinate2.x
-            else range(coordinate2.x, coordinate1.x + 1),
-            range(coordinate1.y, coordinate2.y + 1)
-            if coordinate1.y <= coordinate2.y
-            else range(coordinate2.y, coordinate1.y + 1),
+            (
+                range(coordinate1.x, coordinate2.x + 1)
+                if coordinate1.x <= coordinate2.x
+                else range(coordinate2.x, coordinate1.x + 1)
+            ),
+            (
+                range(coordinate1.y, coordinate2.y + 1)
+                if coordinate1.y <= coordinate2.y
+                else range(coordinate2.y, coordinate1.y + 1)
+            ),
         )
 
     @staticmethod

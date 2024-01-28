@@ -63,21 +63,29 @@ class Day8(Solver):
             for col_i in range(len(row)):
                 other_trees_all_directions = [
                     # left trees in order from (x, y)
-                    parsed_input[row_i, (col_i - 1) :: -1]
-                    if col_i != 0
-                    else np.array([]),
+                    (
+                        parsed_input[row_i, (col_i - 1) :: -1]
+                        if col_i != 0
+                        else np.array([])
+                    ),
                     # right trees in order from (x, y)
-                    parsed_input[row_i, (col_i + 1) :]
-                    if col_i != parsed_input.shape[1] - 1
-                    else np.array([]),
+                    (
+                        parsed_input[row_i, (col_i + 1) :]
+                        if col_i != parsed_input.shape[1] - 1
+                        else np.array([])
+                    ),
                     # top trees in order from (x, y)
-                    parsed_input[(row_i - 1) :: -1, col_i]
-                    if row_i != 0
-                    else np.array([]),
+                    (
+                        parsed_input[(row_i - 1) :: -1, col_i]
+                        if row_i != 0
+                        else np.array([])
+                    ),
                     # bottom trees in order from (x, y)
-                    parsed_input[(row_i + 1) :, col_i]
-                    if row_i != parsed_input.shape[0] - 1
-                    else np.array([]),
+                    (
+                        parsed_input[(row_i + 1) :, col_i]
+                        if row_i != parsed_input.shape[0] - 1
+                        else np.array([])
+                    ),
                 ]
 
                 num_trees_that_can_be_seen = np.zeros(len(other_trees_all_directions))

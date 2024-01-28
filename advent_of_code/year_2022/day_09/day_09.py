@@ -1,6 +1,5 @@
 """Solutions for day 9."""
 
-
 # pylint: disable=too-few-public-methods
 
 
@@ -85,9 +84,9 @@ class Direction(ABC):
                     # so subsequent knots aren't going to move
                     break
 
-                solver_state.current_positions[
-                    knot_index + 1
-                ] = cls._compute_new_tail_position(knot_pos_1, knot_pos_2)
+                solver_state.current_positions[knot_index + 1] = (
+                    cls._compute_new_tail_position(knot_pos_1, knot_pos_2)
+                )
 
             solver_state.all_tail_positions.add(solver_state.current_positions[-1])
 
