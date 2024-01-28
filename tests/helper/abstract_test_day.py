@@ -1,6 +1,5 @@
 """Abstract test class to be used for testing Solution classes."""
 
-
 from abc import ABC, abstractmethod
 from pathlib import Path
 

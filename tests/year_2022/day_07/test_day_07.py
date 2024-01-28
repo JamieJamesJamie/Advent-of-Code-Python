@@ -1,6 +1,5 @@
 """Tests for Day7 Solution class."""
 
-
 import pytest
 from anytree import findall
 

@@ -1,6 +1,5 @@
 """Main module to start the program from."""
 
-
 from rich import box
 from rich.console import Console
 from rich.table import Table

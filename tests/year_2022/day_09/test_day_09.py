@@ -1,6 +1,5 @@
 """Tests for Day9 Solution class."""
 
-
 # pylint: disable=arguments-differ
 
 

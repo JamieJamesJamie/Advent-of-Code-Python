@@ -1,6 +1,5 @@
 """Solutions for day 7."""
 
-
 from collections.abc import Sequence
 from functools import partial
 from typing import Any

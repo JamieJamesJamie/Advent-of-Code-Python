@@ -1,6 +1,5 @@
 """Solutions for day 13."""
 
-
 import ast
 import functools
 from collections.abc import Iterable, Sequence

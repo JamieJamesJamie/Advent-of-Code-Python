@@ -1,6 +1,5 @@
 """Solutions for day 11."""
 
-
 import logging
 import math
 from collections.abc import Callable, Iterable, Sequence

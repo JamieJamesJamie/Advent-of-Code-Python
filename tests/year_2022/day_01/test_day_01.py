@@ -1,6 +1,5 @@
 """Tests for Day1 Solution class."""
 
-
 import pytest
 
 from advent_of_code.year_2022.day_01.day_01 import Day1

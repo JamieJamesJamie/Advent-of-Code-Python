@@ -1,6 +1,5 @@
 """Tests for Day3 Solution class."""
 
-
 import numpy as np
 import pytest
 

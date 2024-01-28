@@ -1,6 +1,5 @@
 """Solutions for day 5."""
 
-
 from collections import OrderedDict
 from collections.abc import Iterable, Sequence
 from typing import NamedTuple
