@@ -276,9 +276,9 @@ contourpy==1.2.0 ; python_version >= "3.10" and python_version < "3.13" \
 cycler==0.12.1 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30 \
     --hash=sha256:88bb128f02ba341da8ef447245a9e138fae777f6a23943da4540077d3601eb1c
-dill==0.3.7 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:76b122c08ef4ce2eedcd4d1abd8e641114bfc6c2867f49f3c41facf65bf19f5e \
-    --hash=sha256:cc1c8b182eb3013e24bd475ff2e9295af86c1a38eb1aff128dac8962a9ce3c03
+dill==0.3.8 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:3ebe3c479ad625c4553aca177444d89b486b1d84982eeacded644afc0cf797ca \
+    --hash=sha256:c36ca9ffb54365bdd2f8eb3eff7d2a21237f8452b57ace88b1ac615b7e815bd7
 distlib==0.3.8 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:034db59a0b96f8ca18035f36290806a9a6e6bd9d1ff91e45a7f172eb17e51784 \
     --hash=sha256:1530ea13e350031b6312d8580ddb6b27a104275a31106523b8f123787f494f64
@@ -722,9 +722,9 @@ numpy==1.26.3 ; python_version >= "3.10" and python_version < "3.13" \
 packaging==23.2 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5 \
     --hash=sha256:8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7
-parse==1.20.0 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:5e171b001452fa9f004c5a58a93525175468daf69b493e9fa915347ed7ff6968 \
-    --hash=sha256:bd28bae37714b45d5894d77160a16e2be36b64a3b618c81168b3684676aa498b
+parse==1.20.1 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:09002ca350ad42e76629995f71f7b518670bcf93548bdde3684fd55d2be51975 \
+    --hash=sha256:76ddd5214255ae711db4c512be636151fbabaa948c6f30115aecc440422ca82c
 pathspec==0.12.1 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:a0d503e138a4c123b27490a4f7beda6a01c6f288df0e4a8b79c7eb0dc7b4cc08 \
     --hash=sha256:a482d51503a1ab33b1c67a6c3813a26953dbdc71c31dacaef9a838c4e29f5712
