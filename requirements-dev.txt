@@ -291,9 +291,9 @@ docstring-parser==0.16 ; python_version >= "3.10" and python_version < "3.13" \
 exceptiongroup==1.2.0 ; python_version >= "3.10" and python_version < "3.11" \
     --hash=sha256:4bfd3996ac73b41e9b9628b04e079f193850720ea5945fc96a08633c66912f14 \
     --hash=sha256:91f5c769735f051a4290d52edd0858999b57e5876e9f85937691bd4c9fa3ed68
-filelock==3.13.1 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:521f5f56c50f8426f5e03ad3b281b490a87ef15bc6c526f168290f0c7148d44e \
-    --hash=sha256:57dbda9b35157b05fb3e58ee91448612eb674172fab98ee235ccb0b5bee19a1c
+filelock==3.13.3 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:5ffa845303983e7a0b7ae17636509bc97997d58afeafa72fb141a17b152284cb \
+    --hash=sha256:a79895a25bbefdf55d1a2a0a80968f7dbb28edcd6d4234a0afb3f37ecde4b546
 fonttools==4.50.0 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:0743fd2191ad7ab43d78cd747215b12033ddee24fa1e088605a3efe80d6984de \
     --hash=sha256:074841375e2e3d559aecc86e1224caf78e8b8417bb391e7d2506412538f21adc \
@@ -747,9 +747,9 @@ pathspec==0.12.1 ; python_version >= "3.10" and python_version < "3.13" \
 pbr==6.0.0 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:4a7317d5e3b17a3dccb6a8cfe67dab65b20551404c52c8ed41279fa4f0cb4cda \
     --hash=sha256:d1377122a5a00e2f940ee482999518efe16d745d423a670c27773dfbc3c9a7d9
-pebble==5.0.6 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:c8a0659b215ff6dcc974516018fcd95c5c626d8bb9a6668dcfbf85880e6390dc \
-    --hash=sha256:e7f7ecfd0107ab7cec9f3bb411a856c4d7d552202d4e9a8b038e9a64ae31fd8c
+pebble==5.0.7 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:2784c147766f06388cea784084b14bec93fdbaa793830f1983155aa330a2a6e4 \
+    --hash=sha256:f1742f2a62e8544e722c7b387211fb1a06038ca8cda322e5d55c84c793fd8d7d
 pillow==10.2.0 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:0304004f8067386b477d20a518b50f3fa658a28d44e4116970abfcd94fac34a8 \
     --hash=sha256:0689b5a8c5288bc0504d9fcee48f61a6a586b9b98514d7d29b840143d6734f39 \
