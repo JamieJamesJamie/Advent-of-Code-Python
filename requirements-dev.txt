@@ -99,9 +99,9 @@ async-timeout==4.0.3 ; python_version >= "3.10" and python_version < "3.11" \
 attrs==23.2.0 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:935dc3b529c262f6cf76e50877d35a4bd3c1de194fd41f47a2b7ae8f19971f30 \
     --hash=sha256:99b87a485a5820b23b879f04c2305b44b951b502fd64be915879d77a7e8fc6f1
-bandit[toml]==1.7.7 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:17e60786a7ea3c9ec84569fd5aee09936d116cb0cb43151023258340dbffb7ed \
-    --hash=sha256:527906bec6088cb499aae31bc962864b4e77569e9d529ee51df3a93b4b8ab28a
+bandit[toml]==1.7.8 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:36de50f720856ab24a24dbaa5fee2c66050ed97c1477e0a1159deab1775eab6b \
+    --hash=sha256:509f7af645bc0cd8fd4587abc1a038fc795636671ee8204d502b933aee44f381
 beautifulsoup4==4.12.3 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:74e3d1928edc070d21748185c46e3fb33490f22f52a3addee9aee0f4f7781051 \
     --hash=sha256:b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed
