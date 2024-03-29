@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 env:
-  # renovate: datasource=pypi depName=poetry
+  # renovate: datasource=github-releases depName=python-poetry/poetry
   POETRY_VERSION: "1.7.0"
 
 jobs:
