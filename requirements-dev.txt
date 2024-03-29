@@ -825,9 +825,9 @@ platformdirs==4.2.0 ; python_version >= "3.10" and python_version < "3.13" \
 pluggy==1.4.0 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:7db9f7b503d67d1c5b95f59773ebb58a8c1c288129a88665838012cfb07b8981 \
     --hash=sha256:8c85c2876142a764e5b7548e7d9a0e0ddb46f5185161049a79b7e974454223be
-pre-commit==3.5.0 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:5804465c675b659b0862f07907f96295d490822a450c4c40e747d0b1c6ebcb32 \
-    --hash=sha256:841dc9aef25daba9a0238cd27984041fa0467b4199fc4852e27950664919f660
+pre-commit==3.7.0 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:5eae9e10c2b5ac51577c3452ec0a490455c45a0533f7960f993a0d01e59decab \
+    --hash=sha256:e209d61b8acdcf742404408531f0c37d49d2c734fd7cff2d6076083d191cb060
 pygments==2.17.2 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:b27c2826c47d0f3219f29554824c30c5e8945175d888647acd804ddd04af846c \
     --hash=sha256:da46cec9fd2de5be3a8a784f434e4c4ab670b4ff54d605c4c2717e9d49c4c367
