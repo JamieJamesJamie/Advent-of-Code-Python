@@ -6,7 +6,7 @@ on:
 
 env:
   # renovate: datasource=github-releases depName=python-poetry/poetry
-  POETRY_VERSION: "1.8.2"
+  POETRY_VERSION: "1.8.3"
 
 jobs:
   pre-commit:
