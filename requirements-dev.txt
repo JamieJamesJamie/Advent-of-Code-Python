@@ -943,8 +943,8 @@ tomli==2.0.1 ; python_version >= "3.10" and python_version < "3.11" \
 tomlkit==0.12.5 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:af914f5a9c59ed9d0762c7b64d3b5d5df007448eb9cd2edc8a46b1eafead172f \
     --hash=sha256:eef34fba39834d4d6b73c9ba7f3e4d1c417a4e56f89a7e96e090dd0d24b8fb3c
-typed-argument-parser==1.9.0 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:7bfa8629849ab89912df1f5a4ecf6feae5de0deaf30914fa6e2733a95abd7c20
+typed-argument-parser==1.10.0 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:d0e463511549f2951df2968b181b856c2e281be1ab1f4471437de08eb4113ef2
 typing-extensions==4.11.0 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:83f085bd5ca59c80295fc2a82ab5dac679cbe02b9f33f7d83af68e241bea51b0 \
     --hash=sha256:c1f94d72897edaf4ce775bb7558d5b79d8126906a14ea5ed1635921406c0387a

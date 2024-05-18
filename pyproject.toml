@@ -21,7 +21,7 @@ numpy = "1.26.4"
 parse = "1.20.1"
 rich = "13.7.1"
 scipy = "1.13.0"
-typed-argument-parser = "1.9.0"
+typed-argument-parser = "1.10.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "8.1.1"
