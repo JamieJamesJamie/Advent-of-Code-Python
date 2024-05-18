@@ -250,9 +250,9 @@ mdurl==0.1.2 ; python_version >= "3.10" and python_version < "3.13" \
 mypy-extensions==1.0.0 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:4392f6c0eb8a5668a69e23d168ffa70f0be9ccfd32b5cc2d26a34ae5b844552d \
     --hash=sha256:75dbf8955dc00442a438fc4d0666508a9a97b6bd41aa2f0ffe9d2f2725af0782
-networkx==3.2.1 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:9f1bb5cf3409bf324e0a722c20bdb4c20ee39bf1c30ce8ae499c8502b0b5e0c6 \
-    --hash=sha256:f18c69adc97877c42332c170849c96cefa91881c99a7cb3e95b7c659ebdc1ec2
+networkx==3.3 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:0c127d8b2f4865f59ae9cb8aafcd60b5c70f3241ebd66f7defad7c4ab90126c9 \
+    --hash=sha256:28575580c6ebdaf4505b22c6256a2b9de86b316dc63ba9e93abde3d78dfdbcf2
 numpy==1.26.4 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:03a8c78d01d9781b28a6989f6fa1bb2c4f2d51201cf99d3dd875df6fbd96b23b \
     --hash=sha256:08beddf13648eb95f8d867350f6a018a4be2e5ad54c8d8caed89ebca558b2818 \
