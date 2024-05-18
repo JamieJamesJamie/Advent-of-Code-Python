@@ -1729,17 +1729,21 @@ files = [
 
 [[package]]
 name = "typed-argument-parser"
-version = "1.9.0"
+version = "1.10.0"
 description = "Typed Argument Parser"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "typed-argument-parser-1.9.0.tar.gz", hash = "sha256:7bfa8629849ab89912df1f5a4ecf6feae5de0deaf30914fa6e2733a95abd7c20"},
+    {file = "typed-argument-parser-1.10.0.tar.gz", hash = "sha256:d0e463511549f2951df2968b181b856c2e281be1ab1f4471437de08eb4113ef2"},
 ]
 
 [package.dependencies]
 docstring-parser = ">=0.15"
 typing-inspect = ">=0.7.1"
+
+[package.extras]
+dev = ["flake8", "pydantic (>=2.5.0)", "pytest", "pytest-cov"]
+dev-no-pydantic = ["flake8", "pytest", "pytest-cov"]
 
 [[package]]
 name = "typing-extensions"
@@ -1931,4 +1935,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "6fbedda29b66f38134f2f7f594c90b1d0ea8602ca2fc99be81818f493298e733"
+content-hash = "a321a3d59d00235fefaeeb54413ebf0d92ed2bacef8cd80b445e36dae006c46e"
