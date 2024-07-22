@@ -90,9 +90,9 @@ anytree==2.12.1 ; python_version >= "3.10" and python_version < "3.13" \
 aocd-example-parser==2023.12.17 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:40c245c83b070529b7368257aa9bb3a68d8ba0b8ca139e1b620527ad681740e2 \
     --hash=sha256:ebdc7f0612803c91c2759cbf5be0608ca0d6660dab8f3231fdca1418fa585665
-astroid==3.2.3 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:3eae9ea67c11c858cdd2c91337d2e816bd019ac897ca07d7b346ac10105fceb3 \
-    --hash=sha256:7099b5a60985529d8d46858befa103b82d0d05a5a5e8b816b5303ed96075e1d9
+astroid==3.2.4 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:0e14202810b30da1b735827f78f5157be2bbd4a7a59b7707ca0bfc2fb4c0063a \
+    --hash=sha256:413658a61eeca6202a59231abb473f932038fbcbf1666587f66d482083413a25
 async-timeout==4.0.3 ; python_version >= "3.10" and python_version < "3.11" \
     --hash=sha256:4640d96be84d82d02ed59ea2b7105a0f7b33abe8703703cd0ab0bf87c427522f \
     --hash=sha256:7405140ff1230c310e51dc27b3145b9092d659ce68ff733fb0cefe3ee42be028
