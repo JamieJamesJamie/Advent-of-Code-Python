@@ -844,9 +844,9 @@ pre-commit==3.7.1 ; python_version >= "3.10" and python_version < "3.13" \
 pygments==2.18.0 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:786ff802f32e91311bff3889f6e9a86e81505fe99f2735bb6d60ae0c5004f199 \
     --hash=sha256:b8e6aca0523f3ab76fee51799c488e38782ac06eafcf95e7ba832985c8e7b13a
-pylint==3.2.5 ; python_version >= "3.10" and python_version < "3.13" \
-    --hash=sha256:32cd6c042b5004b8e857d727708720c54a676d1e22917cf1a2df9b4d4868abd6 \
-    --hash=sha256:e9b7171e242dcc6ebd0aaa7540481d1a72860748a0a7816b8fe6cf6c80a6fe7e
+pylint==3.2.6 ; python_version >= "3.10" and python_version < "3.13" \
+    --hash=sha256:03c8e3baa1d9fb995b12c1dbe00aa6c4bcef210c2a2634374aedeb22fb4a8f8f \
+    --hash=sha256:a5d01678349454806cff6d886fb072294f56a58c4761278c97fb557d708e1eb3
 pyparsing==3.1.2 ; python_version >= "3.10" and python_version < "3.13" \
     --hash=sha256:a1bac0ce561155ecc3ed78ca94d3c9378656ad4c94c1270de543f621420f94ad \
     --hash=sha256:f9db75911801ed778fe61bb643079ff86601aca99fcae6345aa67292038fb742
