@@ -88,14 +88,14 @@ class Day3(Solver):
         replaced_dots = np.where(
             parsed_input.character_map == ".", "0", parsed_input.character_map
         )
-        digit_map = np.where(~np.char.isdigit(replaced_dots), "100", replaced_dots)
+        digit_map = np.where(~np.strings.isdigit(replaced_dots), "100", replaced_dots)
         int_map = digit_map.astype(int)
 
         correlated = correlate(int_map, Day3._WEIGHTS)
 
         does_touch_symbol = correlated > Day3._KERNEL_BOUNDARY
 
-        number_does_touch_symbol = does_touch_symbol & np.char.isdigit(
+        number_does_touch_symbol = does_touch_symbol & np.strings.isdigit(
             parsed_input.character_map
         )
 
@@ -113,12 +113,12 @@ class Day3(Solver):
         :param parsed_input: The engine schematic.
         :return: The summed gear ratios.
         """
-        is_digits = np.char.isdigit(parsed_input.character_map)
+        is_digits = np.strings.isdigit(parsed_input.character_map)
         sums = correlate(is_digits.astype(int), Day3._WEIGHTS)
         gear_bools = (sums >= 2) & (parsed_input.character_map == "*")
 
         gear_nums = np.where(gear_bools, "100", parsed_input.character_map)
-        input_nums = np.where(~np.char.isdigit(gear_nums), "0", gear_nums)
+        input_nums = np.where(~np.strings.isdigit(gear_nums), "0", gear_nums)
         input_ints = input_nums.astype(int)
 
         correlated = correlate(input_ints, Day3._WEIGHTS)
