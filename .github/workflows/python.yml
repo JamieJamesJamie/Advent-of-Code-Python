@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 env:
-  # renovate: datasource=github-releases depName=containerbase/python-prebuild
+  # renovate: datasource=github-releases depName=python packageName=containerbase/python-prebuild
   PYTHON_VERSION: "3.12.3"
 
   # renovate: datasource=github-releases depName=python-poetry/poetry

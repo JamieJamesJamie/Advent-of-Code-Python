@@ -28,7 +28,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
 USER $USER
 ARG HOME="/home/$USER/"
 
-# renovate: datasource=github-releases depName=containerbase/python-prebuild
+# renovate: datasource=github-releases depName=python packageName=containerbase/python-prebuild
 ARG PYTHON_VERSION=3.12.3
 
 # renovate: datasource=github-releases depName=python-poetry/poetry
