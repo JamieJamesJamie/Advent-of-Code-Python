@@ -6,7 +6,7 @@ on:
 
 env:
   # renovate: datasource=github-releases depName=python packageName=containerbase/python-prebuild
-  PYTHON_VERSION: "3.12.3"
+  PYTHON_VERSION: "3.13.0"
 
   # renovate: datasource=github-releases depName=python-poetry/poetry
   POETRY_VERSION: "1.8.4"
