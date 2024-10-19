@@ -1,4 +1,4 @@
-"""Solutions for day 2."""
+"""Solutions for day 1."""
 
 from collections.abc import Iterable
 
