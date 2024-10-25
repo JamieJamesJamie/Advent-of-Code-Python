@@ -24,7 +24,7 @@
     <option name="SCRIPT_NAME" value="$PROJECT_DIR$/advent_of_code/main.py" />
     <option
       name="PARAMETERS"
-      value="--years 2015 --days 1 --files example1.txt input.txt"
+      value="--years 2015 --days 1 2 --files example1.txt input.txt"
     />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
