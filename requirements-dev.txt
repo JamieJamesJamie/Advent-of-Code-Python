@@ -790,9 +790,9 @@ mypy==1.13.0 ; python_full_version == "3.13.0" \
     --hash=sha256:bde31fc887c213e223bbfc34328070996061b0833b0a4cfec53745ed61f3519b \
     --hash=sha256:c5fc54dbb712ff5e5a0fca797e6e0aa25726c7e72c6a5850cfd2adbc1eb0a372 \
     --hash=sha256:de2904956dac40ced10931ac967ae63c5089bd498542194b436eb097a9f77bc8
-networkx==3.4.1 ; python_full_version == "3.13.0" \
-    --hash=sha256:e30a87b48c9a6a7cc220e732bffefaee585bdb166d13377734446ce1a0620eed \
-    --hash=sha256:f9df45e85b78f5bd010993e897b4f1fdb242c11e015b101bd951e5c0e29982d8
+networkx==3.4.2 ; python_full_version == "3.13.0" \
+    --hash=sha256:307c3669428c5362aab27c8a1260aa8f47c4e91d3891f48be0141738d8d053e1 \
+    --hash=sha256:df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f
 nodeenv==1.9.1 ; python_full_version == "3.13.0" \
     --hash=sha256:6ec12890a2dab7946721edbfbcd91f3319c6ccc9aec47be7c7e6b7011ee6645f \
     --hash=sha256:ba11c9782d29c27c70ffbdda2d7415098754709be8a7056d79a737cd901155c9
