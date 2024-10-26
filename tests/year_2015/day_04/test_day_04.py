@@ -1,16 +1,16 @@
-"""Tests for Day3 Solution class."""
+"""Tests for Day4 Solution class."""
 
 # pylint: disable=arguments-differ
 
 
 import pytest
 
-from advent_of_code.year_2015.day_03.day_03 import Day3
+from advent_of_code.year_2015.day_04.day_04 import Day4
 from tests.year_2015.abstract_test_day_2015 import AbstractTestDay2015
 
 
 class TestDay(AbstractTestDay2015):
-    """Test class for testing day 3."""
+    """Test class for testing day 4."""
 
     @staticmethod
     def day() -> int:
@@ -18,20 +18,18 @@ class TestDay(AbstractTestDay2015):
 
         :return: The day that is being tested.
         """
-        return 3
+        return 4
 
     @staticmethod
-    def solver() -> type[Day3]:
+    def solver() -> type[Day4]:
         """Returns the Solver class that is being tested.
 
         :return: The solver class that is being tested.
         """
-        return Day3
+        return Day4
 
     @pytest.mark.parametrize(
-        "example, parsed",
-        ((1, ">"), (2, "^>v<"), (3, "^v^v^v^v^v"), (4, "^v")),
-        indirect=["example"],
+        "example, parsed", ((1, "abcdef"), (2, "pqrstuv")), indirect=["example"]
     )
     def test_parse_example(self, example, parsed):
         """Test that example input is parsed correctly.
@@ -42,7 +40,7 @@ class TestDay(AbstractTestDay2015):
         assert example == parsed
 
     @pytest.mark.parametrize(
-        "example, result", ((1, 2), (2, 4), (3, 2), (4, 2)), indirect=["example"]
+        "example, result", ((1, 609043), (2, 1048970)), indirect=["example"]
     )
     def test_part1_example(self, example, result):
         """Test part 1 on example input.
@@ -53,7 +51,7 @@ class TestDay(AbstractTestDay2015):
         assert self.solver().part1(example) == result
 
     @pytest.mark.parametrize(
-        "example, result", ((1, 2), (2, 3), (3, 11), (4, 3)), indirect=["example"]
+        "example, result", ((1, 6742839), (2, 5714438)), indirect=["example"]
     )
     def test_part2_example(self, example, result):
         """Test part 2 on example input.
