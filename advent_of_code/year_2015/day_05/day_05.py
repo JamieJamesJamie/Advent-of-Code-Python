@@ -11,69 +11,57 @@ class Day5(Solver):
 
     FORBIDDEN_STRINGS = {"ab", "cd", "pq", "xy"}
 
-    @staticmethod
-    def _contains_at_least_3_vowels(string: str) -> bool:
-        return sum(map(string.lower().count, "aeiou")) >= 3
+    AT_LEAST_3_VOWELS_REGEX = ".*".join(["[aeiou]"] * 3)
+    CONTAINS_AT_LEAST_1_REPEATING_LETTER_REGEX = r"(?P<character>\w)(?P=character)"
+    DOES_NOT_CONTAIN_FORBIDDEN_STRING_REGEX = f"^((?!{'|'.join(FORBIDDEN_STRINGS)}).)*$"
+
+    CONTAINS_NON_OVERLAPPING_PAIR_OF_LETTERS_REGEX = r"(?P<pair>\w\w).*(?P=pair)"
+    CONTAINS_REPEATED_LETTER_WITH_1_LETTER_INBETWEEN_REGEX = (
+        r"(?P<outer>\w)\w(?P=outer)"
+    )
 
     @staticmethod
-    def _contains_at_least_1_repeating_letter(string: str) -> bool:
-        return re.search(r"(\w)\1", string) is not None
+    def _num_nice_strings(parsed_input: str, regexes: Iterable[str]) -> int:
+        all_regexes = "".join(rf"(?=^.*{regex}.*$)" for regex in regexes)
+        matches = re.findall(all_regexes, parsed_input, re.MULTILINE)
+        return len(matches)
 
     @staticmethod
-    def _does_not_contain_forbidden_strings(string: str) -> bool:
-        return not any(
-            forbidden_string in string for forbidden_string in Day5.FORBIDDEN_STRINGS
-        )
-
-    @staticmethod
-    def _is_nice_string_part_1(string: str) -> bool:
-        return (
-            Day5._contains_at_least_3_vowels(string)
-            and Day5._contains_at_least_1_repeating_letter(string)
-            and Day5._does_not_contain_forbidden_strings(string)
-        )
-
-    @staticmethod
-    def _contains_a_pair_of_any_2_letters_without_overlapping(string: str) -> bool:
-        return re.search(r"(\w\w).*\1", string) is not None
-
-    @staticmethod
-    def _contains_at_least_1_letter_which_repeats_with_1_letter_between_them(
-        string: str,
-    ) -> bool:
-        return re.search(r"(\w)\w\1", string) is not None
-
-    @staticmethod
-    def _is_nice_string_part_2(string: str) -> bool:
-        return Day5._contains_a_pair_of_any_2_letters_without_overlapping(
-            string
-        ) and Day5._contains_at_least_1_letter_which_repeats_with_1_letter_between_them(
-            string
-        )
-
-    @staticmethod
-    def parse(puzzle_input: str) -> tuple[str, ...]:
+    def parse(puzzle_input: str) -> str:
         """Parse input for puzzle 5.
 
         :param puzzle_input: Input to parse.
         :return: The strings to process.
         """
-        return tuple(puzzle_input.splitlines())
+        return puzzle_input
 
     @staticmethod
-    def part1(parsed_input: Iterable[str]) -> int:
+    def part1(parsed_input: str) -> int:
         """Solves part 1.
 
         :param parsed_input: Input to parse.
         :return: The total number of nice strings.
         """
-        return sum(Day5._is_nice_string_part_1(string) for string in parsed_input)
+        return Day5._num_nice_strings(
+            parsed_input,
+            (
+                Day5.AT_LEAST_3_VOWELS_REGEX,
+                Day5.CONTAINS_AT_LEAST_1_REPEATING_LETTER_REGEX,
+                Day5.DOES_NOT_CONTAIN_FORBIDDEN_STRING_REGEX,
+            ),
+        )
 
     @staticmethod
-    def part2(parsed_input: Iterable[str]) -> int:
+    def part2(parsed_input: str) -> int:
         """Solves part 2.
 
         :param parsed_input: Input to parse.
         :return: The total number of nice strings.
         """
-        return sum(Day5._is_nice_string_part_2(string) for string in parsed_input)
+        return Day5._num_nice_strings(
+            parsed_input,
+            (
+                Day5.CONTAINS_NON_OVERLAPPING_PAIR_OF_LETTERS_REGEX,
+                Day5.CONTAINS_REPEATED_LETTER_WITH_1_LETTER_INBETWEEN_REGEX,
+            ),
+        )

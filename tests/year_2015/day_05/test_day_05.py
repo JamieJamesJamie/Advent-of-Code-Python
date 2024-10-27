@@ -3,6 +3,8 @@
 # pylint: disable=arguments-differ
 
 
+import inspect
+
 import pytest
 
 from advent_of_code.year_2015.day_05.day_05 import Day5
@@ -31,26 +33,38 @@ class TestDay(AbstractTestDay2015):
     @pytest.mark.parametrize(
         "example, parsed",
         (
-            (1, ("ugknbfddgicrmopn",)),
-            (2, ("aaa",)),
-            (3, ("jchzalrnumimnmhp",)),
-            (4, ("haegwjzuvuyypxyu",)),
-            (5, ("dvszwmarrgswjxmb",)),
+            (1, "ugknbfddgicrmopn"),
+            (2, "aaa"),
+            (3, "jchzalrnumimnmhp"),
+            (4, "haegwjzuvuyypxyu"),
+            (5, "dvszwmarrgswjxmb"),
             (
                 6,
-                (
-                    "ugknbfddgicrmopn",
-                    "aaa",
-                    "jchzalrnumimnmhp",
-                    "haegwjzuvuyypxyu",
-                    "dvszwmarrgswjxmb",
+                inspect.cleandoc(
+                    """
+                    ugknbfddgicrmopn
+                    aaa
+                    jchzalrnumimnmhp
+                    haegwjzuvuyypxyu
+                    dvszwmarrgswjxmb
+                    """
                 ),
             ),
-            (7, ("qjhvhtzxzqqjkmpb",)),
-            (8, ("xxyxx",)),
-            (9, ("uurcxstgmygtbstg",)),
-            (10, ("ieodomkazucvgmuy",)),
-            (11, ("qjhvhtzxzqqjkmpb", "xxyxx", "uurcxstgmygtbstg", "ieodomkazucvgmuy")),
+            (7, "qjhvhtzxzqqjkmpb"),
+            (8, "xxyxx"),
+            (9, "uurcxstgmygtbstg"),
+            (10, "ieodomkazucvgmuy"),
+            (
+                11,
+                inspect.cleandoc(
+                    """
+                    qjhvhtzxzqqjkmpb
+                    xxyxx
+                    uurcxstgmygtbstg
+                    ieodomkazucvgmuy
+                    """
+                ),
+            ),
         ),
         indirect=["example"],
     )
