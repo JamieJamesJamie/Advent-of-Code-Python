@@ -452,9 +452,9 @@ pyparsing==3.2.0 ; python_full_version == "3.13.0" \
 python-dateutil==2.9.0.post0 ; python_full_version == "3.13.0" \
     --hash=sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3 \
     --hash=sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427
-rich==13.9.3 ; python_full_version == "3.13.0" \
-    --hash=sha256:9836f5096eb2172c9e77df411c1b009bace4193d6a481d534fea75ebba758283 \
-    --hash=sha256:bc1e01b899537598cf02579d2b9f4a415104d3fc439313a7a2c165d76557a08e
+rich==13.9.4 ; python_full_version == "3.13.0" \
+    --hash=sha256:439594978a49a09530cff7ebc4b5c7103ef57baf48d5ea3184f21d9a2befa098 \
+    --hash=sha256:6049d5e6ec054bf2779ab3358186963bac2ea89175919d699e378b99738c2a90
 scipy==1.14.1 ; python_full_version == "3.13.0" \
     --hash=sha256:0c2f95de3b04e26f5f3ad5bb05e74ba7f68b837133a4492414b3afd79dfe540e \
     --hash=sha256:1729560c906963fc8389f6aac023739ff3983e727b1a4d87696b7bf108316a79 \
