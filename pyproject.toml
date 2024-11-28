@@ -27,7 +27,7 @@ typed-argument-parser = "1.10.1"
 pytest = "8.3.3"
 
 [tool.poetry.group.dev.dependencies]
-bandit = { version = "1.7.10", extras = ["toml"] }
+bandit = { version = "1.8.0", extras = ["toml"] }
 black = { version = "24.10.0", extras = ["d"] }
 docformatter = "1.7.5"
 isort = "5.13.2"
