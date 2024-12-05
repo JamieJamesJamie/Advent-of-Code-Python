@@ -29,7 +29,7 @@ USER $USER
 ARG HOME="/home/$USER/"
 
 # renovate: datasource=github-releases depName=python packageName=containerbase/python-prebuild
-ARG PYTHON_VERSION=3.13.0
+ARG PYTHON_VERSION=3.13.1
 
 # renovate: datasource=github-releases depName=python-poetry/poetry
 ARG POETRY_VERSION=1.8.4
