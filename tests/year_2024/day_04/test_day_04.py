@@ -32,7 +32,7 @@ class TestDay(AbstractTestDay2024):
 
         :param example: Parsed input from example file.
         """
-        assert (
+        assert np.all(
             example
             == np.array(
                 (
@@ -48,7 +48,7 @@ class TestDay(AbstractTestDay2024):
                     ("M", "X", "M", "X", "A", "X", "M", "A", "S", "X"),
                 )
             )
-        ).all()
+        )
 
     def test_part1_example(self, example):
         """Test part 1 on example input.
