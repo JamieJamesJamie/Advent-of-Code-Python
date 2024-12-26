@@ -33,7 +33,7 @@ docformatter = "1.7.5"
 isort = "5.13.2"
 mypy = "1.14.0"
 pre-commit = "3.8.0"
-pylint = "3.3.2"
+pylint = "3.3.3"
 
 [tool.bandit]
 exclude_dirs = ["tests"]
