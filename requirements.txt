@@ -10,9 +10,9 @@ anytree==2.12.1 ; python_full_version == "3.13.1" \
 aocd-example-parser==2024.12.25 ; python_full_version == "3.13.1" \
     --hash=sha256:51aa57aee98026164c063ffd943cb9a488787fd2d19779362bea04f9cd386984 \
     --hash=sha256:6447dfb0b7d89bd901ed1c99d6c1c8d74a3b519b81f3db0e4116ca0ba9f5cb08
-beautifulsoup4==4.12.3 ; python_full_version == "3.13.1" \
-    --hash=sha256:74e3d1928edc070d21748185c46e3fb33490f22f52a3addee9aee0f4f7781051 \
-    --hash=sha256:b80878c9f40111313e55da8ba20bdba06d8fa3969fc68304167741bbf9e082ed
+beautifulsoup4==4.13.3 ; python_full_version == "3.13.1" \
+    --hash=sha256:1bd32405dacc920b42b83ba01644747ed77456a65760e285fbc47633ceddaf8b \
+    --hash=sha256:99045d7d3f08f91f0d656bc9b7efbae189426cd913d830294a15eefa0ea4df16
 contourpy==1.3.1 ; python_full_version == "3.13.1" \
     --hash=sha256:041b640d4ec01922083645a94bb3b2e777e6b626788f4095cf21abbe266413c1 \
     --hash=sha256:05e806338bfeaa006acbdeba0ad681a10be63b26e1b17317bfac3c5d98f36cda \
