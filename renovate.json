@@ -4,7 +4,6 @@
   "gitIgnoredAuthors": [
     "41898282+github-actions[bot]@users.noreply.github.com"
   ],
-  "rangeStrategy": "update-lockfile",
   "pip_requirements": {
     "enabled": false
   },
