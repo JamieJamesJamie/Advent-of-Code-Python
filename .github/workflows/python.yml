@@ -9,7 +9,7 @@ env:
   PYTHON_VERSION: "3.13.2"
 
   # renovate: datasource=github-releases depName=python-poetry/poetry
-  POETRY_VERSION: "1.8.5"
+  POETRY_VERSION: "2.1.2"
 
 jobs:
   pre-commit:

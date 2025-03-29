@@ -32,7 +32,7 @@ ARG HOME="/home/$USER/"
 ARG PYTHON_VERSION=3.13.2
 
 # renovate: datasource=github-releases depName=python-poetry/poetry
-ARG POETRY_VERSION=1.8.5
+ARG POETRY_VERSION=2.1.2
 
 ENV PYENV_ROOT="${HOME}.pyenv/"
 ENV PATH="${PYENV_ROOT}shims:${PYENV_ROOT}/bin:${HOME}/.local/bin:$PATH"
