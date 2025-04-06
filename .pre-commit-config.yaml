@@ -83,6 +83,10 @@ repos:
     hooks:
       - id: poetry-check # run poetry check to validate config
       - id: poetry-lock # run poetry lock to update lock file
+
+  - repo: https://github.com/python-poetry/poetry-plugin-export
+    rev: 1.9.0 # add version here
+    hooks:
       - id: poetry-export # run poetry export to sync lock file with requirements.txt
         name: poetry-export requirements.txt
         args: ["-f", "requirements.txt", "-o", "requirements.txt"]
