@@ -164,17 +164,14 @@ frozenlist = ">=1.1.0"
 
 [[package]]
 name = "anytree"
-version = "2.12.1"
+version = "2.13.0"
 description = "Powerful and Lightweight Python Tree Data Structure with various plugins"
 optional = false
-python-versions = ">=3.7.2,<4"
+python-versions = "<4.0,>=3.9.2"
 files = [
-    {file = "anytree-2.12.1-py3-none-any.whl", hash = "sha256:5ea9e61caf96db1e5b3d0a914378d2cd83c269dfce1fb8242ce96589fa3382f0"},
-    {file = "anytree-2.12.1.tar.gz", hash = "sha256:244def434ccf31b668ed282954e5d315b4e066c4940b94aff4a7962d85947830"},
+    {file = "anytree-2.13.0-py3-none-any.whl", hash = "sha256:4cbcf10df36b1f1cba131b7e487ff3edafc9d6e932a3c70071b5b768bab901ff"},
+    {file = "anytree-2.13.0.tar.gz", hash = "sha256:c9d3aa6825fdd06af7ebb05b4ef291d2db63e62bb1f9b7d9b71354be9d362714"},
 ]
-
-[package.dependencies]
-six = "*"
 
 [[package]]
 name = "aocd-example-parser"
@@ -2100,4 +2097,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.0"
 python-versions = "3.13.3"
-content-hash = "6f2b982edfa5eb1e61cf0f29a26f132cdb4dd63ecff3c7c794bbad95bef11e02"
+content-hash = "8d91f0a47ef957f96615c8995dd61b331be74208abad6253f7509107667da581"
