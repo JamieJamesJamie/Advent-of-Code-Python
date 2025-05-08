@@ -29,7 +29,7 @@ pytest = "8.3.5"
 [tool.poetry.group.dev.dependencies]
 bandit = { version = "1.8.3", extras = ["toml"] }
 black = { version = "25.1.0", extras = ["d"] }
-docformatter = "1.7.5"
+docformatter = "1.7.6"
 isort = "6.0.1"
 mypy = "1.15.0"
 pre-commit = "3.8.0"
