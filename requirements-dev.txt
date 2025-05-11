@@ -302,9 +302,9 @@ dill==0.4.0 ; python_full_version == "3.13.3" \
 distlib==0.3.9 ; python_full_version == "3.13.3" \
     --hash=sha256:47f8c22fd27c27e25a65601af709b38e4f0a45ea4fc2e710f65755fa8caaaf87 \
     --hash=sha256:a60f20dea646b8a33f3e7772f74dc0b2d0772d2837ee1342a00645c81edf9403
-docformatter==1.7.6 ; python_full_version == "3.13.3" \
-    --hash=sha256:3259698c29b411fc53ac363c5f90b5e1c0ccb7224b166df33224b85d98f2e540 \
-    --hash=sha256:911f03dd302d0045739dd4daf6a007ce26256db693494b19a4ccdc9136a59dbb
+docformatter==1.7.7 ; python_full_version == "3.13.3" \
+    --hash=sha256:7af49f8a46346a77858f6651f431b882c503c2f4442c8b4524b920c863277834 \
+    --hash=sha256:ea0e1e8867e5af468dfc3f9e947b92230a55be9ec17cd1609556387bffac7978
 docstring-parser==0.16 ; python_full_version == "3.13.3" \
     --hash=sha256:538beabd0af1e2db0146b6bd3caa526c35a34d61af9fd2887f3a8a27a739aa6e \
     --hash=sha256:bf0a1387354d3691d102edef7ec124f219ef639982d096e26e3b60aeffa90637
