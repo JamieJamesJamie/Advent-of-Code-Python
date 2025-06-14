@@ -11,7 +11,7 @@ packages = [{ include = "advent_of_code" }]
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "3.13.4"
+python = "3.13.5"
 advent-of-code-data = "2.1.0"
 advent-of-code-ocr = "1.0.0"
 anytree = "2.13.0"
