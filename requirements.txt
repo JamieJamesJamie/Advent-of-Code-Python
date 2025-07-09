@@ -475,9 +475,9 @@ soupsieve==2.7 ; python_full_version == "3.13.5" \
 typed-argument-parser==1.10.1 ; python_full_version == "3.13.5" \
     --hash=sha256:117c2ef9ad6536d36f84f65eb7be035244c841fea34bd5abf2301a01c8a1ec89 \
     --hash=sha256:152cad218c84f23d9d4cbbfcb153a1a53fa0b330f0f7a4b85190dd4cb86f0c0a
-typing-extensions==4.14.0 ; python_full_version == "3.13.5" \
-    --hash=sha256:8676b788e32f02ab42d9e7c61324048ae4c6d844a399eebace3d4979d75ceef4 \
-    --hash=sha256:a1514509136dd0b477638fc68d6a91497af5076466ad0fa6c338e44e359944af
+typing-extensions==4.14.1 ; python_full_version == "3.13.5" \
+    --hash=sha256:38b39f4aeeab64884ce9f74c94263ef78f3c22467c8724005483154c26648d36 \
+    --hash=sha256:d1e1e3b58374dc93031d6eda2420a48ea44a36c2b4766a4fdeb3710755731d76
 typing-inspect==0.9.0 ; python_full_version == "3.13.5" \
     --hash=sha256:9ee6fc59062311ef8547596ab6b955e1b8aa46242d854bfc78f4f6b0eff35f9f \
     --hash=sha256:b23fc42ff6f6ef6954e4852c1fb512cdd18dbea03134f91f856a95ccc9461f78
