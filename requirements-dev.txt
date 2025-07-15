@@ -103,9 +103,9 @@ anytree==2.13.0 ; python_full_version == "3.13.5" \
 aocd-example-parser==2024.12.25 ; python_full_version == "3.13.5" \
     --hash=sha256:51aa57aee98026164c063ffd943cb9a488787fd2d19779362bea04f9cd386984 \
     --hash=sha256:6447dfb0b7d89bd901ed1c99d6c1c8d74a3b519b81f3db0e4116ca0ba9f5cb08
-astroid==3.3.10 ; python_full_version == "3.13.5" \
-    --hash=sha256:104fb9cb9b27ea95e847a94c003be03a9e039334a8ebca5ee27dafaf5c5711eb \
-    --hash=sha256:c332157953060c6deb9caa57303ae0d20b0fbdb2e59b4a4f2a6ba49d0a7961ce
+astroid==3.3.11 ; python_full_version == "3.13.5" \
+    --hash=sha256:1e5a5011af2920c7c67a53f65d536d65bfa7116feeaf2354d8b94f29573bb0ce \
+    --hash=sha256:54c760ae8322ece1abd213057c4b5bba7c49818853fc901ef09719a60dbf9dec
 attrs==25.3.0 ; python_full_version == "3.13.5" \
     --hash=sha256:427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3 \
     --hash=sha256:75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b
