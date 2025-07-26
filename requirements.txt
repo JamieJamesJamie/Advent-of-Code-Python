@@ -1,9 +1,9 @@
 advent-of-code-data==2.1.0 ; python_full_version == "3.13.5" \
     --hash=sha256:1e0457338a9572e610f72da8aad8b06f778311a69b0ec676bf2e5db8328f4d45 \
     --hash=sha256:947e6583f581ed184873aac835b333fc39a5712cce606c67532f9d43253a98e2
-advent-of-code-ocr==1.0.0 ; python_full_version == "3.13.5" \
-    --hash=sha256:690bcdad71e4246264ba1a4678e3666732bf1aa7b1bc285ab6b88bea263d5c40 \
-    --hash=sha256:b2f5593967eca658534cb23044b28a3e623de8a4df4c97e805bd50c5d741cd6c
+advent-of-code-ocr==1.1.0 ; python_full_version == "3.13.5" \
+    --hash=sha256:a5a0668b88e94a8d7319fe024a8840799bf1ba8526fc4a5b5f5178459d678a36 \
+    --hash=sha256:f03373e2d364b30da9a168064ed9342c6e18b7a443f433e551038e8437671ba7
 anytree==2.13.0 ; python_full_version == "3.13.5" \
     --hash=sha256:4cbcf10df36b1f1cba131b7e487ff3edafc9d6e932a3c70071b5b768bab901ff \
     --hash=sha256:c9d3aa6825fdd06af7ebb05b4ef291d2db63e62bb1f9b7d9b71354be9d362714
@@ -13,6 +13,12 @@ aocd-example-parser==2024.12.25 ; python_full_version == "3.13.5" \
 beautifulsoup4==4.13.4 ; python_full_version == "3.13.5" \
     --hash=sha256:9bbbb14bfde9d79f38b8cd5f8c7c85f4b8f2523190ebed90e950a8dea4cb1c4b \
     --hash=sha256:dbb3c4e1ceae6aefebdaf2423247260cd062430a410e38c66f2baa50a8437195
+click==8.2.1 ; python_full_version == "3.13.5" \
+    --hash=sha256:27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202 \
+    --hash=sha256:61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b
+colorama==0.4.6 ; python_full_version == "3.13.5" and platform_system == "Windows" \
+    --hash=sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44 \
+    --hash=sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6
 contourpy==1.3.2 ; python_full_version == "3.13.5" \
     --hash=sha256:0475b1f6604896bc7c53bb070e355e9321e1bc0d381735421a2d2068ec56531f \
     --hash=sha256:106fab697af11456fcba3e352ad50effe493a90f893fca6c2ca5c033820cea92 \
