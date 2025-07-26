@@ -23,17 +23,17 @@ nb = ["IPython", "jupyter-server"]
 
 [[package]]
 name = "advent-of-code-ocr"
-version = "1.0.0"
-description = "Convert Advent of Code ASCII art"
+version = "1.1.0"
+description = "A library to parse Advent of Code ASCII art"
 optional = false
-python-versions = "~=3.7"
+python-versions = ">=3.10"
 files = [
-    {file = "advent-of-code-ocr-1.0.0.tar.gz", hash = "sha256:b2f5593967eca658534cb23044b28a3e623de8a4df4c97e805bd50c5d741cd6c"},
-    {file = "advent_of_code_ocr-1.0.0-py2.py3-none-any.whl", hash = "sha256:690bcdad71e4246264ba1a4678e3666732bf1aa7b1bc285ab6b88bea263d5c40"},
+    {file = "advent_of_code_ocr-1.1.0-py3-none-any.whl", hash = "sha256:a5a0668b88e94a8d7319fe024a8840799bf1ba8526fc4a5b5f5178459d678a36"},
+    {file = "advent_of_code_ocr-1.1.0.tar.gz", hash = "sha256:f03373e2d364b30da9a168064ed9342c6e18b7a443f433e551038e8437671ba7"},
 ]
 
-[package.extras]
-test = ["numpy", "pytest"]
+[package.dependencies]
+click = ">=8.2.1"
 
 [[package]]
 name = "aiohappyeyeballs"
@@ -2162,4 +2162,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.0"
 python-versions = "3.13.5"
-content-hash = "ed5894253753fc58a9b7fa5ad9b9ac0fb83a65757b31ba421b82c10183d17ed5"
+content-hash = "23dccd2706744fada3e2b85ff8457496ee1d37a007b64ae3f927827b35f0e5c0"
