@@ -424,13 +424,13 @@ files = [
 
 [[package]]
 name = "click"
-version = "8.2.1"
+version = "8.2.2"
 description = "Composable command line interface toolkit"
 optional = false
 python-versions = ">=3.10"
 files = [
-    {file = "click-8.2.1-py3-none-any.whl", hash = "sha256:61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b"},
-    {file = "click-8.2.1.tar.gz", hash = "sha256:27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202"},
+    {file = "click-8.2.2-py3-none-any.whl", hash = "sha256:52e1e9f5d3db8c85aa76968c7c67ed41ddbacb167f43201511c8fd61eb5ba2ca"},
+    {file = "click-8.2.2.tar.gz", hash = "sha256:068616e6ef9705a07b6db727cb9c248f4eb9dae437a30239f56fa94b18b852ef"},
 ]
 
 [package.dependencies]
@@ -1398,13 +1398,13 @@ setuptools = "*"
 
 [[package]]
 name = "pebble"
-version = "5.1.2"
+version = "5.1.3"
 description = "Threading and multiprocessing eye-candy."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "Pebble-5.1.2-py3-none-any.whl", hash = "sha256:89bf53e31aab823cae323cb9c92667b4cba468fcc9d194804fdaf049d779a1f2"},
-    {file = "pebble-5.1.2.tar.gz", hash = "sha256:9d1fb7c81ae9f9c6679558ac21289f9fa382826939fa80c8ef67f9b5e6a38a3f"},
+    {file = "Pebble-5.1.3-py3-none-any.whl", hash = "sha256:8b28b1ede25de4b0d9249516d5fd794c330f8f03b692debe374619317ed0bdd7"},
+    {file = "pebble-5.1.3.tar.gz", hash = "sha256:9fdf00dde4abb09907817114ad8cf822836b6d6cc8f43a3f0ec741be276086e7"},
 ]
 
 [[package]]
