@@ -592,9 +592,9 @@ six==1.17.0 ; python_full_version == "3.13.7" \
 soupsieve==2.8 ; python_full_version == "3.13.7" \
     --hash=sha256:0cc76456a30e20f5d7f2e14a98a4ae2ee4e5abdc7c5ea0aafe795f344bc7984c \
     --hash=sha256:e2dd4a40a628cb5f28f6d4b0db8800b8f581b65bb380b97de22ba5ca8d72572f
-typed-argument-parser==1.10.1 ; python_full_version == "3.13.7" \
-    --hash=sha256:117c2ef9ad6536d36f84f65eb7be035244c841fea34bd5abf2301a01c8a1ec89 \
-    --hash=sha256:152cad218c84f23d9d4cbbfcb153a1a53fa0b330f0f7a4b85190dd4cb86f0c0a
+typed-argument-parser==1.11.0 ; python_full_version == "3.13.7" \
+    --hash=sha256:674d2aa8050618d2f5663bec7a2fdef274cddd59f6275f53386206aad906be9c \
+    --hash=sha256:71a4f7661d1c072101bad014f26cbc2c7cf0e626c51fc7681c66975cc1ecc723
 typing-extensions==4.15.0 ; python_full_version == "3.13.7" \
     --hash=sha256:0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466 \
     --hash=sha256:f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548
