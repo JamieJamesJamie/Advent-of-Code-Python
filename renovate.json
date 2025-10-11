@@ -6,16 +6,5 @@
   ],
   "pip_requirements": {
     "enabled": false
-  },
-  "pre-commit": {
-    "ignoreDeps": [
-      "PyCQA/bandit",
-      "psf/black",
-      "psf/black-pre-commit-mirror",
-      "PyCQA/docformatter",
-      "pycqa/isort",
-      "pre-commit/mirrors-mypy",
-      "PyCQA/pylint"
-    ]
   }
 }

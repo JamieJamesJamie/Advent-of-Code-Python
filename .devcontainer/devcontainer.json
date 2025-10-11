@@ -1,19 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-  "name": "poetry3-poetry-pyenv",
-  "build": {
-    "dockerfile": "Dockerfile"
+  "name": "Advent of Code Python - with uv",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/base:2.0.1-debian-13",
+
+  "containerEnv": {
+    "UV_LINK_MODE": "copy"
   },
 
-  // 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
-  // "features": {},
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers-extra/features/uv:1.0.0": { "version": "0.9.2" }
+  },
 
-  // 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
 
-  // 👇 Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "poetry install && poetry run pre-commit install",
+  // Use 'postCreateCommand' to run commands after the container is created.
+  //"postCreateCommand": "uv sync --all-groups --all-packages && uv run pre-commit install",
 
-  // 👇 Configure tool-specific properties.
+  // Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": [
@@ -62,6 +69,6 @@
     }
   }
 
-  // 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
 }
