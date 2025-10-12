@@ -26,4 +26,4 @@ class ArgumentParser(Tap):
     def configure(self) -> None:
         # pylint: disable=attribute-defined-outside-init,missing-function-docstring
 
-        self.description = "My Advent of Code 2022 solutions."
+        self.description = "My Advent of Code solutions."
