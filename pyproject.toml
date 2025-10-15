@@ -30,7 +30,7 @@ pytest = "8.4.2"
 bandit = { version = "1.8.6", extras = ["toml"] }
 black = { version = "25.9.0", extras = ["d"] }
 docformatter = "1.7.7"
-isort = "6.1.0"
+isort = "7.0.0"
 mypy = "1.18.2"
 pre-commit = "4.3.0"
 pylint = "4.0.0"
