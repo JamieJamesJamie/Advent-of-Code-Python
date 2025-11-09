@@ -1135,9 +1135,9 @@ platformdirs==4.5.0 ; python_full_version == "3.13.7" \
 pluggy==1.6.0 ; python_full_version == "3.13.7" \
     --hash=sha256:7dcc130b76258d33b90f61b658791dede3486c3e6bfb003ee5c9bfb396dd22f3 \
     --hash=sha256:e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746
-pre-commit==4.3.0 ; python_full_version == "3.13.7" \
-    --hash=sha256:2b0747ad7e6e967169136edffee14c16e148a778a54e4f967921aa1ebf2308d8 \
-    --hash=sha256:499fe450cc9d42e9d58e606262795ecb64dd05438943c62b66f6a8673da30b16
+pre-commit==4.4.0 ; python_full_version == "3.13.7" \
+    --hash=sha256:b35ea52957cbf83dcc5d8ee636cbead8624e3a15fbfa61a370e42158ac8a5813 \
+    --hash=sha256:f0233ebab440e9f17cabbb558706eb173d19ace965c68cdce2c081042b4fab15
 propcache==0.4.1 ; python_full_version == "3.13.7" \
     --hash=sha256:0002004213ee1f36cfb3f9a42b5066100c44276b9b72b4e1504cddd3d692e86e \
     --hash=sha256:0013cb6f8dde4b2a2f66903b8ba740bdfe378c943c4377a200551ceb27f379e4 \
