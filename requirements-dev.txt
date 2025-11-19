@@ -176,9 +176,9 @@ black[d]==25.11.0 ; python_full_version == "3.13.7" \
     --hash=sha256:ec311e22458eec32a807f029b2646f661e6859c3f61bc6d9ffb67958779f392e \
     --hash=sha256:f42c0ea7f59994490f4dccd64e6b2dd49ac57c7c84f38b8faab50f8759db245c \
     --hash=sha256:f9786c24d8e9bd5f20dc7a7f0cdd742644656987f6ea6947629306f937726c03
-cfgv==3.4.0 ; python_full_version == "3.13.7" \
-    --hash=sha256:b7265b1f29fd3316bfcd2b330d63d024f2bfd8bcb8b0272f8e19a504856c48f9 \
-    --hash=sha256:e52591d4c5f5dead8e0f673fb16db7949d2cfb3f7da4582893288f0ded8fe560
+cfgv==3.5.0 ; python_full_version == "3.13.7" \
+    --hash=sha256:a8dc6b26ad22ff227d2634a65cb388215ce6cc96bbcc5cfde7641ae87e8dacc0 \
+    --hash=sha256:d5b1034354820651caa73ede66a6294d6e95c1b00acc5e9b098e917404669132
 charset-normalizer==3.4.4 ; python_full_version == "3.13.7" \
     --hash=sha256:027f6de494925c0ab2a55eab46ae5129951638a49a34d87f4c3eda90f696b4ad \
     --hash=sha256:077fbb858e903c73f6c9db43374fd213b0b6a778106bc7032446a8e8b5b38b93 \
