@@ -143,9 +143,9 @@ astroid==4.0.2 ; python_full_version == "3.13.7" \
 attrs==25.4.0 ; python_full_version == "3.13.7" \
     --hash=sha256:16d5969b87f0859ef33a48b35d55ac1be6e42ae49d5e853b597db70c35c57e11 \
     --hash=sha256:adcf7e2a1fb3b36ac48d97835bb6d8ade15b8dcce26aba8bf1d14847b57a3373
-bandit[toml]==1.9.1 ; python_full_version == "3.13.7" \
-    --hash=sha256:0a1f34c04f067ee28985b7854edaa659c9299bd71e1b7e18236e46cccc79720b \
-    --hash=sha256:6dbafd1a51e276e065404f06980d624bad142344daeac3b085121fcfd117b7cf
+bandit[toml]==1.9.2 ; python_full_version == "3.13.7" \
+    --hash=sha256:32410415cd93bf9c8b91972159d5cf1e7f063a9146d70345641cd3877de348ce \
+    --hash=sha256:bda8d68610fc33a6e10b7a8f1d61d92c8f6c004051d5e946406be1fb1b16a868
 beautifulsoup4==4.14.2 ; python_full_version == "3.13.7" \
     --hash=sha256:2a98ab9f944a11acee9cc848508ec28d9228abfd522ef0fad6a02a72e0ded69e \
     --hash=sha256:5ef6fa3a8cbece8488d66985560f97ed091e22bbc4e9c2338508a9d5de6d4515
