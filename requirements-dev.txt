@@ -948,9 +948,9 @@ mypy==1.18.2 ; python_full_version == "3.13.7" \
     --hash=sha256:d924eef3795cc89fecf6bedc6ed32b33ac13e8321344f6ddbf8ee89f706c05cb \
     --hash=sha256:ed4482847168439651d3feee5833ccedbf6657e964572706a2adb1f7fa4dfe2e \
     --hash=sha256:f9e171c465ad3901dc652643ee4bffa8e9fef4d7d0eece23b428908c77a76a66
-networkx==3.5 ; python_full_version == "3.13.7" \
-    --hash=sha256:0030d386a9a06dee3565298b4a734b68589749a544acbb6c412dc9e2489ec6ec \
-    --hash=sha256:d4c6f9cf81f52d69230866796b82afbccdec3db7ae4fbd1b65ea750feed50037
+networkx==3.6 ; python_full_version == "3.13.7" \
+    --hash=sha256:285276002ad1f7f7da0f7b42f004bcba70d381e936559166363707fdad3d72ad \
+    --hash=sha256:cdb395b105806062473d3be36458d8f1459a4e4b98e236a66c3a48996e07684f
 nodeenv==1.9.1 ; python_full_version == "3.13.7" \
     --hash=sha256:6ec12890a2dab7946721edbfbcd91f3319c6ccc9aec47be7c7e6b7011ee6645f \
     --hash=sha256:ba11c9782d29c27c70ffbdda2d7415098754709be8a7056d79a737cd901155c9
