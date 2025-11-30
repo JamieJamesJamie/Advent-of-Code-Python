@@ -1337,9 +1337,9 @@ propcache==0.4.1 ; python_full_version == "3.13.7" \
 pygments==2.19.2 ; python_full_version == "3.13.7" \
     --hash=sha256:636cb2477cec7f8952536970bc533bc43743542f70392ae026374600add5b887 \
     --hash=sha256:86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b
-pylint==4.0.3 ; python_full_version == "3.13.7" \
-    --hash=sha256:896d09afb0e78bbf2e030cd1f3d8dc92771a51f7e46828cbc3948a89cd03433a \
-    --hash=sha256:a427fe76e0e5355e9fb9b604fd106c419cafb395886ba7f3cebebb03f30e081d
+pylint==4.0.4 ; python_full_version == "3.13.7" \
+    --hash=sha256:63e06a37d5922555ee2c20963eb42559918c20bd2b21244e4ef426e7c43b92e0 \
+    --hash=sha256:d9b71674e19b1c36d79265b5887bf8e55278cbe236c9e95d22dc82cf044fdbd2
 pyparsing==3.2.5 ; python_full_version == "3.13.7" \
     --hash=sha256:2df8d5b7b2802ef88e8d016a2eb9c7aeaa923529cd251ed0fe4608275d4105b6 \
     --hash=sha256:e38a4f02064cf41fe6593d328d0512495ad1f3d8a91c4f73fc401b3079a59a5e
