@@ -146,9 +146,9 @@ attrs==25.4.0 ; python_full_version == "3.13.7" \
 bandit[toml]==1.9.2 ; python_full_version == "3.13.7" \
     --hash=sha256:32410415cd93bf9c8b91972159d5cf1e7f063a9146d70345641cd3877de348ce \
     --hash=sha256:bda8d68610fc33a6e10b7a8f1d61d92c8f6c004051d5e946406be1fb1b16a868
-beautifulsoup4==4.14.2 ; python_full_version == "3.13.7" \
-    --hash=sha256:2a98ab9f944a11acee9cc848508ec28d9228abfd522ef0fad6a02a72e0ded69e \
-    --hash=sha256:5ef6fa3a8cbece8488d66985560f97ed091e22bbc4e9c2338508a9d5de6d4515
+beautifulsoup4==4.14.3 ; python_full_version == "3.13.7" \
+    --hash=sha256:0918bfe44902e6ad8d57732ba310582e98da931428d231a5ecb9e7c703a735bb \
+    --hash=sha256:6292b1c5186d356bba669ef9f7f051757099565ad9ada5dd630bd9de5fa7fb86
 black[d]==25.11.0 ; python_full_version == "3.13.7" \
     --hash=sha256:0a1d40348b6621cc20d3d7530a5b8d67e9714906dfd7346338249ad9c6cedf2b \
     --hash=sha256:0c0f7c461df55cf32929b002335883946a4893d759f2df343389c4396f3b6b37 \
