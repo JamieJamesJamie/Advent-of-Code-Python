@@ -134,9 +134,9 @@ aiosignal==1.4.0 ; python_full_version == "3.13.7" \
 anytree==2.13.0 ; python_full_version == "3.13.7" \
     --hash=sha256:4cbcf10df36b1f1cba131b7e487ff3edafc9d6e932a3c70071b5b768bab901ff \
     --hash=sha256:c9d3aa6825fdd06af7ebb05b4ef291d2db63e62bb1f9b7d9b71354be9d362714
-aocd-example-parser==2024.12.25 ; python_full_version == "3.13.7" \
-    --hash=sha256:51aa57aee98026164c063ffd943cb9a488787fd2d19779362bea04f9cd386984 \
-    --hash=sha256:6447dfb0b7d89bd901ed1c99d6c1c8d74a3b519b81f3db0e4116ca0ba9f5cb08
+aocd-example-parser==2025.12.1 ; python_full_version == "3.13.7" \
+    --hash=sha256:9180ef01a9962e9783a67dffe3a197fb9d708c95c7768ba435b4c5f6e73f45a2 \
+    --hash=sha256:a553fb0ed619d3328245d64d0e439ade8fcef2184b3f4a08360716ec5a401dc3
 astroid==4.0.2 ; python_full_version == "3.13.7" \
     --hash=sha256:ac8fb7ca1c08eb9afec91ccc23edbd8ac73bb22cbdd7da1d488d9fb8d6579070 \
     --hash=sha256:d7546c00a12efc32650b19a2bb66a153883185d3179ab0d4868086f807338b9b
