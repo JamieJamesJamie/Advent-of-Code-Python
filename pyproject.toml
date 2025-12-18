@@ -32,7 +32,7 @@ black = { version = "25.11.0", extras = ["d"] }
 docformatter = "1.7.7"
 isort = "7.0.0"
 mypy = "1.19.1"
-pre-commit = "4.5.0"
+pre-commit = "4.5.1"
 pylint = "4.0.4"
 
 [tool.bandit]
