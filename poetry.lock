@@ -2,17 +2,17 @@
 
 [[package]]
 name = "advent-of-code-data"
-version = "2.1.0"
+version = "2.1.1"
 description = "Get your puzzle data with a single import"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "advent_of_code_data-2.1.0-py3-none-any.whl", hash = "sha256:1e0457338a9572e610f72da8aad8b06f778311a69b0ec676bf2e5db8328f4d45"},
-    {file = "advent_of_code_data-2.1.0.tar.gz", hash = "sha256:947e6583f581ed184873aac835b333fc39a5712cce606c67532f9d43253a98e2"},
+    {file = "advent_of_code_data-2.1.1-py3-none-any.whl", hash = "sha256:6d92045db4f51820cb0337a3d240873ec586cef16525c686f60250ca97711d6f"},
+    {file = "advent_of_code_data-2.1.1.tar.gz", hash = "sha256:28a85126b06e6225baa475ad0cd7880b75812b89fc890b26d81480997f6bdc6f"},
 ]
 
 [package.dependencies]
-aocd-example-parser = ">=2023.12.24"
+aocd-example-parser = ">=2025.12.11"
 beautifulsoup4 = "*"
 pebble = "*"
 tzdata = {version = "*", markers = "platform_system == \"Windows\""}
@@ -2506,4 +2506,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.0"
 python-versions = "3.13.10"
-content-hash = "aa09a05718d29bdd6851d91285fe554cc229c2bdf53e2b8d714f6cc4bd9ccb94"
+content-hash = "131ecf24e01f3e0fd5b8fab4f482cb0e0ff14d4b75305cfcad4cf4fadacbaa31"
