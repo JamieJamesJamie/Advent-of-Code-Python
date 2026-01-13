@@ -388,9 +388,9 @@ docformatter==1.7.7 ; python_full_version == "3.13.10" \
 docstring-parser==0.17.0 ; python_full_version == "3.13.10" \
     --hash=sha256:583de4a309722b3315439bb31d64ba3eebada841f2e2cee23b99df001434c912 \
     --hash=sha256:cf2569abd23dce8099b300f9b4fa8191e9582dda731fd533daf54c4551658708
-filelock==3.20.1 ; python_full_version == "3.13.10" \
-    --hash=sha256:15d9e9a67306188a44baa72f569d2bfd803076269365fdea0934385da4dc361a \
-    --hash=sha256:b8360948b351b80f420878d8516519a2204b07aefcdcfd24912a5d33127f188c
+filelock==3.20.3 ; python_full_version == "3.13.10" \
+    --hash=sha256:18c57ee915c7ec61cff0ecf7f0f869936c7c30191bb0cf406f1341778d0834e1 \
+    --hash=sha256:4b0dda527ee31078689fc205ec4f1c1bf7d56cf88b6dc9426c4f230e46c2dce1
 fonttools==4.61.1 ; python_full_version == "3.13.10" \
     --hash=sha256:0de30bfe7745c0d1ffa2b0b7048fb7123ad0d71107e10ee090fa0b16b9452e87 \
     --hash=sha256:10d88e55330e092940584774ee5e8a6971b01fc2f4d3466a1d6c158230880796 \
