@@ -1,6 +1,6 @@
-advent-of-code-data==2.1.1 ; python_full_version == "3.13.10" \
-    --hash=sha256:28a85126b06e6225baa475ad0cd7880b75812b89fc890b26d81480997f6bdc6f \
-    --hash=sha256:6d92045db4f51820cb0337a3d240873ec586cef16525c686f60250ca97711d6f
+advent-of-code-data==2.2.0 ; python_full_version == "3.13.10" \
+    --hash=sha256:01c2e7ad422deeb112f8efa2bfe4c4473b2645d429235b8b317fe4c12677119d \
+    --hash=sha256:5116fec76f849671ff504a3c45f5b4e12b7a348527267abecefb9d35b954150c
 advent-of-code-ocr==1.1.0 ; python_full_version == "3.13.10" \
     --hash=sha256:a5a0668b88e94a8d7319fe024a8840799bf1ba8526fc4a5b5f5178459d678a36 \
     --hash=sha256:f03373e2d364b30da9a168064ed9342c6e18b7a443f433e551038e8437671ba7
