@@ -1465,9 +1465,9 @@ pyyaml==6.0.3 ; python_full_version == "3.13.10" \
     --hash=sha256:f7057c9a337546edc7973c0d3ba84ddcdf0daa14533c2065749c9075001090e6 \
     --hash=sha256:fa160448684b4e94d80416c0fa4aac48967a969efe22931448d853ada8baf926 \
     --hash=sha256:fc09d0aa354569bc501d4e787133afc08552722d3ab34836a80547331bb5d4a0
-rich==14.3.0 ; python_full_version == "3.13.10" \
-    --hash=sha256:0b8c1e368c1125b9e993c2d2f1342802525f4853fc6dac2e8e9e88bac0f45bce \
-    --hash=sha256:b75e54d3abbcc49137e83e4db54dc86c5e47687eebc95aa0305363231a36e699
+rich==14.3.1 ; python_full_version == "3.13.10" \
+    --hash=sha256:b8c5f568a3a749f9290ec6bddedf835cec33696bfc1e48bcfecb276c7386e4b8 \
+    --hash=sha256:da750b1aebbff0b372557426fb3f35ba56de8ef954b3190315eb64076d6fb54e
 scipy==1.17.0 ; python_full_version == "3.13.10" \
     --hash=sha256:00fb5f8ec8398ad90215008d8b6009c9db9fa924fd4c7d6be307c6f945f9cd73 \
     --hash=sha256:031121914e295d9791319a1875444d55079885bbae5bdc9c5e0f2ee5f09d34ff \
