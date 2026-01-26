@@ -36,6 +36,7 @@ ARG POETRY_VERSION=1.8.5
 
 ENV PYENV_ROOT="${HOME}.pyenv/"
 ENV PATH="${PYENV_ROOT}shims:${PYENV_ROOT}/bin:${HOME}/.local/bin:$PATH"
+ENV POETRY_VIRTUALENVS_IN_PROJECT=true
 
 RUN curl https://pyenv.run | bash \
     && echo "installed pyenv" \
@@ -43,8 +44,7 @@ RUN curl https://pyenv.run | bash \
     && echo "installed python ${PYTHON_VERSION}" \
     && pyenv global ${PYTHON_VERSION} \
     && echo "set global python version ${PYTHON_VERSION}" \
-    && curl -sSL https://install.python-poetry.org | python3 - \
-    && poetry config virtualenvs.in-project true
+    && curl -sSL https://install.python-poetry.org | python3 -
 
 # Advent of Code
 #COPY --link --chown=${USER}:${USER} AOC_TOKE[N] ${HOME}.config/aocd/token
