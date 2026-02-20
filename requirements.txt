@@ -395,9 +395,9 @@ numpy==2.4.2 ; python_full_version == "3.13.12" \
 packaging==26.0 ; python_full_version == "3.13.12" \
     --hash=sha256:00243ae351a257117b6a241061796684b084ed1c516a08c48a3f7e147a9d80b4 \
     --hash=sha256:b36f1fef9334a5588b4166f8bcd26a14e521f2b55e6b9de3aaa80d3ff7a37529
-parse==1.21.0 ; python_full_version == "3.13.12" \
-    --hash=sha256:6d81f7bae0ab25fd72818375c4a9c71c8705256bfc42e8725be609cf8b904aed \
-    --hash=sha256:937725d51330ffec9c7a26fdb5623baa135d8ba8ed78817ea9523538844e3ce4
+parse==1.21.1 ; python_full_version == "3.13.12" \
+    --hash=sha256:55339ca698019815df3b8e8b550e5933933527e623b0cdf1ca2f404da35ffb47 \
+    --hash=sha256:825e1a88e9d9fb481b8d2ca709c6195558b6eaa97c559ad3a9a20aa2d12815a3
 pebble==5.2.0 ; python_full_version == "3.13.12" \
     --hash=sha256:6237a792a78524648857ec6d2dae069c91a45bdef18daf957078a56e2dd8e0a8 \
     --hash=sha256:8e0a5f6a1cfdd0ac1bfc4a789e20d2b4b895de976e547d23b7de23b71ef39b34
