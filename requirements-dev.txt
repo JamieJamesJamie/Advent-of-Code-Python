@@ -1597,15 +1597,12 @@ stevedore==5.7.0 ; python_full_version == "3.13.12" \
 tomlkit==0.14.0 ; python_full_version == "3.13.12" \
     --hash=sha256:592064ed85b40fa213469f81ac584f67a4f2992509a7c3ea2d632208623a3680 \
     --hash=sha256:cf00efca415dbd57575befb1f6634c4f42d2d87dbba376128adb42c121b87064
-typed-argument-parser==1.11.0 ; python_full_version == "3.13.12" \
-    --hash=sha256:674d2aa8050618d2f5663bec7a2fdef274cddd59f6275f53386206aad906be9c \
-    --hash=sha256:71a4f7661d1c072101bad014f26cbc2c7cf0e626c51fc7681c66975cc1ecc723
+typed-argument-parser==1.12.0 ; python_full_version == "3.13.12" \
+    --hash=sha256:9cdf26c710b9cde2992ff0763288598628ac852d9a1accf5269837cd6e24a930 \
+    --hash=sha256:cf5f7cafac869fb9627c4c90394e321c895d58872d865ad2c62e65668d259fa0
 typing-extensions==4.15.0 ; python_full_version == "3.13.12" \
     --hash=sha256:0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466 \
     --hash=sha256:f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548
-typing-inspect==0.9.0 ; python_full_version == "3.13.12" \
-    --hash=sha256:9ee6fc59062311ef8547596ab6b955e1b8aa46242d854bfc78f4f6b0eff35f9f \
-    --hash=sha256:b23fc42ff6f6ef6954e4852c1fb512cdd18dbea03134f91f856a95ccc9461f78
 tzdata==2026.1 ; platform_system == "Windows" and python_full_version == "3.13.12" \
     --hash=sha256:4b1d2be7ac37ceafd7327b961aa3a54e467efbdb563a23655fbfe0d39cfc42a9 \
     --hash=sha256:67658a1903c75917309e753fdc349ac0efd8c27db7a0cb406a25be4840f87f98

@@ -2369,18 +2369,17 @@ files = [
 
 [[package]]
 name = "typed-argument-parser"
-version = "1.11.0"
+version = "1.12.0"
 description = "Typed Argument Parser"
 optional = false
-python-versions = ">=3.9"
+python-versions = ">=3.10"
 files = [
-    {file = "typed_argument_parser-1.11.0-py3-none-any.whl", hash = "sha256:674d2aa8050618d2f5663bec7a2fdef274cddd59f6275f53386206aad906be9c"},
-    {file = "typed_argument_parser-1.11.0.tar.gz", hash = "sha256:71a4f7661d1c072101bad014f26cbc2c7cf0e626c51fc7681c66975cc1ecc723"},
+    {file = "typed_argument_parser-1.12.0-py3-none-any.whl", hash = "sha256:9cdf26c710b9cde2992ff0763288598628ac852d9a1accf5269837cd6e24a930"},
+    {file = "typed_argument_parser-1.12.0.tar.gz", hash = "sha256:cf5f7cafac869fb9627c4c90394e321c895d58872d865ad2c62e65668d259fa0"},
 ]
 
 [package.dependencies]
 docstring-parser = ">=0.15"
-typing-inspect = ">=0.7.1"
 
 [package.extras]
 dev = ["pydantic (>=2.5.0)", "typed-argument-parser[dev-no-pydantic]"]
@@ -2396,21 +2395,6 @@ files = [
     {file = "typing_extensions-4.15.0-py3-none-any.whl", hash = "sha256:f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548"},
     {file = "typing_extensions-4.15.0.tar.gz", hash = "sha256:0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466"},
 ]
-
-[[package]]
-name = "typing-inspect"
-version = "0.9.0"
-description = "Runtime inspection utilities for typing module."
-optional = false
-python-versions = "*"
-files = [
-    {file = "typing_inspect-0.9.0-py3-none-any.whl", hash = "sha256:9ee6fc59062311ef8547596ab6b955e1b8aa46242d854bfc78f4f6b0eff35f9f"},
-    {file = "typing_inspect-0.9.0.tar.gz", hash = "sha256:b23fc42ff6f6ef6954e4852c1fb512cdd18dbea03134f91f856a95ccc9461f78"},
-]
-
-[package.dependencies]
-mypy-extensions = ">=0.3.0"
-typing-extensions = ">=3.7.4"
 
 [[package]]
 name = "tzdata"
@@ -2612,4 +2596,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.0"
 python-versions = "3.13.12"
-content-hash = "73cd31ad3a40a0b8b84b00920bb8cf184961a9865e8bd6cfd6de4a33f3660eb9"
+content-hash = "7a670e54704e7f695a832bb20b8b97eb5b2222601f2259f38b865e71111c6367"
