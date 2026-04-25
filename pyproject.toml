@@ -19,7 +19,7 @@ matplotlib = "3.10.9"
 networkx = "3.6.1"
 numpy = "2.4.4"
 parse = "1.21.1"
-rich = "14.3.3"
+rich = "15.0.0"
 scipy = "1.17.1"
 typed-argument-parser = "1.12.0"
 
