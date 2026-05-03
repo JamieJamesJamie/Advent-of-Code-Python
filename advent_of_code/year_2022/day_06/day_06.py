@@ -10,17 +10,15 @@ class Day6(Solver):
 
     @staticmethod
     def _get_marker(datastream_buffer: str, num_distinct_characters: int) -> int:
-        """Returns the marker for the specified :param:`datastream_buffer`
-        given the number of distinct characters
-        :param:`num_distinct_characters` that there should be to indicate a
-        marker.
+        """Returns the marker for the specified :param:`datastream_buffer` given the
+        number of distinct characters :param:`num_distinct_characters` that there should
+        be to indicate a marker.
 
-        :param datastream_buffer: The datastream buffer received by the
-            device.
-        :param num_distinct_characters: The number of distinct
-            characters that there should be to indicate a marker.
-        :return: The number of characters that need to be processed
-            before the marker is detected.
+        :param datastream_buffer: The datastream buffer received by the device.
+        :param num_distinct_characters: The number of distinct characters that there
+            should be to indicate a marker.
+        :return: The number of characters that need to be processed before the marker is
+            detected.
         """
         window: deque[str] = deque(maxlen=num_distinct_characters)
 
@@ -48,10 +46,9 @@ class Day6(Solver):
     def part1(parsed_input: str) -> int:
         """Solves part 1.
 
-        :param parsed_input: The datastream buffer received by the
-            device.
-        :return: The number of characters that need to be processed
-            before the start-of-packet marker is detected.
+        :param parsed_input: The datastream buffer received by the device.
+        :return: The number of characters that need to be processed before the start-of-
+            packet marker is detected.
         """
         return Day6._get_marker(parsed_input, 4)
 
@@ -59,9 +56,8 @@ class Day6(Solver):
     def part2(parsed_input: str) -> int:
         """Solves part 2.
 
-        :param parsed_input: The datastream buffer received by the
-            device.
-        :return: The number of characters that need to be processed
-            before the start-of-message marker is detected.
+        :param parsed_input: The datastream buffer received by the device.
+        :return: The number of characters that need to be processed before the start-of-
+            message marker is detected.
         """
         return Day6._get_marker(parsed_input, 14)

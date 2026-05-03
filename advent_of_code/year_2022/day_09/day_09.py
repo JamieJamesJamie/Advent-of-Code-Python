@@ -18,8 +18,7 @@ class Position(NamedTuple):
     y: int
 
     def is_touching(self, position: "Position") -> bool:
-        """Returns whether this knot is touching the :param:`position` of
-        another knot.
+        """Returns whether this knot is touching the :param:`position` of another knot.
 
         :param position: The position of another knot.
         :return: Whether this knot and the given knot are touching.
@@ -36,8 +35,8 @@ class Position(NamedTuple):
         )
 
     def distance_from(self, position: "Position") -> int:
-        """Returns the distance between this knot's position and the
-        :param:`position` of another knot.
+        """Returns the distance between this knot's position and the :param:`position`
+        of another knot.
 
         :param position: The position of another knot.
         :return: The distance between this knot and another knot.
@@ -51,8 +50,7 @@ class SolverState:
     def __init__(self, rope_length: int):
         """The constructor for the :class:`SolverState`.
 
-        :param rope_length: The length of the rope being used in the
-            puzzle.
+        :param rope_length: The length of the rope being used in the puzzle.
         """
         self.current_positions = [Position(0, 0) for _ in range(rope_length)]
         self.all_tail_positions = {self.current_positions[-1]}
@@ -63,11 +61,10 @@ class Direction(ABC):
 
     @classmethod
     def compute(cls, num_steps: int, solver_state: SolverState) -> SolverState:
-        """Computes the positions of each knot in the rope and what positions
-        the tail of the rope has traversed.
+        """Computes the positions of each knot in the rope and what positions the tail
+        of the rope has traversed.
 
-        :param num_steps: Number of steps to traverse the head of the
-            rope.
+        :param num_steps: Number of steps to traverse the head of the rope.
         :param solver_state: Current state of the solver.
         :return: The new state of the solver.
         """
@@ -124,8 +121,8 @@ class Direction(ABC):
         :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step in a particular direction away
-            from the given position.
+        :return: A new position one step in a particular direction away from the given
+            position.
         """
 
 
@@ -137,8 +134,7 @@ class Up(Direction):
         """Returns a new position one step up away from :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step up away from the given
-            position.
+        :return: A new position one step up away from the given position.
         """
         return Position(position.x, position.y + 1)
 
@@ -151,8 +147,7 @@ class Down(Direction):
         """Returns a new position one step down away from :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step down away from the given
-            position.
+        :return: A new position one step down away from the given position.
         """
         return Position(position.x, position.y - 1)
 
@@ -165,8 +160,7 @@ class Left(Direction):
         """Returns a new position one step left away from :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step left away from the given
-            position.
+        :return: A new position one step left away from the given position.
         """
         return Position(position.x - 1, position.y)
 
@@ -179,8 +173,7 @@ class Right(Direction):
         """Returns a new position one step right away from :param:`position`.
 
         :param position: The position of a knot.
-        :return: A new position one step right away from the given
-            position.
+        :return: A new position one step right away from the given position.
         """
         return Position(position.x + 1, position.y)
 
@@ -273,8 +266,7 @@ class Day9(Solver):
         """Parse input for puzzle 9.
 
         :param puzzle_input: Input to parse.
-        :return: A sequence of instructions to move the head of the
-            rope.
+        :return: A sequence of instructions to move the head of the rope.
         """
         instructions = []
 
@@ -293,10 +285,8 @@ class Day9(Solver):
     def _solve_puzzle(instructions: tuple[Instruction, ...], rope_length: int) -> int:
         """Solves the puzzle.
 
-        :param instructions: A sequence of instructions to move the head
-            of the rope.
-        :param rope_length: The length of the rope being used in the
-            puzzle.
+        :param instructions: A sequence of instructions to move the head of the rope.
+        :param rope_length: The length of the rope being used in the puzzle.
         :return: The number of positions the tail visited at least once.
         """
         solver_state = SolverState(rope_length=rope_length)
@@ -312,8 +302,7 @@ class Day9(Solver):
     def part1(parsed_input: tuple[Instruction, ...]) -> int:
         """Solves part 1.
 
-        :param parsed_input: A sequence of instructions to move the head
-            of the rope.
+        :param parsed_input: A sequence of instructions to move the head of the rope.
         :return: The number of positions the tail visited at least once.
         """
         return Day9._solve_puzzle(instructions=parsed_input, rope_length=2)
@@ -322,8 +311,7 @@ class Day9(Solver):
     def part2(parsed_input: tuple[Instruction, ...]) -> int:
         """Solves part 2.
 
-        :param parsed_input: A sequence of instructions to move the head
-            of the rope.
+        :param parsed_input: A sequence of instructions to move the head of the rope.
         :return: The number of positions the tail visited at least once.
         """
         return Day9._solve_puzzle(instructions=parsed_input, rope_length=10)

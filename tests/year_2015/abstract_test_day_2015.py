@@ -1,5 +1,4 @@
-"""Abstract test class to be used for testing Solution classes for the year
-2015."""
+"""Abstract test class to be used for testing Solution classes for the year 2015."""
 
 from abc import ABCMeta
 

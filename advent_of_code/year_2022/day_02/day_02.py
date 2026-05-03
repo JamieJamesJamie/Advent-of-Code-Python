@@ -37,8 +37,8 @@ class Day2(Solver):
 
     @staticmethod
     def _outcome(opponent_move: Move, my_move: Move) -> Outcome:
-        """Returns the :class:`Outcome` of a Rock Paper Scissors game, given
-        the :param:`opponent_move` and :param:`my_move`.
+        """Returns the :class:`Outcome` of a Rock Paper Scissors game, given the
+        :param:`opponent_move` and :param:`my_move`.
 
         :param opponent_move: Opponent's move in Rock Paper Scissors.
         :param my_move: My move in Rock Paper Scissors.
@@ -54,14 +54,13 @@ class Day2(Solver):
 
     @staticmethod
     def _get_move(opponent_move: Move, my_outcome: Outcome) -> Move:
-        """Returns the :class:`Move` that should be made in a Rock Paper
-        Scissors game against the given :param:`opponent_move` to achieve the
-        given :class:`my_outcome`.
+        """Returns the :class:`Move` that should be made in a Rock Paper Scissors game
+        against the given :param:`opponent_move` to achieve the given
+        :class:`my_outcome`.
 
         :param opponent_move: Opponent's move in Rock Paper Scissors.
         :param my_outcome: The outcome that should be achieved.
-        :return: The move that should be made to achieve the given
-            outcome.
+        :return: The move that should be made to achieve the given outcome.
         """
         if Day2._outcome(opponent_move, Move.ROCK) == my_outcome:
             return Move.ROCK
@@ -76,8 +75,7 @@ class Day2(Solver):
         """Parse input for puzzle 2.
 
         :param puzzle_input: Input to parse.
-        :return: The columns (round info) for each round of Rock Paper
-            Scissors.
+        :return: The columns (round info) for each round of Rock Paper Scissors.
         """
         return tuple(RoundInfo(*line.split(" ")) for line in puzzle_input.splitlines())
 
@@ -85,8 +83,7 @@ class Day2(Solver):
     def part1(parsed_input: Iterable[RoundInfo]) -> int:
         """Solves part 1.
 
-        :param parsed_input: The round info for each round of Rock Paper
-            Scissors.
+        :param parsed_input: The round info for each round of Rock Paper Scissors.
         :return: The total score.
         """
         total_score = 0
@@ -108,8 +105,7 @@ class Day2(Solver):
     def part2(parsed_input: Iterable[RoundInfo]) -> int:
         """Solves part 2.
 
-        :param parsed_input: The round info for each round of Rock Paper
-            Scissors.
+        :param parsed_input: The round info for each round of Rock Paper Scissors.
         :return: The total score.
         """
         total_score = 0

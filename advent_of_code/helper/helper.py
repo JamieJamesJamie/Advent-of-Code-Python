@@ -1,10 +1,9 @@
-"""Helper functions that may be useful to solve some Advent of Code
-problems."""
+"""Helper functions that may be useful to solve some Advent of Code problems."""
 
 
 def inclusive_range(start, stop=None, step=1):
-    """Return an object that produces a sequence of integers from
-    :param:`start` (inclusive) to :param:`stop` (inclusive) by :param:`step`.
+    """Return an object that produces a sequence of integers from :param:`start`
+    (inclusive) to :param:`stop` (inclusive) by :param:`step`.
 
     range(i, j) produces i, i+1, i+2, ..., j.
 

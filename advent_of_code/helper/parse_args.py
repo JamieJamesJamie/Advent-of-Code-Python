@@ -11,8 +11,8 @@ DEFAULT_FILE_PATH = Path("input.txt")
 
 
 class ArgumentParser(Tap):
-    """Typed Argument Parser (TAP) class used to parse command line arguments
-    into the program."""
+    """Typed Argument Parser (TAP) class used to parse command line arguments into the
+    program."""
 
     years: tuple[int, ...]
     """Years of the puzzles to solve."""

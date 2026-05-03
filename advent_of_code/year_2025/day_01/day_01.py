@@ -25,8 +25,8 @@ class Day1(Solver):
         """Solves part 1.
 
         :param parsed_input: Input to parse.
-        :return: The number of times the dial points at 0 after
-            following each rotation step.
+        :return: The number of times the dial points at 0 after following each rotation
+            step.
         """
         password = 0
         dial_pointer = 50
@@ -44,8 +44,7 @@ class Day1(Solver):
         """Solves part 2.
 
         :param parsed_input: Input to parse.
-        :return: The number of times the dial points at 0 during each
-            rotation step.
+        :return: The number of times the dial points at 0 during each rotation step.
         """
         password = 0
         dial_pointer = 50
