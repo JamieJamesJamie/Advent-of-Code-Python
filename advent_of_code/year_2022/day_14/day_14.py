@@ -45,15 +45,13 @@ class Day14(Solver):
     def _parse_straight_line(
         coordinate1_string: Iterable[str], coordinate2_string: Iterable[str]
     ) -> Iterable[tuple[int, int]]:
-        """Parses the given coordinates representing the ends of a straight
-        line, and returns each coordinate on this straight line.
+        """Parses the given coordinates representing the ends of a straight line, and
+        returns each coordinate on this straight line.
 
-        :param coordinate1_string: An iterable containing 2 coordinates
-            as strings.
-        :param coordinate2_string: An iterable containing 2 coordinates
-            as strings.
-        :return: Each coordinate along the straight line represented by
-            the given coordinates.
+        :param coordinate1_string: An iterable containing 2 coordinates as strings.
+        :param coordinate2_string: An iterable containing 2 coordinates as strings.
+        :return: Each coordinate along the straight line represented by the given
+            coordinates.
         """
         coordinate1 = Position(*(int(dim) for dim in coordinate1_string))
         coordinate2 = Position(*(int(dim) for dim in coordinate2_string))
@@ -90,8 +88,7 @@ class Day14(Solver):
         void_y_coordinate: int,
         sand_source: Position = Position(500, 0),
     ) -> Position | None:
-        """Simulates a single unit of sand falling from the
-        :param:`sand_source`.
+        """Simulates a single unit of sand falling from the :param:`sand_source`.
 
         :param cave_map: Mapping from positions to elements.
         :param void_y_coordinate: The point at which sand will fall into the void.
@@ -126,8 +123,7 @@ class Day14(Solver):
         """Simulates sand falling from the :param:`sand_source`.
 
         :param cave_map: Mapping from positions to elements.
-        :param void_y_coordinate: The point at which sand will fall into
-            the void.
+        :param void_y_coordinate: The point at which sand will fall into the void.
         :param sand_source: The source of sand.
         :return: Mapping from positions to elements.
         """
@@ -149,8 +145,8 @@ class Day14(Solver):
         """Solves part 1.
 
         :param parsed_input: Mapping from positions to ROCK elements.
-        :return: The number of units of sand that have come to rest
-            before sand starts flowing into the void below.
+        :return: The number of units of sand that have come to rest before sand starts
+            flowing into the void below.
         """
         void_y_coordinate = max(y_coordinate for _, y_coordinate in parsed_input.keys())
         cave_map = Day14._simulate_sand(parsed_input, void_y_coordinate)

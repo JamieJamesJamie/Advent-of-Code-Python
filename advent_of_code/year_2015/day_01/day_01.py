@@ -13,8 +13,7 @@ class Day1(Solver):
         """Parse input for puzzle 1.
 
         :param puzzle_input: Input to parse.
-        :return: The floor increment for each direction in the
-            instructions.
+        :return: The floor increment for each direction in the instructions.
         """
         floor_increment_mappings = {"(": 1, ")": -1}
 
@@ -34,9 +33,8 @@ class Day1(Solver):
         """Solves part 2.
 
         :param parsed_input: Input to parse.
-        :return: The position in the instructions that causes Santa to
-            first enter the basement, or None if Santa never makes it to
-            the basement.
+        :return: The position in the instructions that causes Santa to first enter the
+            basement, or None if Santa never makes it to the basement.
         """
         basement_floor = -1
         current_floor = 0

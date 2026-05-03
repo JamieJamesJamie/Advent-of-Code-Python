@@ -47,8 +47,8 @@ class ParsedInput:
     def sum_middle_pages(self, is_ordered: bool) -> int:
         """Sums the middle pages.
 
-        :param is_ordered: Whether to sum the correctly-ordered updates
-            or the incorrectly-ordered updates.
+        :param is_ordered: Whether to sum the correctly-ordered updates or the
+            incorrectly-ordered updates.
         :return: The sum of the middle pages.
         """
         return sum(self._iterate_middle_pages(is_ordered))
@@ -71,8 +71,7 @@ class Day5(Solver):
         """Solves part 1.
 
         :param parsed_input: The parsed input.
-        :return: The sum of the middle page numbers from the correctly-
-            ordered updates.
+        :return: The sum of the middle page numbers from the correctly- ordered updates.
         """
         return parsed_input.sum_middle_pages(is_ordered=True)
 
@@ -81,7 +80,7 @@ class Day5(Solver):
         """Solves part 2.
 
         :param parsed_input: The parsed input.
-        :return: The sum of the middle page numbers from the
-            incorrectly-ordered updates.
+        :return: The sum of the middle page numbers from the incorrectly-ordered
+            updates.
         """
         return parsed_input.sum_middle_pages(is_ordered=False)

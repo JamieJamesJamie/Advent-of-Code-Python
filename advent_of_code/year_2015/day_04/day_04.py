@@ -11,14 +11,14 @@ class Day4(Solver):
 
     @staticmethod
     def _find_md5_hash(key_prefix: str, num_leading_zeros: int) -> int:
-        """Finds the smallest key suffix that produces an MD5 hash with the
-        specified number of leading zeros.
+        """Finds the smallest key suffix that produces an MD5 hash with the specified
+        number of leading zeros.
 
         :param key_prefix: The prefix of the MD5 key.
-        :param num_leading_zeros: The number of leading zeros that the
-            MD5 hash should have.
-        :return: The smallest key suffix that produces an MD5 hash with
-            the specified number of leading zeros.
+        :param num_leading_zeros: The number of leading zeros that the MD5 hash should
+            have.
+        :return: The smallest key suffix that produces an MD5 hash with the specified
+            number of leading zeros.
         """
         for number in itertools.count(1):
             if (
@@ -47,8 +47,7 @@ class Day4(Solver):
         """Solves part 1.
 
         :param parsed_input: Input to parse.
-        :return: The smallest key suffix that produces an MD5 hash with
-            5 leading zeros.
+        :return: The smallest key suffix that produces an MD5 hash with 5 leading zeros.
         """
         return Day4._find_md5_hash(parsed_input, 5)
 
@@ -57,7 +56,6 @@ class Day4(Solver):
         """Solves part 2.
 
         :param parsed_input: Input to parse.
-        :return: The smallest key suffix that produces an MD5 hash with
-            6 leading zeros.
+        :return: The smallest key suffix that produces an MD5 hash with 6 leading zeros.
         """
         return Day4._find_md5_hash(parsed_input, 6)

@@ -34,8 +34,7 @@ class SolverState:
         """Constructor for :class:`SolverState`.
 
         :param crates: Lines of crates as described in the input file.
-        :param stack_labels: The labels given to stacks in the input
-            file.
+        :param stack_labels: The labels given to stacks in the input file.
         :param instructions: The procedure to follow to move crates.
         """
         self.instructions = tuple(
@@ -52,8 +51,7 @@ class SolverState:
         """Parse the crate input at the top of the input file.
 
         :param crates: Lines of crates as described in the input file.
-        :param stack_labels: The labels given to stacks in the input
-            file.
+        :param stack_labels: The labels given to stacks in the input file.
         :return: A mapping from stack labels to stacks of crates.
         """
         stacks: OrderedDict[str, list[str]] = OrderedDict(
@@ -82,8 +80,8 @@ class Day5(Solver):
     def _parse_instructions_part1(
         instructions: Iterable[Instruction], stacks: OrderedDict[str, list[str]]
     ) -> None:
-        """Parse the :param:`instructions` to move crates in the
-        :param:`stacks` using the interpretation for part 1 of the puzzle.
+        """Parse the :param:`instructions` to move crates in the :param:`stacks` using
+        the interpretation for part 1 of the puzzle.
 
         :param instructions: Instructions to move crates in the stacks.
         :param stacks: A mapping from stack labels to stacks of crates.
@@ -98,8 +96,8 @@ class Day5(Solver):
     def _parse_instructions_part2(
         instructions: Iterable[Instruction], stacks: OrderedDict[str, list[str]]
     ) -> None:
-        """Parse the :param:`instructions` to move crates in the
-        :param:`stacks` using the interpretation for part 2 of the puzzle.
+        """Parse the :param:`instructions` to move crates in the :param:`stacks` using
+        the interpretation for part 2 of the puzzle.
 
         :param instructions: Instructions to move crates in the stacks.
         :param stacks: A mapping from stack labels to stacks of crates.

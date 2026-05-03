@@ -22,10 +22,9 @@ def year_day_path(year: int, day: int) -> Path:
 
 
 def src_path() -> Path:
-    """Returns the :class:`Path` of the directory where the year subdirectories
-    are located.
+    """Returns the :class:`Path` of the directory where the year subdirectories are
+    located.
 
-    :return: The Path of the directory where the year subdirectories are
-        located.
+    :return: The Path of the directory where the year subdirectories are located.
     """
     return Path(__file__).parents[1]

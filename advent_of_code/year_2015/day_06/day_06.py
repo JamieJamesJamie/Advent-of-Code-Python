@@ -75,8 +75,7 @@ class Day6(Solver):
 
     @staticmethod
     def _map_action_part_1(action: Action, light_slice):
-        """Returns the adjusted lights after performing the given
-        :param:action.
+        """Returns the adjusted lights after performing the given :param:action.
 
         :param action: The action to perform.
         :param light_slice: The lights to perform the action on.
@@ -94,8 +93,7 @@ class Day6(Solver):
 
     @staticmethod
     def _map_action_part_2(action: Action, light_slice):
-        """Returns the adjusted lights after performing the given
-        :param:action.
+        """Returns the adjusted lights after performing the given :param:action.
 
         :param action: The action to perform.
         :param light_slice: The lights to perform the action on.
@@ -118,10 +116,9 @@ class Day6(Solver):
 
         :param instructions: The instructions to follow.
         :param dtype: The type of light brightness.
-        :param mapper: The mapper to use to adjust the lights'
-            brightness.
-        :return: The total brightness of the lights after following the
-            given instructions.
+        :param mapper: The mapper to use to adjust the lights' brightness.
+        :return: The total brightness of the lights after following the given
+            instructions.
         """
         lights = np.zeros((1000, 1000), dtype=dtype)
 
@@ -153,8 +150,8 @@ class Day6(Solver):
         """Solves part 1.
 
         :param parsed_input: Input to parse.
-        :return: The number of lights that are lit after following the
-            given instructions.
+        :return: The number of lights that are lit after following the given
+            instructions.
         """
         return Day6._calculate_light_sum(parsed_input, bool, Day6._map_action_part_1)
 
@@ -163,7 +160,7 @@ class Day6(Solver):
         """Solves part 2.
 
         :param parsed_input: Input to parse.
-        :return: The total brightness of the lights after following the
-            given instructions.
+        :return: The total brightness of the lights after following the given
+            instructions.
         """
         return Day6._calculate_light_sum(parsed_input, int, Day6._map_action_part_2)

@@ -24,8 +24,7 @@ class Day3(Solver):
         """Traverses to the next position and adds the new position to
         :param:`houses_visited`.
 
-        :param houses_visited: The set of houses to add the new position
-            to.
+        :param houses_visited: The set of houses to add the new position to.
         :param current_position: The current position to traverse from.
         :param direction: The direction to traverse to.
         """

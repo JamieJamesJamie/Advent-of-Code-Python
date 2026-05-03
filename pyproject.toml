@@ -38,6 +38,9 @@ pylint = "4.0.5"
 [tool.bandit]
 exclude_dirs = ["tests"]
 
+[tool.docformatter]
+black = true
+
 [tool.isort]
 profile = "black"
 

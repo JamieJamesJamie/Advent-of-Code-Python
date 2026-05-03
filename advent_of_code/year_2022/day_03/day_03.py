@@ -11,8 +11,8 @@ class Day3(Solver):
 
     @staticmethod
     def _uppercase_priority(character: str) -> int:
-        """Returns the priority of the given item type :param:`character` given
-        that :param:`character` is uppercase.
+        """Returns the priority of the given item type :param:`character` given that
+        :param:`character` is uppercase.
 
         :param character: The item type to get the priority of.
         :return: The priority of the given item type.
@@ -21,8 +21,8 @@ class Day3(Solver):
 
     @staticmethod
     def _lowercase_priority(character: str) -> int:
-        """Returns the priority of the given item type :param:`character` given
-        that :param:`character` is lowercase.
+        """Returns the priority of the given item type :param:`character` given that
+        :param:`character` is lowercase.
 
         :param character: The item type to get the priority of.
         :return: The priority of the given item type.
@@ -56,8 +56,8 @@ class Day3(Solver):
         """Solves part 1.
 
         :param parsed_input: The contents contained in each rucksack.
-        :return: The sum of the priorities of each item that appears in
-            both compartments in each rucksack.
+        :return: The sum of the priorities of each item that appears in both
+            compartments in each rucksack.
         """
         summed_priorities = 0
 

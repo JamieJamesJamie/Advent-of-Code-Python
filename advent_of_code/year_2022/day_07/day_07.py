@@ -33,8 +33,8 @@ class Day7(Solver):
 
     @staticmethod
     def process_file(line: Sequence[str], current_node: Node) -> None:
-        """Adds file or directory specified by :param:`line` as a child to the
-        given :param:`current_node`.
+        """Adds file or directory specified by :param:`line` as a child to the given
+        :param:`current_node`.
 
         If the specified file or directory is already a child of :param:`current_node`,
         then the file or directory is not added as a child to :param:`current_node`.
@@ -51,11 +51,10 @@ class Day7(Solver):
 
     @staticmethod
     def change_directory(line: Sequence[str], current_node: Node) -> Node:
-        """Changes directory from the :param:`current_node` using the
-        instruction provided in :param:`line`.
+        """Changes directory from the :param:`current_node` using the instruction
+        provided in :param:`line`.
 
-        :param line: The change directory (cd) instruction as seen in
-            the puzzle input.
+        :param line: The change directory (cd) instruction as seen in the puzzle input.
         :param current_node: The node to traverse from.
         :return: The node that was traversed to.
         """
@@ -78,8 +77,8 @@ class Day7(Solver):
         """Renders the :param:`node` and its children to a pretty string.
 
         :param node: The node to render from.
-        :return: A pretty string that can be printed to see a visual
-            representation of the tree starting at the provided node.
+        :return: A pretty string that can be printed to see a visual representation of
+            the tree starting at the provided node.
         """
         return "\n".join(
             f"{pre}{node_i.name}"
@@ -102,8 +101,8 @@ class Day7(Solver):
     def post_order_function_with_file_size_limit(
         node: Node, file_size_limit: int | None = None
     ) -> bool:
-        """Calculates the file size of the :param:`node` and returns whether
-        the :param:`node` should be used for traversal.
+        """Calculates the file size of the :param:`node` and returns whether the
+        :param:`node` should be used for traversal.
 
         The :param:`node` will be used for traversal if the :param:`node`'s file size
         is less than or equal to the :param:`file_size_limit`.
@@ -126,8 +125,7 @@ class Day7(Solver):
         """Parse input for puzzle 7.
 
         :param puzzle_input: Input to parse.
-        :return: The root directory of the tree described in the puzzle
-            input.
+        :return: The root directory of the tree described in the puzzle input.
         """
         root = Node("/")
         current_node = root
@@ -154,10 +152,10 @@ class Day7(Solver):
     def part1(parsed_input: Node) -> int:
         """Solves part 1.
 
-        :param parsed_input: The root directory of the tree described in
-            the puzzle input.
-        :return: The sum of the directories' total file sizes that are
-            less than or equal to 100,000.
+        :param parsed_input: The root directory of the tree described in the puzzle
+            input.
+        :return: The sum of the directories' total file sizes that are less than or
+            equal to 100,000.
         """
         return sum(
             node.file_size
@@ -174,11 +172,10 @@ class Day7(Solver):
     def part2(parsed_input: Node) -> int:
         """Solves part 2.
 
-        :param parsed_input: The root directory of the tree described in
-            the puzzle input.
-        :return: The total file size of the smallest directory that, if
-            deleted, would free up enough space on the filesystem to run
-            the update.
+        :param parsed_input: The root directory of the tree described in the puzzle
+            input.
+        :return: The total file size of the smallest directory that, if deleted, would
+            free up enough space on the filesystem to run the update.
         """
 
         total_disk_space = 70_000_000
