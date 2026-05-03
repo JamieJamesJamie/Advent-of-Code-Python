@@ -36,9 +36,9 @@ class Day7(Solver):
         """Adds file or directory specified by :param:`line` as a child to the given
         :param:`current_node`.
 
-        If the specified file or directory is already a child of :param:`current_node`,
-        then the file or directory is not added as a child to :param:`current_node`.
-
+        If the specified file or directory is already a child of
+        :param:`current_node`, then the file or directory is not added as a child to
+        :param:`current_node`.
         :param line: Line from the puzzle input describing the file or directory.
         :param current_node: The node to add the child to.
         """
@@ -104,11 +104,12 @@ class Day7(Solver):
         """Calculates the file size of the :param:`node` and returns whether the
         :param:`node` should be used for traversal.
 
-        The :param:`node` will be used for traversal if the :param:`node`'s file size
-        is less than or equal to the :param:`file_size_limit`.
-        Otherwise, if :param:`file_size_limit` is :code:`None`,
-        this function will always return :code:`True`.
-
+        The
+        :param:`node` will be used for traversal if the
+        :param:`node`'s file size is less than or equal to the
+        :param:`file_size_limit`. Otherwise, if
+        :param:`file_size_limit` is :code:`None`, this function will always return
+            :code:`True`.
         :param node: The node to check.
         :param file_size_limit: The file size limit to filter on.
         :return: Whether the node should be included in the filter.
@@ -177,7 +178,6 @@ class Day7(Solver):
         :return: The total file size of the smallest directory that, if deleted, would
             free up enough space on the filesystem to run the update.
         """
-
         total_disk_space = 70_000_000
         required_unused_space = 30_000_000
         min_directory_deletion_file_size = required_unused_space - (
