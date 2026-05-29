@@ -1707,13 +1707,13 @@ files = [
 
 [[package]]
 name = "parse"
-version = "1.22.0"
+version = "1.22.1"
 description = "parse() is the opposite of format()"
 optional = false
 python-versions = "*"
 files = [
-    {file = "parse-1.22.0-py2.py3-none-any.whl", hash = "sha256:eea8ed34e2614cea65d9c1d4af9cb68cce26aea13d44bdcaf83c1b40884fe945"},
-    {file = "parse-1.22.0.tar.gz", hash = "sha256:d4987d68ccf08b6ba3bf80b5004ff7de61c4337cba2d8350ae5c9925794979d9"},
+    {file = "parse-1.22.1-py2.py3-none-any.whl", hash = "sha256:20f0925a46f06602485ac90d751764d0697fd8455aaa97489ba8953a4b66de32"},
+    {file = "parse-1.22.1.tar.gz", hash = "sha256:d3a4740ec3da338e2b258b2d69741b731eadfddca59e24a14bc4ee5fce38c911"},
 ]
 
 [[package]]
@@ -2612,4 +2612,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.0"
 python-versions = "3.13.13"
-content-hash = "815cd3cd47c08e35017f7696f15a8931bf75dcb4bf3c5a609a416dd0b68b0841"
+content-hash = "ba56fe0cb071f1cdccb59eccc45687e4eb01f13fb47f6af02e45745b4c2a761e"
