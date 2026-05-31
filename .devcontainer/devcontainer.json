@@ -27,6 +27,7 @@
         "VisualStudioExptTeam.vscodeintellicode",
 
         // Docker
+        "docker.docker",
         "ms-azuretools.vscode-docker",
 
         // Git
@@ -37,12 +38,17 @@
         "me-dutour-mathieu.vscode-github-actions",
 
         // Markdown
+        "bierner.markdown-checkbox",
         "bierner.markdown-emoji",
         "DavidAnson.vscode-markdownlint",
         "DevHawk.markdown-sup",
+        "joffreykern.markdown-toc",
+        "TakumiI.markdowntable",
+        "yzhang.markdown-all-in-one",
 
         // Images
         "076923.python-image-preview",
+        "kisstkondoros.vscode-gutter-preview",
         "mushan.vscode-paste-image",
 
         // Other Formatters
@@ -51,9 +57,12 @@
 
         // Other
         "christian-kohler.path-intellisense",
+        "GrapeCity.gc-excelviewer",
         "Gruntfuggly.todo-tree",
         "mechatroner.rainbow-csv",
         "ms-vsliveshare.vsliveshare",
+        "naumovs.color-highlight",
+        "RandomFractalsInc.vscode-data-preview",
         "redhat.vscode-xml",
         "richie5um2.vscode-sort-json",
         "streetsidesoftware.code-spell-checker-british-english",
