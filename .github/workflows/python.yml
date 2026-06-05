@@ -21,7 +21,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.GIT_AUTO_COMMIT_ACTION_CHECKOUT_PAT }}
@@ -30,7 +30,7 @@ jobs:
         run: pipx install poetry=="${{ env.POETRY_VERSION }}"
 
       - name: Set up Python ${{ env.PYTHON_VERSION }}
-        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: "poetry"
@@ -42,14 +42,14 @@ jobs:
         run: |
           echo "pre-commit-version=$(poetry run pre-commit -V)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5
+      - uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5.0.5
         with:
           path: ~/.cache/pre-commit
           key: ${{ steps.pre-commit-version.outputs.pre-commit-version }}|${{ env.pythonLocation }}|${{ hashFiles('.pre-commit-config.yaml') }}
 
       - run: poetry run pre-commit run --show-diff-on-failure --color=always --all-files
 
-      - uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7
+      - uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7.1.0
         if: success() || failure()
         with:
           commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
@@ -61,7 +61,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
 
       - name: Read .pre-commit-config.yaml
         uses: actions-tools/yaml-outputs@1a26d8aaa36aa54fe71d91c265dd6d4369a4fcfb # v2
@@ -73,7 +73,7 @@ jobs:
         run: pipx install poetry=="${{ env.POETRY_VERSION }}"
 
       - name: Set up Python ${{ env.PYTHON_VERSION }}
-        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: "poetry"
