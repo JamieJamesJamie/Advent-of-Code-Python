@@ -73,7 +73,6 @@ class TestDay(AbstractTestDay2022):
 
         :param example: Parsed input from example file.
         """
-
         all_expected_nodes = findall(self.expected_root())
         all_actual_nodes = findall(example)
 
