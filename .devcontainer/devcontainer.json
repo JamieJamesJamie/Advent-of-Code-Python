@@ -24,7 +24,6 @@
         "ms-python.mypy-type-checker",
         "ms-python.pylint",
         "njpwerner.autodocstring",
-        "VisualStudioExptTeam.vscodeintellicode",
 
         // Docker
         "docker.docker",
