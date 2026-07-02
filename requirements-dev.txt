@@ -432,9 +432,9 @@ dill==0.4.1 ; python_full_version == "3.13.14" \
 distlib==0.4.3 ; python_full_version == "3.13.14" \
     --hash=sha256:4b0ce306c966eb73bc3a7b6abad017c556dadd92c44701562cd528ac7fde4d5b \
     --hash=sha256:f152097224a0ae24be5a0f6bae1b9359af82133bce63f98a95f86cae1aede9ed
-docformatter==1.7.7 ; python_full_version == "3.13.14" \
-    --hash=sha256:7af49f8a46346a77858f6651f431b882c503c2f4442c8b4524b920c863277834 \
-    --hash=sha256:ea0e1e8867e5af468dfc3f9e947b92230a55be9ec17cd1609556387bffac7978
+docformatter==1.7.8 ; python_full_version == "3.13.14" \
+    --hash=sha256:6589b62a8f38c62c4c8c84cb1afa296af007c88c959e4c9d25c74c1f933c4dbf \
+    --hash=sha256:8e518948bacb8d8df5d5f625060e214a200f0a908d8e6797c9ebbdd2cdd17467
 docstring-parser==0.18.0 ; python_full_version == "3.13.14" \
     --hash=sha256:292510982205c12b1248696f44959db3cdd1740237a968ea1e2e7a900eeb2015 \
     --hash=sha256:b3fcbed555c47d8479be0796ef7e19c2670d428d72e96da63f3a40122860374b
@@ -1580,8 +1580,6 @@ typing-extensions==4.16.0 ; python_full_version == "3.13.14" \
 tzdata==2026.2 ; platform_system == "Windows" and python_full_version == "3.13.14" \
     --hash=sha256:9173fde7d80d9018e02a662e168e5a2d04f87c41ea174b139fbef642eda62d10 \
     --hash=sha256:bbe9af844f658da81a5f95019480da3a89415801f6cc966806612cc7169bffe7
-untokenize==0.1.1 ; python_full_version == "3.13.14" \
-    --hash=sha256:3865dbbbb8efb4bb5eaa72f1be7f3e0be00ea8b7f125c69cbd1f5fda926f37a2
 urllib3==2.7.0 ; python_full_version == "3.13.14" \
     --hash=sha256:231e0ec3b63ceb14667c67be60f2f2c40a518cb38b03af60abc813da26505f4c \
     --hash=sha256:9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897
