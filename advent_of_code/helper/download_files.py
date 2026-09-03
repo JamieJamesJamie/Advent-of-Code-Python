@@ -17,7 +17,6 @@ def download(output_path: Path, year: int, day: int):
     :param year: Year to download puzzle input from.
     :param day: Day to download and write puzzle input from and to respectively.
     """
-
     puzzle = Puzzle(year=year, day=day)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
