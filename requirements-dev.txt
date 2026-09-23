@@ -1313,9 +1313,9 @@ mypy==2.3.1 ; python_full_version == "3.13.15" \
     --hash=sha256:f12fdb70459d0060dea40b29e52163a961b156106d68d57882a6a9f648983a53 \
     --hash=sha256:f5d716048611e85ca9eefb2e1baa5d73ede389b5820ded260ea27c757d667af8 \
     --hash=sha256:ff715e45b2231a8e85de1d163d1b42791e4d7aab8f5145f85fee1b710b735aff
-networkx==3.6.1 ; python_full_version == "3.13.15" \
-    --hash=sha256:26b7c357accc0c8cde558ad486283728b65b6a95d85ee1cd66bafab4c8168509 \
-    --hash=sha256:d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762
+networkx==3.7 ; python_full_version == "3.13.15" \
+    --hash=sha256:e3fd2c13a7814cee3746340d8d7f8598a67f16a58bf47fb7f8793fab6efca1b0 \
+    --hash=sha256:fd77a511bd90f39f3d016351345b52cf5319b813bdca01de3f755d3cca62e96a
 nodeenv==1.10.0 ; python_full_version == "3.13.15" \
     --hash=sha256:5bb13e3eed2923615535339b3c620e76779af4cb4c6a90deccc9e36b274d3827 \
     --hash=sha256:996c191ad80897d076bdfba80a41994c2b47c68e224c542b48feba42ba00f8bb
