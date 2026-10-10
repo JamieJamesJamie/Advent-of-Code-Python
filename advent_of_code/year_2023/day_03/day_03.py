@@ -84,7 +84,6 @@ class Day3(Solver):
         :param parsed_input: The engine schematic.
         :return: The summed part numbers.
         """
-
         replaced_dots = np.where(
             parsed_input.character_map == ".", "0", parsed_input.character_map
         )

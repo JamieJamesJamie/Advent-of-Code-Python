@@ -9,8 +9,9 @@ def inclusive_range(start, stop=None, step=1):
 
     range(i) produces 0, 1, 2, ..., i.
 
-    When :param:`step` is given, it specifies the increment (or decrement).
+    When
 
+    :param:`step` is given, it specifies the increment (or decrement).
     :param start: The starting number.
     :param stop: The inclusive stopping number.
     :param step: The increment or decrement.

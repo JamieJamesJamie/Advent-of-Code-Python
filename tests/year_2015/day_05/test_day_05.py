@@ -54,12 +54,8 @@ class TestDay(AbstractTestDay2015):
             (10, "ieodomkazucvgmuy"),
             (
                 11,
-                inspect.cleandoc("""
-                    qjhvhtzxzqqjkmpb
-                    xxyxx
-                    uurcxstgmygtbstg
-                    ieodomkazucvgmuy
-                    """),
+                inspect.cleandoc("""Qjhvhtzxzqqjkmpb xxyxx uurcxstgmygtbstg
+                                 ieodomkazucvgmuy."""),
             ),
         ),
         indirect=["example"],
