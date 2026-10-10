@@ -1431,9 +1431,9 @@ numpy==2.5.3 ; python_full_version == "3.13.16" \
 packaging==26.3 ; python_full_version == "3.13.16" \
     --hash=sha256:94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79 \
     --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c
-parse==1.22.2 ; python_full_version == "3.13.16" \
-    --hash=sha256:8ff0b98202798b8cefa4f8fac06b670d6d00e5ec6ecbbacaf97ac0d0e93a54e6 \
-    --hash=sha256:b8ed6f889ca625b6b3aed4ec1439eb9421fde31814c2b1d550ccd8df5733a5b6
+parse==1.22.3 ; python_full_version == "3.13.16" \
+    --hash=sha256:2cd33a301b5a4b400ee79952f42364fe486e5f10701fbf819fbbab1eab478139 \
+    --hash=sha256:7e79bb39c72c3bf1613510fd5cdffe5baa9a7873892bef1d4566f1672c8a42f4
 pathspec==1.1.1 ; python_full_version == "3.13.16" \
     --hash=sha256:17db5ecd524104a120e173814c90367a96a98d07c45b2e10c2f3919fff91bf5a \
     --hash=sha256:a00ce642f577bf7f473932318056212bc4f8bfdf53128c78bbd5af0b9b20b189
@@ -1879,9 +1879,9 @@ scipy==1.18.1 ; python_full_version == "3.13.16" \
 six==1.17.0 ; python_full_version == "3.13.16" \
     --hash=sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274 \
     --hash=sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81
-soupsieve==3.0 ; python_full_version == "3.13.16" \
-    --hash=sha256:1136e639f72f95f1a9351b4587f640553d08d41a5653b187da30d6c9200c296c \
-    --hash=sha256:6abca899ac412ad87154fd65928da2fc0cff3df490767b7c9dd7726bf661e954
+soupsieve==3.0.1 ; python_full_version == "3.13.16" \
+    --hash=sha256:713d5c69f90ef84deffec0b9c6244796575e3c9fc9081cefb96091ce1200a308 \
+    --hash=sha256:dd1d6bd1ba7cd39866edd704321c11b4df5e7ae98620174a9071a9af3a9c05cd
 stevedore==5.9.1 ; python_full_version == "3.13.16" \
     --hash=sha256:5c8ff3a9f336cc1a06ac0f597bc79d11a2f950bfd32e290ca56b5a301fafafbf \
     --hash=sha256:e97a2667923efda926e8713fde6a73616df68210a3cbc6f02b48967b676fd8bf
