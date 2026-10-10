@@ -28,7 +28,7 @@ pytest = "9.1.1"
 
 [tool.poetry.group.dev.dependencies]
 bandit = { version = "1.9.4", extras = ["toml"] }
-black = { version = "26.5.1", extras = ["d"] }
+black = { version = "26.10.1", extras = ["d"] }
 docformatter = "1.7.7"
 isort = "9.0.2"
 mypy = "2.4.0"
