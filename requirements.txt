@@ -598,9 +598,9 @@ scipy==1.18.1 ; python_full_version == "3.13.16" \
 six==1.17.0 ; python_full_version == "3.13.16" \
     --hash=sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274 \
     --hash=sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81
-soupsieve==2.10 ; python_full_version == "3.13.16" \
-    --hash=sha256:49e9380d7d2905463583bafe285e818c7366a9ed7b3aee221c1ac79c905d8bc0 \
-    --hash=sha256:8596eb8967d744174820280fa62b4542a2e955bfaccca73ed8a13c6eb8e9b502
+soupsieve==3.0 ; python_full_version == "3.13.16" \
+    --hash=sha256:1136e639f72f95f1a9351b4587f640553d08d41a5653b187da30d6c9200c296c \
+    --hash=sha256:6abca899ac412ad87154fd65928da2fc0cff3df490767b7c9dd7726bf661e954
 typed-argument-parser==1.12.0 ; python_full_version == "3.13.16" \
     --hash=sha256:9cdf26c710b9cde2992ff0763288598628ac852d9a1accf5269837cd6e24a930 \
     --hash=sha256:cf5f7cafac869fb9627c4c90394e321c895d58872d865ad2c62e65668d259fa0
