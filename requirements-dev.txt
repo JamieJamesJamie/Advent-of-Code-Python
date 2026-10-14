@@ -1431,9 +1431,9 @@ numpy==2.5.4 ; python_full_version == "3.13.16" \
 packaging==26.3 ; python_full_version == "3.13.16" \
     --hash=sha256:94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79 \
     --hash=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c
-parse==1.22.2 ; python_full_version == "3.13.16" \
-    --hash=sha256:8ff0b98202798b8cefa4f8fac06b670d6d00e5ec6ecbbacaf97ac0d0e93a54e6 \
-    --hash=sha256:b8ed6f889ca625b6b3aed4ec1439eb9421fde31814c2b1d550ccd8df5733a5b6
+parse==1.22.3 ; python_full_version == "3.13.16" \
+    --hash=sha256:2cd33a301b5a4b400ee79952f42364fe486e5f10701fbf819fbbab1eab478139 \
+    --hash=sha256:7e79bb39c72c3bf1613510fd5cdffe5baa9a7873892bef1d4566f1672c8a42f4
 pathspec==1.1.1 ; python_full_version == "3.13.16" \
     --hash=sha256:17db5ecd524104a120e173814c90367a96a98d07c45b2e10c2f3919fff91bf5a \
     --hash=sha256:a00ce642f577bf7f473932318056212bc4f8bfdf53128c78bbd5af0b9b20b189
