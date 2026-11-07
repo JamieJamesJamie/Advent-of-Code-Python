@@ -66,7 +66,6 @@ class Monkey:
         :param modulo: Maximum worry level allowed.
         :return: The index of the monkey to throw the current item to.
         """
-
         old_worry_level = self.items[0]
         Logger.debug(
             "Monkey inspects an item with a worry level of %d", old_worry_level
