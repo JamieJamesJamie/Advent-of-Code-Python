@@ -795,18 +795,17 @@ files = [
 
 [[package]]
 name = "docformatter"
-version = "1.7.7"
+version = "1.7.8"
 description = "Formats docstrings to follow PEP 257"
 optional = false
-python-versions = "<4.0,>=3.9"
+python-versions = "<4.0,>=3.10"
 files = [
-    {file = "docformatter-1.7.7-py3-none-any.whl", hash = "sha256:7af49f8a46346a77858f6651f431b882c503c2f4442c8b4524b920c863277834"},
-    {file = "docformatter-1.7.7.tar.gz", hash = "sha256:ea0e1e8867e5af468dfc3f9e947b92230a55be9ec17cd1609556387bffac7978"},
+    {file = "docformatter-1.7.8-py3-none-any.whl", hash = "sha256:8e518948bacb8d8df5d5f625060e214a200f0a908d8e6797c9ebbdd2cdd17467"},
+    {file = "docformatter-1.7.8.tar.gz", hash = "sha256:6589b62a8f38c62c4c8c84cb1afa296af007c88c959e4c9d25c74c1f933c4dbf"},
 ]
 
 [package.dependencies]
 charset_normalizer = ">=3.0.0,<4.0.0"
-untokenize = ">=0.1.1,<0.2.0"
 
 [package.extras]
 tomli = ["tomli (>=2.0.0,<3.0.0)"]
@@ -2599,13 +2598,13 @@ test = ["Cython", "array-api-strict (>=2.3.1)", "asv", "gmpy2", "hypothesis (>=6
 
 [[package]]
 name = "soupsieve"
-version = "4.1"
+version = "4.1.1"
 description = "A modern CSS selector implementation for Beautiful Soup."
 optional = false
 python-versions = ">=3.11.5"
 files = [
-    {file = "soupsieve-4.1-py3-none-any.whl", hash = "sha256:e4d667b3974ce6e038e7390486b8093369854a1d345ffdd4c121dfc4a782e809"},
-    {file = "soupsieve-4.1.tar.gz", hash = "sha256:ca9abf7126667010d8f6e9b39bfc1bc3b23c8aed9bcb0f54a754dde969bb8aab"},
+    {file = "soupsieve-4.1.1-py3-none-any.whl", hash = "sha256:8ff3422dab0b720fb667ee79864d80531a0e57994a13eb701697719ffcb751f6"},
+    {file = "soupsieve-4.1.1.tar.gz", hash = "sha256:b296bd2d2f65b1a78149f3d7bf6736a147d2c9e2dfbde0e4404639d748a02e03"},
 ]
 
 [[package]]
@@ -2668,16 +2667,6 @@ python-versions = ">=2"
 files = [
     {file = "tzdata-2026.6-py2.py3-none-any.whl", hash = "sha256:0a10eec6e13ef16b627fabed9a5f2ba61a62b1c67f327305f4e7e412a70b4aec"},
     {file = "tzdata-2026.6.tar.gz", hash = "sha256:85d2cd9c09f81f0bb29db27759fc83af4f1e620efb814f8c5bf8b4cc4feece6d"},
-]
-
-[[package]]
-name = "untokenize"
-version = "0.1.1"
-description = "Transforms tokens into original source code (while preserving whitespace)."
-optional = false
-python-versions = "*"
-files = [
-    {file = "untokenize-0.1.1.tar.gz", hash = "sha256:3865dbbbb8efb4bb5eaa72f1be7f3e0be00ea8b7f125c69cbd1f5fda926f37a2"},
 ]
 
 [[package]]
@@ -2870,4 +2859,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.0"
 python-versions = "3.13.18"
-content-hash = "e925145596df7e8641dbc46ab78da9bb20315668e7da62b375a19e486d2496b4"
+content-hash = "983de279f6f5a43a969a843afbdb5fad3514438e5d0eb33bfa2dd3aeb4dd05cd"
