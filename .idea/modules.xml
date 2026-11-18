@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module
-        fileurl="file://$PROJECT_DIR$/.idea/Advent-of-Code.iml"
-        filepath="$PROJECT_DIR$/.idea/Advent-of-Code.iml"
+        fileurl="file://$PROJECT_DIR$/.idea/advent-of-code.iml"
+        filepath="$PROJECT_DIR$/.idea/advent-of-code.iml"
       />
     </modules>
   </component>

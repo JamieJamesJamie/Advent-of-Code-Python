@@ -6,7 +6,7 @@
     factoryName="Autodetect"
     nameIsGenerated="true"
   >
-    <module name="Advent-of-Code" />
+    <module name="advent-of-code" />
     <option name="ENV_FILES" value="" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
@@ -19,6 +19,8 @@
       ID="PythonCoverageRunConfigurationExtension"
       runner="coverage.py"
     />
+    <option name="RUN_TOOL" value="" />
+    <option name="RUN_AS_SCRIPT" value="" />
     <option name="_new_additionalArguments" value="&quot;&quot;" />
     <option
       name="_new_target"
