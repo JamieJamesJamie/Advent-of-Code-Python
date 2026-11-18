@@ -20,4 +20,7 @@
       </map>
     </option>
   </component>
+  <component name="RuffConfiguration">
+    <option name="fixOnSave" value="true" />
+  </component>
 </project>
