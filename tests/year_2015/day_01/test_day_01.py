@@ -2,7 +2,6 @@
 
 # pylint: disable=arguments-differ
 
-
 import pytest
 
 from advent_of_code.year_2015.day_01.day_01 import Day1

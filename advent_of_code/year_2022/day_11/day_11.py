@@ -30,7 +30,8 @@ class Logger:
         :param kwargs: Keyword arguments to pass to :code:`logging.debug`.
         """
         if Logger.current_round in Logger.rounds_to_log:
-            logging.debug(msg, *args, **kwargs)
+            logger = logging.getLogger(__name__)
+            logger.debug(msg, *args, **kwargs)
 
 
 @dataclass
@@ -165,7 +166,7 @@ class Day11(Solver):
             monkeys.append(
                 Monkey(
                     parse("Monkey {:d}:", monkey_lines[0])[0],
-                    list(item[0] for item in findall("{:d}", monkey_lines[1])),
+                    [item[0] for item in findall("{:d}", monkey_lines[1])],
                     Monkey.POSSIBLE_OPERATORS[operation_key],
                     operand,
                     search("Test: divisible by {:d}", monkey_lines[3])[0],

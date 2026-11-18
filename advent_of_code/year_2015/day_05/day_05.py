@@ -9,7 +9,7 @@ from advent_of_code.helper.solver import Solver
 class Day5(Solver):
     """Solver for day 5."""
 
-    FORBIDDEN_STRINGS = {"ab", "cd", "pq", "xy"}
+    FORBIDDEN_STRINGS = frozenset({"ab", "cd", "pq", "xy"})
 
     AT_LEAST_3_VOWELS_REGEX = ".*".join(["[aeiou]"] * 3)
     CONTAINS_AT_LEAST_1_REPEATING_LETTER_REGEX = r"(?P<character>\w)(?P=character)"

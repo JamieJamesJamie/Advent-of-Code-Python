@@ -189,8 +189,10 @@ class Day7(Solver):
                 node
                 for node in PostOrderIter(
                     parsed_input,
-                    filter_=lambda n: not n.is_leaf
-                    and n.file_size >= min_directory_deletion_file_size,
+                    filter_=lambda n: (
+                        not n.is_leaf
+                        and n.file_size >= min_directory_deletion_file_size
+                    ),
                 )
             ),
             key=lambda n: n.file_size,

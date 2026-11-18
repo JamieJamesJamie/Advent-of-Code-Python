@@ -2,9 +2,9 @@
 
 # pylint: disable=too-few-public-methods
 
-
 from abc import ABC, abstractmethod
-from typing import NamedTuple
+from collections.abc import Mapping
+from typing import ClassVar, NamedTuple
 
 import numpy as np
 
@@ -189,7 +189,12 @@ class Day9(Solver):
     """Solver for day 9."""
 
     _START_POSITION = Position(0, 0)
-    _MOVE: dict[str, type[Direction]] = {"U": Up, "D": Down, "L": Left, "R": Right}
+    _MOVE: ClassVar[Mapping[str, type[Direction]]] = {
+        "U": Up,
+        "D": Down,
+        "L": Left,
+        "R": Right,
+    }
 
     @staticmethod
     def generate_map(solver_state: SolverState) -> np.ndarray:
@@ -242,7 +247,7 @@ class Day9(Solver):
         ):
             map_to_print[
                 rope_position.x - min_position.x, rope_position.y - min_position.y
-            ] = ("H" if rope_index == 0 else str(rope_index))
+            ] = "H" if rope_index == 0 else str(rope_index)
 
         map_to_print = np.rot90(map_to_print)
 

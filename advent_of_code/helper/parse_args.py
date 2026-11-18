@@ -2,7 +2,6 @@
 
 # pylint: disable=too-few-public-methods
 
-
 from pathlib import Path
 
 from tap import Tap
