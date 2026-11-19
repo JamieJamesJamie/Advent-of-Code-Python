@@ -1,7 +1,7 @@
 """Solutions for day 1."""
 
-from collections.abc import Iterable
-from types import MappingProxyType
+from collections.abc import Iterable, Mapping
+from typing import ClassVar
 
 from advent_of_code.helper.solver import Solver
 
@@ -9,19 +9,17 @@ from advent_of_code.helper.solver import Solver
 class Day1(Solver):
     """Solver for day 1."""
 
-    _NUMBER_MAPPINGS = MappingProxyType(
-        {
-            "one": 1,
-            "two": 2,
-            "three": 3,
-            "four": 4,
-            "five": 5,
-            "six": 6,
-            "seven": 7,
-            "eight": 8,
-            "nine": 9,
-        }
-    )
+    _NUMBER_MAPPINGS: ClassVar[Mapping[str, int]] = {
+        "one": 1,
+        "two": 2,
+        "three": 3,
+        "four": 4,
+        "five": 5,
+        "six": 6,
+        "seven": 7,
+        "eight": 8,
+        "nine": 9,
+    }
 
     @staticmethod
     def _part1_1_line(parsed_input: Iterable[str]) -> int:

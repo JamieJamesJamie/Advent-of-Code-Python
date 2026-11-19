@@ -1,8 +1,9 @@
 """Solutions for day 4."""
 
+from collections.abc import Mapping
 from functools import partial
 from itertools import product
-from types import MappingProxyType
+from typing import ClassVar
 
 import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
@@ -16,7 +17,7 @@ class Day4(Solver):
 
     _XMAS_ARRAY = np.array(tuple("XMAS"))
 
-    _X_MAS_MAPPING = MappingProxyType({"X": 0, "M": 1, "A": 2, "S": 4})
+    _X_MAS_MAPPING: ClassVar[Mapping[str, int]] = {"X": 0, "M": 1, "A": 2, "S": 4}
 
     _WEIGHTS = (
         (
