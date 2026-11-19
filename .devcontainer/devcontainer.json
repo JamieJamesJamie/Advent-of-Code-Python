@@ -20,7 +20,6 @@
         // Python functionality
         "charliermarsh.ruff",
         "ms-python.python",
-        "ms-python.isort",
         "ms-python.mypy-type-checker",
         "ms-python.pylint",
         "njpwerner.autodocstring",

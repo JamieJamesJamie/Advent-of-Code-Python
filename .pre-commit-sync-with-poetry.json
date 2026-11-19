@@ -7,10 +7,6 @@
     "repo": "https://github.com/PyCQA/docformatter",
     "rev": "v${rev}"
   },
-  "isort": {
-    "repo": "https://github.com/pycqa/isort",
-    "rev": "${rev}"
-  },
   "mypy": {
     "repo": "https://github.com/pre-commit/mirrors-mypy",
     "rev": "v${rev}"

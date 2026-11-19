@@ -6,12 +6,6 @@
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "autoDocstring.docstringFormat": "sphinx",
-  "isort.check": true,
-  "isort.importStrategy": "fromEnvironment",
-  "isort.severity": {
-    "E": "Warning",
-    "W": "Warning"
-  },
   "mypy-type-checker.importStrategy": "fromEnvironment",
   "mypy-type-checker.preferDaemon": true,
   "mypy-type-checker.reportingScope": "workspace",

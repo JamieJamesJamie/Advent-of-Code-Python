@@ -22,11 +22,6 @@ repos:
       - id: sync_with_poetry
         args: ["--db", ".pre-commit-sync-with-poetry.json"]
 
-  - repo: https://github.com/pycqa/isort
-    rev: 9.0.2
-    hooks:
-      - id: isort
-
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.22.0
     hooks:

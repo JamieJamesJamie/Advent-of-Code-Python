@@ -29,7 +29,6 @@ pytest = "9.2.0"
 [tool.poetry.group.dev.dependencies]
 bandit = { version = "1.9.4", extras = ["toml"] }
 docformatter = "1.7.7"
-isort = "9.0.2"
 mypy = "2.4.1"
 pre-commit = "4.7.0"
 pylint = "4.1.4"
@@ -40,9 +39,6 @@ exclude_dirs = ["tests"]
 
 [tool.docformatter]
 black = true
-
-[tool.isort]
-profile = "black"
 
 [tool.mypy]
 ignore_missing_imports = true
