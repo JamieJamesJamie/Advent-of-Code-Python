@@ -1,6 +1,8 @@
 """Solutions for day 3."""
 
 import itertools
+from collections.abc import Mapping
+from typing import ClassVar
 
 import numpy as np
 
@@ -10,7 +12,7 @@ from advent_of_code.helper.solver import Solver
 class Day3(Solver):
     """Solver for day 3."""
 
-    DIRECTION_MAPPINGS: dict[str, np.ndarray] = {
+    DIRECTION_MAPPINGS: ClassVar[Mapping[str, np.ndarray]] = {
         "^": np.array((0, 1)),
         "v": np.array((0, -1)),
         ">": np.array((1, 0)),

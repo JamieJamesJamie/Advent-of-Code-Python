@@ -22,11 +22,6 @@ repos:
       - id: sync_with_poetry
         args: ["--db", ".pre-commit-sync-with-poetry.json"]
 
-  - repo: https://github.com/pycqa/isort
-    rev: 9.0.2
-    hooks:
-      - id: isort
-
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.22.0
     hooks:
@@ -39,15 +34,15 @@ repos:
     hooks:
       - id: docformatter
 
-  - repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 26.10.1
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.17.5
     hooks:
-      - id: black
-        # It is recommended to specify the latest version of Python
-        # supported by your project here, or alternatively use
-        # pre-commit's default_language_version, see
-        # https://pre-commit.com/#top_level-default_language_version
-        #language_version: python3.9
+      # Run the linter.
+      - id: ruff-check
+        args: [--fix]
+      # Run the formatter.
+      - id: ruff-format
 
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v2.4.1 # Use the sha / tag you want to point at

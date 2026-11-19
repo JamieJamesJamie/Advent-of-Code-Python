@@ -1,6 +1,7 @@
 """Solutions for day 1."""
 
-from collections.abc import Iterable
+from collections.abc import Iterable, Mapping
+from typing import ClassVar
 
 from advent_of_code.helper.solver import Solver
 
@@ -8,7 +9,7 @@ from advent_of_code.helper.solver import Solver
 class Day1(Solver):
     """Solver for day 1."""
 
-    _NUMBER_MAPPINGS = {
+    _NUMBER_MAPPINGS: ClassVar[Mapping[str, int]] = {
         "one": 1,
         "two": 2,
         "three": 3,

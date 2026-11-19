@@ -1,8 +1,8 @@
 """Solutions for day 2."""
 
-from collections.abc import Iterable
+from collections.abc import Iterable, Mapping
 from enum import Enum
-from typing import NamedTuple
+from typing import ClassVar, NamedTuple
 
 from advent_of_code.helper.solver import Solver
 
@@ -33,7 +33,11 @@ class RoundInfo(NamedTuple):
 class Day2(Solver):
     """Solver for day 2."""
 
-    _OPPONENT_TRANSLATIONS = {"A": Move.ROCK, "B": Move.PAPER, "C": Move.SCISSORS}
+    _OPPONENT_TRANSLATIONS: ClassVar[Mapping[str, Move]] = {
+        "A": Move.ROCK,
+        "B": Move.PAPER,
+        "C": Move.SCISSORS,
+    }
 
     @staticmethod
     def _outcome(opponent_move: Move, my_move: Move) -> Outcome:

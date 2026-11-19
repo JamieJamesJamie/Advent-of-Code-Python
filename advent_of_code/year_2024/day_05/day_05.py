@@ -32,7 +32,7 @@ class ParsedInput:
             sorted(
                 update,
                 key=cmp_to_key(
-                    lambda a, b: (-1 if (a, b) in self._page_ordering_rules else 1)
+                    lambda a, b: -1 if (a, b) in self._page_ordering_rules else 1
                 ),
             )
         )

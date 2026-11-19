@@ -2,7 +2,6 @@
 
 # pylint: disable=arguments-differ
 
-
 import inspect
 
 import pytest
