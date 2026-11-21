@@ -32,7 +32,7 @@ docformatter = "1.7.7"
 mypy = "2.4.1"
 pre-commit = "4.7.0"
 pylint = "4.1.4"
-ruff = "0.17.5"
+ruff = "0.17.6"
 
 [tool.bandit]
 exclude_dirs = ["tests"]
