@@ -39,13 +39,15 @@ class TestDay(AbstractTestDay2015):
             (5, "dvszwmarrgswjxmb"),
             (
                 6,
-                inspect.cleandoc("""
+                inspect.cleandoc(
+                    """
                     ugknbfddgicrmopn
                     aaa
                     jchzalrnumimnmhp
                     haegwjzuvuyypxyu
                     dvszwmarrgswjxmb
-                    """),
+                    """
+                ),
             ),
             (7, "qjhvhtzxzqqjkmpb"),
             (8, "xxyxx"),
@@ -53,12 +55,8 @@ class TestDay(AbstractTestDay2015):
             (10, "ieodomkazucvgmuy"),
             (
                 11,
-                inspect.cleandoc("""
-                    qjhvhtzxzqqjkmpb
-                    xxyxx
-                    uurcxstgmygtbstg
-                    ieodomkazucvgmuy
-                    """),
+                inspect.cleandoc("""Qjhvhtzxzqqjkmpb xxyxx uurcxstgmygtbstg
+                                 ieodomkazucvgmuy."""),
             ),
         ),
         indirect=["example"],
