@@ -1952,5 +1952,5 @@ python-discovery = ">=1.6.1"
 
 [metadata]
 lock-version = "2.0"
-python-versions = "3.13.18"
-content-hash = "a77ac7699b55ac3b58031099a7fec436524c0ff807561d8f639ba689e51ee581"
+python-versions = "3.14.10"
+content-hash = "618846d4943cb9b66b12e09f79714ebfc93a19b34c5f7d208af84d151e6a3f0b"
