@@ -56,8 +56,7 @@ class TestDay(AbstractTestDay2015):
             (
                 11,
                 inspect.cleandoc(
-                    """Qjhvhtzxzqqjkmpb xxyxx uurcxstgmygtbstg
-                                 ieodomkazucvgmuy."""
+                    """Qjhvhtzxzqqjkmpb xxyxx uurcxstgmygtbstg ieodomkazucvgmuy."""
                 ),
             ),
         ),
