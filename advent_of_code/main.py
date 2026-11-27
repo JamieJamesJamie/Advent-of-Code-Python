@@ -10,7 +10,6 @@ from advent_of_code.helper.solve import solve
 
 def main():
     """Main method."""
-
     args = ArgumentParser().parse_args()
 
     for year in args.years:
